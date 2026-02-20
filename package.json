@@ -1,0 +1,53 @@
+{
+	"name": "launchclear",
+	"version": "0.1.0",
+	"description": "Compliance artifact and action generator for AI product teams",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": {
+		"launchclear": "dist/cli/index.js"
+	},
+	"scripts": {
+		"dev": "tsx src/cli/index.ts",
+		"build": "tsup",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write .",
+		"test": "vitest run",
+		"test:unit": "vitest run tests/unit",
+		"test:snapshot": "vitest run tests/snapshot",
+		"test:watch": "vitest",
+		"check": "biome check . && tsc --noEmit"
+	},
+	"keywords": ["ai", "compliance", "gdpr", "eu-ai-act", "regulatory", "dpia"],
+	"author": "Yap Jia Qing",
+	"license": "MIT",
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"dependencies": {
+		"commander": "^13.1.0",
+		"hono": "^4.7.0",
+		"inquirer": "^12.4.0",
+		"zod": "^3.24.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"@types/node": "^22.13.0",
+		"tsup": "^8.4.0",
+		"tsx": "^4.19.0",
+		"typescript": "^5.7.0",
+		"vitest": "^3.0.0"
+	},
+	"tsup": {
+		"entry": ["src/cli/index.ts"],
+		"format": ["esm"],
+		"target": "node20",
+		"outDir": "dist",
+		"splitting": true,
+		"clean": true,
+		"dts": false
+	}
+}

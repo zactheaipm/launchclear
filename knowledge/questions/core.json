@@ -1,0 +1,418 @@
+[
+	{
+		"id": "product-description",
+		"text": "What does your AI product or feature do? Describe its purpose, how it works, and what problem it solves.",
+		"type": "free-text",
+		"category": "core",
+		"regulatoryRelevance": "Determines the scope of applicable regulations and risk classification across all jurisdictions.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	},
+	{
+		"id": "product-type",
+		"text": "What best describes your AI system's primary function?",
+		"type": "single-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "classifier",
+				"label": "Classifier",
+				"description": "Categorizes inputs into predefined classes (e.g., spam detection, content moderation)"
+			},
+			{
+				"value": "recommender",
+				"label": "Recommender",
+				"description": "Suggests items, content, or actions to users"
+			},
+			{
+				"value": "generator",
+				"label": "Generator",
+				"description": "Creates new content (text, images, code, audio)"
+			},
+			{
+				"value": "predictor",
+				"label": "Predictor",
+				"description": "Forecasts outcomes or future events"
+			},
+			{
+				"value": "detector",
+				"label": "Detector",
+				"description": "Identifies patterns, anomalies, or specific elements"
+			},
+			{
+				"value": "ranker",
+				"label": "Ranker",
+				"description": "Orders or prioritizes items (e.g., search results, candidates)"
+			},
+			{
+				"value": "agent",
+				"label": "Agent",
+				"description": "Autonomous system that takes actions on behalf of users"
+			},
+			{
+				"value": "foundation-model",
+				"label": "Foundation / GPAI model",
+				"description": "A general-purpose AI model trained at scale (e.g., large language model, multimodal foundation model)"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Does not fit the above categories"
+			}
+		],
+		"regulatoryRelevance": "System type influences risk classification under the EU AI Act and determines applicable transparency obligations.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	},
+	{
+		"id": "data-categories",
+		"text": "What types of data does your system collect or process? Select all that apply.",
+		"type": "multi-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "personal",
+				"label": "Personal data",
+				"description": "Names, email addresses, phone numbers, identifiers"
+			},
+			{
+				"value": "sensitive",
+				"label": "Sensitive personal data",
+				"description": "Race, ethnicity, religion, sexual orientation, political opinions"
+			},
+			{
+				"value": "biometric",
+				"label": "Biometric data",
+				"description": "Fingerprints, facial recognition, voice prints, gait analysis"
+			},
+			{
+				"value": "health",
+				"label": "Health data",
+				"description": "Medical records, diagnoses, treatment information"
+			},
+			{
+				"value": "financial",
+				"label": "Financial data",
+				"description": "Income, credit scores, bank account details, transaction history"
+			},
+			{
+				"value": "location",
+				"label": "Location data",
+				"description": "GPS coordinates, IP-based geolocation, address history"
+			},
+			{
+				"value": "behavioral",
+				"label": "Behavioral data",
+				"description": "Browsing history, usage patterns, engagement metrics"
+			},
+			{
+				"value": "minor",
+				"label": "Minor's data",
+				"description": "Data from or about individuals under 18"
+			},
+			{
+				"value": "employment",
+				"label": "Employment data",
+				"description": "Resumes, performance reviews, compensation, work history"
+			},
+			{
+				"value": "criminal",
+				"label": "Criminal records",
+				"description": "Criminal history, arrest records, court proceedings"
+			},
+			{
+				"value": "political",
+				"label": "Political data",
+				"description": "Political affiliations, voting records, political opinions"
+			},
+			{
+				"value": "genetic",
+				"label": "Genetic data",
+				"description": "DNA data, genetic test results"
+			},
+			{
+				"value": "public",
+				"label": "Public data only",
+				"description": "Publicly available information only"
+			},
+			{
+				"value": "anonymized",
+				"label": "Anonymized data",
+				"description": "Data that cannot be linked back to individuals"
+			},
+			{
+				"value": "pseudonymized",
+				"label": "Pseudonymized data",
+				"description": "Data with direct identifiers replaced by pseudonyms"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Data types not listed above"
+			}
+		],
+		"regulatoryRelevance": "Data types determine GDPR legal basis requirements, trigger DPIA obligations, and affect risk classification under multiple frameworks.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	},
+	{
+		"id": "user-populations",
+		"text": "Who are the end users or subjects of this AI system? Select all that apply.",
+		"type": "multi-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "consumers",
+				"label": "Consumers",
+				"description": "General public using consumer-facing products"
+			},
+			{
+				"value": "businesses",
+				"label": "Businesses",
+				"description": "Business clients or enterprise users"
+			},
+			{
+				"value": "minors",
+				"label": "Minors (under 18)",
+				"description": "Children or adolescents"
+			},
+			{
+				"value": "employees",
+				"label": "Employees",
+				"description": "Current employees of the deploying organization"
+			},
+			{
+				"value": "patients",
+				"label": "Patients",
+				"description": "Healthcare patients or medical service recipients"
+			},
+			{
+				"value": "students",
+				"label": "Students",
+				"description": "Students in educational institutions"
+			},
+			{
+				"value": "job-applicants",
+				"label": "Job applicants",
+				"description": "Candidates applying for employment"
+			},
+			{
+				"value": "credit-applicants",
+				"label": "Credit applicants",
+				"description": "Individuals applying for credit or loans"
+			},
+			{
+				"value": "tenants",
+				"label": "Tenants",
+				"description": "Current or prospective tenants"
+			},
+			{
+				"value": "general-public",
+				"label": "General public",
+				"description": "Unspecified or broad public audience"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "User populations not listed above"
+			}
+		],
+		"regulatoryRelevance": "User populations trigger specific protections: minors invoke COPPA/GDPR children's provisions, employees trigger employment AI laws, patients trigger health data rules.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	},
+	{
+		"id": "decision-impact",
+		"text": "Does this system make or influence decisions that materially affect people's rights, access to services, or opportunities?",
+		"type": "single-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "advisory",
+				"label": "Advisory only",
+				"description": "Provides suggestions or information; humans make all final decisions"
+			},
+			{
+				"value": "material",
+				"label": "Material influence",
+				"description": "Significantly influences decisions about people (e.g., scoring, ranking, filtering)"
+			},
+			{
+				"value": "determinative",
+				"label": "Determinative",
+				"description": "Directly makes decisions that affect people's rights, access, or opportunities"
+			}
+		],
+		"regulatoryRelevance": "Decision impact level determines obligations under GDPR Article 22 (automated decision-making), EU AI Act risk classification, and US state AI laws targeting consequential decisions.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	},
+	{
+		"id": "automation-level",
+		"text": "What level of human oversight exists in the system's decision-making process?",
+		"type": "single-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "fully-automated",
+				"label": "Fully automated",
+				"description": "No human review of individual decisions"
+			},
+			{
+				"value": "human-in-the-loop",
+				"label": "Human-in-the-loop",
+				"description": "A human reviews and approves each decision before it takes effect"
+			},
+			{
+				"value": "human-on-the-loop",
+				"label": "Human-on-the-loop",
+				"description": "A human monitors the system and can intervene, but decisions execute automatically"
+			}
+		],
+		"regulatoryRelevance": "Automation level affects GDPR Article 22 applicability, EU AI Act human oversight requirements, and Colorado AI Act disclosure obligations.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "us-co", "uk", "singapore"]
+	},
+	{
+		"id": "target-markets",
+		"text": "Which markets do you plan to launch this product in? Select all that apply.",
+		"type": "multi-select",
+		"category": "core",
+		"options": [
+			{
+				"value": "eu-ai-act",
+				"label": "EU (AI Act)",
+				"description": "European Union — AI Act applies"
+			},
+			{
+				"value": "eu-gdpr",
+				"label": "EU (GDPR)",
+				"description": "European Union — GDPR data protection applies"
+			},
+			{
+				"value": "us-federal",
+				"label": "US Federal",
+				"description": "United States federal market (FTC, NIST AI RMF)"
+			},
+			{
+				"value": "us-ca",
+				"label": "California",
+				"description": "California — CCPA/CPRA, SB 243"
+			},
+			{
+				"value": "us-co",
+				"label": "Colorado",
+				"description": "Colorado — Colorado AI Act"
+			},
+			{
+				"value": "us-il",
+				"label": "Illinois",
+				"description": "Illinois — BIPA, HRA AI amendment"
+			},
+			{
+				"value": "us-ny",
+				"label": "New York City",
+				"description": "New York City — LL144 (automated employment decisions)"
+			},
+			{
+				"value": "us-tx",
+				"label": "Texas",
+				"description": "Texas — TRAIGA"
+			},
+			{
+				"value": "uk",
+				"label": "United Kingdom",
+				"description": "UK — ICO, AISI frameworks"
+			},
+			{
+				"value": "singapore",
+				"label": "Singapore",
+				"description": "Singapore — PDPC, Model AI Governance Framework"
+			},
+			{
+				"value": "china",
+				"label": "China",
+				"description": "China — CAC GenAI measures"
+			},
+			{
+				"value": "brazil",
+				"label": "Brazil",
+				"description": "Brazil — LGPD, AI Bill"
+			}
+		],
+		"regulatoryRelevance": "Selected markets determine which regulatory frameworks apply and which compliance artifacts and actions are required.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"us-il",
+			"us-ny",
+			"us-tx",
+			"uk",
+			"singapore",
+			"china",
+			"brazil"
+		]
+	}
+]

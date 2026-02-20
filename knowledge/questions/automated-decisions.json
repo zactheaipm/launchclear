@@ -1,0 +1,132 @@
+[
+	{
+		"id": "decision-domains",
+		"text": "In which domains does the system make or influence decisions? Select all that apply.",
+		"type": "multi-select",
+		"category": "automated-decisions",
+		"options": [
+			{
+				"value": "employment",
+				"label": "Employment",
+				"description": "Hiring, firing, promotion, performance evaluation"
+			},
+			{
+				"value": "credit",
+				"label": "Credit/lending",
+				"description": "Credit scoring, loan approval, financial services access"
+			},
+			{
+				"value": "housing",
+				"label": "Housing",
+				"description": "Tenant screening, rental approval, housing access"
+			},
+			{
+				"value": "insurance",
+				"label": "Insurance",
+				"description": "Underwriting, claims processing, pricing"
+			},
+			{
+				"value": "education",
+				"label": "Education",
+				"description": "Admissions, grading, student assessment"
+			},
+			{
+				"value": "healthcare",
+				"label": "Healthcare",
+				"description": "Diagnosis, treatment recommendations, triage"
+			},
+			{
+				"value": "law-enforcement",
+				"label": "Law enforcement",
+				"description": "Predictive policing, surveillance, risk assessment"
+			},
+			{
+				"value": "benefits",
+				"label": "Government benefits",
+				"description": "Eligibility determination, benefits allocation"
+			},
+			{
+				"value": "content-moderation",
+				"label": "Content moderation",
+				"description": "Content removal, account suspension, visibility decisions"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Other decision domains not listed above"
+			}
+		],
+		"regulatoryRelevance": "Decision domain determines EU AI Act risk classification (Annex III), triggers Colorado AI Act obligations for consequential decisions, and invokes NYC LL144 for employment decisions.",
+		"jurisdictionRelevance": ["eu-ai-act", "us-co", "us-ny", "us-il", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	},
+	{
+		"id": "contestability",
+		"text": "Can individuals affected by the system's decisions contest or appeal the outcome?",
+		"type": "yes-no-elaborate",
+		"category": "automated-decisions",
+		"regulatoryRelevance": "GDPR Article 22(3) requires the right to contest automated decisions. EU AI Act Article 14 requires human oversight for high-risk systems. Colorado AI Act requires appeal mechanisms.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "us-co", "uk"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	},
+	{
+		"id": "human-review-process",
+		"text": "Is there a substantive human review process for consequential decisions? If yes, describe how reviews are conducted.",
+		"type": "yes-no-elaborate",
+		"category": "automated-decisions",
+		"regulatoryRelevance": "EU AI Act Article 14 mandates effective human oversight for high-risk systems. GDPR Article 22 requires meaningful human intervention, not rubber-stamp review.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "us-co", "uk"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	},
+	{
+		"id": "bias-testing",
+		"text": "Has the system been tested for bias or disparate impact across protected characteristics (race, gender, age, disability)?",
+		"type": "yes-no-elaborate",
+		"category": "automated-decisions",
+		"regulatoryRelevance": "NYC LL144 requires annual bias audits for automated employment decision tools. Colorado AI Act requires bias testing. EU AI Act Articles 9-10 require bias mitigation for high-risk systems.",
+		"jurisdictionRelevance": ["eu-ai-act", "us-ny", "us-co", "us-il", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	},
+	{
+		"id": "explainability",
+		"text": "Can the system provide meaningful explanations for its decisions to affected individuals?",
+		"type": "yes-no-elaborate",
+		"category": "automated-decisions",
+		"regulatoryRelevance": "GDPR Articles 13-14 require information about automated decision-making logic. EU AI Act requires transparency for high-risk systems. Colorado AI Act requires explanation statements.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "us-co", "uk"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	},
+	{
+		"id": "impact-assessment-conducted",
+		"text": "Has a formal impact assessment been conducted for the system's automated decision-making?",
+		"type": "yes-no",
+		"category": "automated-decisions",
+		"regulatoryRelevance": "GDPR Article 35 requires DPIAs for high-risk processing. EU AI Act requires conformity assessments. Colorado AI Act requires algorithmic impact assessments.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "us-co", "uk", "us-ca"],
+		"requiredWhen": {
+			"field": "decision-impact",
+			"operator": "not-equals",
+			"value": "advisory"
+		}
+	}
+]

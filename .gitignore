@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.tsbuildinfo
+.claude/
+CLAUDE.md
+BUILD_GUIDE.md
+package-lock.json

@@ -1,0 +1,375 @@
+[
+	{
+		"id": "genai-foundation-model-source",
+		"text": "How is the foundation or generative AI model sourced for your product?",
+		"type": "single-select",
+		"category": "generative-ai",
+		"options": [
+			{
+				"value": "self-trained",
+				"label": "Self-trained",
+				"description": "Your organization trained the model from scratch"
+			},
+			{
+				"value": "third-party-api",
+				"label": "Third-party API",
+				"description": "You access a model via API (e.g., OpenAI, Anthropic, Google)"
+			},
+			{
+				"value": "fine-tuned",
+				"label": "Fine-tuned",
+				"description": "You fine-tuned a pre-existing model on your own data"
+			},
+			{
+				"value": "open-source",
+				"label": "Open-source model",
+				"description": "You deploy an open-source model (e.g., Llama, Mistral, Falcon)"
+			}
+		],
+		"regulatoryRelevance": "Model sourcing determines provider vs. deployer obligations under the EU AI Act, training data compliance responsibilities, and accountability allocation across all jurisdictions.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"uk",
+			"china",
+			"singapore",
+			"brazil",
+			"us-federal",
+			"us-ca"
+		],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-model-identifier",
+		"text": "What specific model(s) does your product use? (e.g., GPT-4, Claude 3, Llama 3, Stable Diffusion XL)",
+		"type": "free-text",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Identifying the specific model is needed for transparency notices, algorithm filing (China), and downstream documentation requirements.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "uk", "singapore", "us-ca"],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-output-modalities",
+		"text": "What types of content does your system generate? Select all that apply.",
+		"type": "multi-select",
+		"category": "generative-ai",
+		"options": [
+			{
+				"value": "text",
+				"label": "Text",
+				"description": "Written content, summaries, translations, code comments"
+			},
+			{
+				"value": "image",
+				"label": "Images",
+				"description": "Generated or edited images, illustrations, designs"
+			},
+			{
+				"value": "audio",
+				"label": "Audio",
+				"description": "Speech synthesis, music generation, sound effects"
+			},
+			{
+				"value": "video",
+				"label": "Video",
+				"description": "Generated or edited video content"
+			},
+			{
+				"value": "code",
+				"label": "Code",
+				"description": "Generated source code, scripts, or configurations"
+			},
+			{
+				"value": "multimodal",
+				"label": "Multimodal",
+				"description": "Combines multiple output types (e.g., text + images)"
+			}
+		],
+		"regulatoryRelevance": "Output modalities determine which content labeling, watermarking, and disclosure requirements apply. Image/video/audio generation triggers deepfake and synthetic media regulations in multiple jurisdictions.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"china",
+			"uk",
+			"singapore",
+			"us-federal",
+			"us-ca",
+			"us-tx",
+			"brazil"
+		],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-deepfake-capability",
+		"text": "Can the system generate realistic synthetic media of real people (deepfakes)? This includes realistic face swaps, voice cloning, or body puppetry.",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Deepfake capabilities trigger specific regulations in China (deep synthesis rules), EU (AI Act Article 50), US states (California, Texas deepfake laws), and disclosure requirements across all jurisdictions.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "us-ca", "us-tx", "us-federal", "uk"],
+		"requiredWhen": {
+			"field": "genai-output-modalities",
+			"operator": "includes",
+			"value": ["image", "audio", "video", "multimodal"]
+		}
+	},
+	{
+		"id": "genai-synthetic-voice",
+		"text": "Can the system generate synthetic voice or clone existing voices?",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Voice cloning and synthetic speech trigger disclosure requirements under the EU AI Act Article 50, China deep synthesis regulations, and multiple US state laws.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "us-ca", "us-tx", "us-federal", "uk"],
+		"requiredWhen": {
+			"field": "genai-output-modalities",
+			"operator": "includes",
+			"value": ["audio", "multimodal"]
+		}
+	},
+	{
+		"id": "genai-output-filtering",
+		"text": "Does the system have content safety filters applied to generated output?",
+		"type": "yes-no-elaborate",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Content safety filtering is required by China's CAC GenAI measures, expected under EU AI Act systemic risk provisions, and considered best practice under NIST AI RMF GenAI profile and Singapore IMDA guidelines.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "uk", "singapore", "us-federal", "us-ca"],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-watermarking",
+		"text": "Does the system label or watermark AI-generated content (e.g., C2PA metadata, visible labels, embedded watermarks)?",
+		"type": "yes-no-elaborate",
+		"category": "generative-ai",
+		"regulatoryRelevance": "AI-generated content labeling is mandatory under China's CAC GenAI measures, required by EU AI Act Article 50, required by California SB 942, and recommended by Singapore IMDA and NIST GenAI profile.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "us-ca", "singapore", "uk", "us-federal"],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-training-data-categories",
+		"text": "What categories of data were used to train or fine-tune the model? Select all that apply.",
+		"type": "multi-select",
+		"category": "generative-ai",
+		"options": [
+			{
+				"value": "public-web-scrape",
+				"label": "Public web scrape",
+				"description": "Data scraped from publicly available websites"
+			},
+			{
+				"value": "licensed-datasets",
+				"label": "Licensed datasets",
+				"description": "Data obtained through licensing agreements"
+			},
+			{
+				"value": "user-generated-content",
+				"label": "User-generated content",
+				"description": "Content created by users of your platform"
+			},
+			{
+				"value": "proprietary-data",
+				"label": "Proprietary data",
+				"description": "Internally owned organizational data"
+			},
+			{
+				"value": "synthetic-data",
+				"label": "Synthetic data",
+				"description": "AI-generated data used for training"
+			},
+			{
+				"value": "copyrighted-works",
+				"label": "Copyrighted works",
+				"description": "Books, articles, music, images under copyright"
+			},
+			{
+				"value": "personal-data",
+				"label": "Personal data",
+				"description": "Data relating to identifiable individuals"
+			},
+			{
+				"value": "government-data",
+				"label": "Government/public records",
+				"description": "Official government datasets or public records"
+			},
+			{
+				"value": "open-source-datasets",
+				"label": "Open-source datasets",
+				"description": "Publicly available ML datasets (Common Crawl, LAION, etc.)"
+			}
+		],
+		"regulatoryRelevance": "Training data composition affects EU AI Act copyright compliance (Article 53), China CAC training data legality requirements, GDPR lawful basis for personal data, and Brazil AI Bill disclosure obligations.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"eu-gdpr",
+			"china",
+			"uk",
+			"brazil",
+			"us-federal",
+			"us-ca"
+		],
+		"requiredWhen": {
+			"field": "genai-foundation-model-source",
+			"operator": "includes",
+			"value": ["self-trained", "fine-tuned"]
+		}
+	},
+	{
+		"id": "genai-finetuning-performed",
+		"text": "Did you fine-tune the model on your own data?",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Fine-tuning creates additional data governance obligations and may shift some provider-level responsibilities to the deployer under the EU AI Act and China's CAC measures.",
+		"jurisdictionRelevance": ["eu-ai-act", "china", "uk", "singapore"],
+		"requiredWhen": {
+			"field": "genai-foundation-model-source",
+			"operator": "includes",
+			"value": ["third-party-api", "open-source"]
+		}
+	},
+	{
+		"id": "genai-finetuning-data-description",
+		"text": "Describe the data used for fine-tuning: its source, size, whether it contains personal data, and whether consent was obtained.",
+		"type": "free-text",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Fine-tuning data provenance is relevant for GDPR lawful basis, EU AI Act training data documentation, and China CAC training data legality requirements.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "china", "uk"],
+		"requiredWhen": {
+			"field": "genai-finetuning-performed",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "genai-uses-rag",
+		"text": "Does your system use retrieval-augmented generation (RAG) — retrieving documents or data to augment model responses?",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "RAG systems may process personal data from retrieved documents, creating additional data protection obligations. The retrieval corpus composition affects accuracy, bias, and transparency obligations.",
+		"jurisdictionRelevance": ["eu-ai-act", "eu-gdpr", "china", "uk", "singapore"],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-agentic-capabilities",
+		"text": "Can the AI system take autonomous actions beyond generating content (e.g., calling APIs, executing code, browsing the web, sending messages)?",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Agentic capabilities trigger additional requirements under Singapore's IMDA Agentic AI Framework, EU AI Act human oversight provisions, and may affect risk classification across jurisdictions.",
+		"jurisdictionRelevance": ["eu-ai-act", "singapore", "uk", "us-federal", "china"],
+		"requiredWhen": {
+			"field": "product-type",
+			"operator": "includes",
+			"value": ["generator", "foundation-model", "agent"]
+		}
+	},
+	{
+		"id": "genai-china-algorithm-filing",
+		"text": "Has the algorithm been filed with China's Cyberspace Administration (CAC)?",
+		"type": "single-select",
+		"category": "generative-ai",
+		"options": [
+			{
+				"value": "not-filed",
+				"label": "Not filed",
+				"description": "No filing has been made with the CAC"
+			},
+			{
+				"value": "filed",
+				"label": "Filed",
+				"description": "Filing has been submitted and is under review"
+			},
+			{
+				"value": "approved",
+				"label": "Approved",
+				"description": "Filing has been approved by the CAC"
+			},
+			{
+				"value": "not-applicable",
+				"label": "Not applicable",
+				"description": "Service is not offered in China or is exempt"
+			}
+		],
+		"regulatoryRelevance": "China's CAC Interim Measures for Generative AI Services require algorithm filing before public launch. Non-compliance can result in service shutdown and penalties.",
+		"jurisdictionRelevance": ["china"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "china"
+		}
+	},
+	{
+		"id": "genai-china-content-moderation",
+		"text": "Does the system provide content moderation capabilities to ensure generated content complies with Chinese laws and regulations?",
+		"type": "yes-no-elaborate",
+		"category": "generative-ai",
+		"regulatoryRelevance": "China's CAC GenAI measures require providers to implement content review mechanisms ensuring outputs align with socialist core values and do not contain prohibited content.",
+		"jurisdictionRelevance": ["china"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "china"
+		}
+	},
+	{
+		"id": "genai-uk-frontier-model",
+		"text": "Does this model meet the UK AI Safety Institute's criteria for a frontier model (i.e., a highly capable foundation model that may pose risks)?",
+		"type": "single-select",
+		"category": "generative-ai",
+		"options": [
+			{
+				"value": "yes",
+				"label": "Yes",
+				"description": "The model is considered a frontier model by AISI criteria"
+			},
+			{
+				"value": "no",
+				"label": "No",
+				"description": "The model does not meet frontier model criteria"
+			},
+			{
+				"value": "unknown",
+				"label": "Unknown",
+				"description": "Unsure whether the model qualifies as a frontier model"
+			}
+		],
+		"regulatoryRelevance": "UK AISI frontier model framework applies additional safety evaluation requirements and voluntary commitments (transitioning to mandatory) for frontier AI models.",
+		"jurisdictionRelevance": ["uk"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "uk"
+		}
+	},
+	{
+		"id": "genai-singapore-imda",
+		"text": "Does your organization follow the IMDA's GenAI governance guidelines (Model AI Governance Framework GenAI addendum)?",
+		"type": "yes-no",
+		"category": "generative-ai",
+		"regulatoryRelevance": "Singapore's IMDA GenAI governance framework provides guidance on testing, evaluation, incident reporting, content provenance, and disclosure obligations for GenAI products.",
+		"jurisdictionRelevance": ["singapore"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "singapore"
+		}
+	}
+]

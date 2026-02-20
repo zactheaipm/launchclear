@@ -1,0 +1,153 @@
+[
+	{
+		"id": "gpai-role",
+		"text": "What is your organization's role with respect to the general-purpose AI (GPAI) model used in this product?",
+		"type": "single-select",
+		"category": "gpai",
+		"options": [
+			{
+				"value": "provider",
+				"label": "GPAI model provider",
+				"description": "You develop, train, and/or distribute the GPAI model itself"
+			},
+			{
+				"value": "deployer",
+				"label": "GPAI model deployer",
+				"description": "You integrate a third-party GPAI model (e.g., Claude, GPT-4, Gemini) into your product"
+			},
+			{
+				"value": "both",
+				"label": "Both provider and deployer",
+				"description": "You both develop your own GPAI model and deploy third-party GPAI models"
+			}
+		],
+		"regulatoryRelevance": "EU AI Act Articles 53-55 impose different obligations on GPAI model providers vs. deployers. Providers have documentation, copyright, and training data obligations; deployers must verify provider compliance.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "eu-ai-act"
+		}
+	},
+	{
+		"id": "gpai-model-name",
+		"text": "What is the name of the GPAI model(s) your product uses or provides?",
+		"type": "free-text",
+		"category": "gpai",
+		"regulatoryRelevance": "Identifying the specific GPAI model is needed for technical documentation and to assess whether it exceeds systemic risk thresholds under Article 51.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "eu-ai-act"
+		}
+	},
+	{
+		"id": "gpai-open-source",
+		"text": "Is the GPAI model released under a free and open-source licence with publicly available weights and architecture?",
+		"type": "yes-no",
+		"category": "gpai",
+		"regulatoryRelevance": "Article 53(2) provides a partial exemption from GPAI provider obligations for open-source models — but this exemption does NOT apply if the model has systemic risk.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-compute-threshold",
+		"text": "Was the GPAI model trained using cumulative compute of 10^25 FLOPs (floating point operations) or more?",
+		"type": "single-select",
+		"category": "gpai",
+		"options": [
+			{
+				"value": "yes",
+				"label": "Yes",
+				"description": "Training compute meets or exceeds 10^25 FLOPs"
+			},
+			{
+				"value": "no",
+				"label": "No",
+				"description": "Training compute is below 10^25 FLOPs"
+			},
+			{
+				"value": "unknown",
+				"label": "Unknown",
+				"description": "Training compute is not publicly known or disclosed"
+			}
+		],
+		"regulatoryRelevance": "Article 51 classifies GPAI models as having systemic risk if training compute exceeds 10^25 FLOPs. This triggers additional obligations under Article 55 (model evaluation, adversarial testing, risk assessment, incident reporting, cybersecurity).",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-systemic-risk-designated",
+		"text": "Has the European Commission designated this GPAI model as having systemic risk?",
+		"type": "yes-no",
+		"category": "gpai",
+		"regulatoryRelevance": "Under Article 51(2), the Commission can designate a GPAI model as having systemic risk even if it falls below the compute threshold, based on criteria in Annex XIII.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-downstream-documentation",
+		"text": "Do you provide documentation to downstream AI system providers who integrate your GPAI model, covering capabilities, limitations, and integration guidance?",
+		"type": "yes-no-elaborate",
+		"category": "gpai",
+		"regulatoryRelevance": "Article 53(1)(b) requires GPAI providers to make available information and documentation to downstream providers to enable them to understand the model's capabilities and limitations.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-copyright-compliance",
+		"text": "Do you have a policy in place to comply with EU copyright law, including respecting text and data mining opt-outs?",
+		"type": "yes-no-elaborate",
+		"category": "gpai",
+		"regulatoryRelevance": "Article 53(1)(c) requires all GPAI providers to put in place a policy to comply with Union copyright law, specifically Directive (EU) 2019/790 Article 4(3) regarding text and data mining opt-outs.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-training-data-summary",
+		"text": "Have you prepared and made publicly available a sufficiently detailed summary of the content used for training the GPAI model?",
+		"type": "yes-no",
+		"category": "gpai",
+		"regulatoryRelevance": "Article 53(1)(d) requires GPAI providers to draw up and make publicly available a training data summary according to a template provided by the AI Office.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	},
+	{
+		"id": "gpai-acceptable-use-policy",
+		"text": "Does the GPAI model have an acceptable use policy that defines prohibited and restricted uses?",
+		"type": "yes-no",
+		"category": "gpai",
+		"regulatoryRelevance": "While not explicitly mandated by a single article, an acceptable use policy is a best practice for GPAI providers to mitigate misuse risk and demonstrate due diligence under Articles 53-55.",
+		"jurisdictionRelevance": ["eu-ai-act"],
+		"requiredWhen": {
+			"field": "gpai-role",
+			"operator": "includes",
+			"value": ["provider", "both"]
+		}
+	}
+]

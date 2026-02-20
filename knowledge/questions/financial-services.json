@@ -1,0 +1,221 @@
+[
+	{
+		"id": "financial-sub-sector",
+		"text": "Which financial services sub-sector does this AI system operate in?",
+		"type": "single-select",
+		"category": "financial-services",
+		"options": [
+			{
+				"value": "banking",
+				"label": "Banking",
+				"description": "Retail or commercial banking, deposit services"
+			},
+			{
+				"value": "insurance",
+				"label": "Insurance",
+				"description": "Life, health, property, or casualty insurance"
+			},
+			{
+				"value": "investment",
+				"label": "Investment / asset management",
+				"description": "Investment advisory, portfolio management, fund management"
+			},
+			{
+				"value": "payments",
+				"label": "Payments",
+				"description": "Payment processing, digital wallets, money transfer"
+			},
+			{
+				"value": "lending",
+				"label": "Lending",
+				"description": "Consumer or commercial lending, mortgage origination"
+			},
+			{
+				"value": "trading",
+				"label": "Trading",
+				"description": "Algorithmic trading, market making, brokerage"
+			}
+		],
+		"regulatoryRelevance": "Financial sub-sector determines which specific regulatory bodies and frameworks apply (MAS, FCA, OCC, SEC) and influences risk classification under the EU AI Act.",
+		"jurisdictionRelevance": ["eu-ai-act", "uk", "singapore", "us-federal", "brazil"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-involves-credit",
+		"text": "Does the system assess creditworthiness or make credit-related decisions?",
+		"type": "yes-no-elaborate",
+		"category": "financial-services",
+		"regulatoryRelevance": "Credit scoring and creditworthiness assessment is classified as HIGH-RISK under EU AI Act Annex III §5. Triggers full conformity assessment, CFPB fair lending requirements (ECOA/Reg B), and MAS model risk management.",
+		"jurisdictionRelevance": [
+			"eu-ai-act",
+			"us-federal",
+			"us-ca",
+			"us-co",
+			"uk",
+			"singapore",
+			"brazil"
+		],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-involves-insurance-pricing",
+		"text": "Does the system assess insurance risk or determine insurance pricing (premiums)?",
+		"type": "yes-no-elaborate",
+		"category": "financial-services",
+		"regulatoryRelevance": "Life and health insurance risk assessment and pricing is classified as HIGH-RISK under EU AI Act Annex III §5. Triggers conformity assessment requirements and state insurance regulator scrutiny in the US.",
+		"jurisdictionRelevance": ["eu-ai-act", "uk", "singapore", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-involves-trading",
+		"text": "Does the system perform algorithmic trading, automated order execution, or market-related decisions?",
+		"type": "yes-no",
+		"category": "financial-services",
+		"regulatoryRelevance": "Algorithmic trading triggers MiFID II requirements in the EU, SEC oversight in the US, and MAS requirements in Singapore. Risk controls and human oversight are mandatory.",
+		"jurisdictionRelevance": ["eu-ai-act", "uk", "singapore", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-involves-aml-kyc",
+		"text": "Does the system perform AML (Anti-Money Laundering) screening, KYC (Know Your Customer) verification, or suspicious activity detection?",
+		"type": "yes-no",
+		"category": "financial-services",
+		"regulatoryRelevance": "AML/KYC AI systems must comply with financial crime regulations across all jurisdictions. Model accuracy and false positive rates are scrutinized by regulators. MAS and FCA provide specific guidance.",
+		"jurisdictionRelevance": ["eu-ai-act", "uk", "singapore", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-regulatory-bodies",
+		"text": "Which financial regulatory bodies supervise your institution? Select all that apply.",
+		"type": "multi-select",
+		"category": "financial-services",
+		"options": [
+			{
+				"value": "mas",
+				"label": "MAS (Singapore)",
+				"description": "Monetary Authority of Singapore"
+			},
+			{
+				"value": "fca",
+				"label": "FCA (UK)",
+				"description": "Financial Conduct Authority"
+			},
+			{
+				"value": "pra",
+				"label": "PRA (UK)",
+				"description": "Prudential Regulation Authority"
+			},
+			{
+				"value": "occ",
+				"label": "OCC (US)",
+				"description": "Office of the Comptroller of the Currency"
+			},
+			{
+				"value": "fed",
+				"label": "Federal Reserve (US)",
+				"description": "Board of Governors of the Federal Reserve System"
+			},
+			{
+				"value": "fdic",
+				"label": "FDIC (US)",
+				"description": "Federal Deposit Insurance Corporation"
+			},
+			{
+				"value": "sec",
+				"label": "SEC (US)",
+				"description": "Securities and Exchange Commission"
+			},
+			{
+				"value": "cfpb",
+				"label": "CFPB (US)",
+				"description": "Consumer Financial Protection Bureau"
+			},
+			{
+				"value": "eba",
+				"label": "EBA (EU)",
+				"description": "European Banking Authority"
+			},
+			{
+				"value": "esma",
+				"label": "ESMA (EU)",
+				"description": "European Securities and Markets Authority"
+			},
+			{
+				"value": "eiopa",
+				"label": "EIOPA (EU)",
+				"description": "European Insurance and Occupational Pensions Authority"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Other financial regulatory body"
+			}
+		],
+		"regulatoryRelevance": "Identifying supervising regulatory bodies determines which sector-specific AI governance requirements apply in addition to general AI regulations. Each regulator has distinct expectations for model risk management.",
+		"jurisdictionRelevance": ["eu-ai-act", "uk", "singapore", "us-federal"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-model-risk-governance",
+		"text": "Does your institution have a model risk governance framework in place (e.g., compliant with OCC/Fed SR 11-7 or MAS model risk management guidelines)?",
+		"type": "yes-no-elaborate",
+		"category": "financial-services",
+		"regulatoryRelevance": "SR 11-7 (OCC/Fed) requires financial institutions to have comprehensive model risk management. MAS AI Risk Management Guidelines require governance frameworks, lifecycle controls, and materiality assessments for AI models.",
+		"jurisdictionRelevance": ["us-federal", "singapore", "uk", "eu-ai-act"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	},
+	{
+		"id": "financial-materiality-assessment",
+		"text": "Has a materiality assessment been conducted to evaluate the risk significance of this AI use case within your institution?",
+		"type": "yes-no",
+		"category": "financial-services",
+		"regulatoryRelevance": "MAS AI Risk Management Guidelines specifically require financial institutions to conduct materiality assessments of AI use cases to determine proportionate governance controls.",
+		"jurisdictionRelevance": ["singapore"],
+		"requiredWhen": {
+			"field": "target-markets",
+			"operator": "includes",
+			"value": "singapore"
+		}
+	},
+	{
+		"id": "financial-customer-explainability",
+		"text": "Can the system provide meaningful explanations of its decisions to affected customers (e.g., why a loan was denied, why a premium was set at a certain level)?",
+		"type": "yes-no-elaborate",
+		"category": "financial-services",
+		"regulatoryRelevance": "ECOA/Reg B requires adverse action notices with specific reasons for credit denials. GDPR Article 22 requires meaningful information about automated decision logic. MAS expects explainability for customer-facing AI decisions.",
+		"jurisdictionRelevance": ["us-federal", "eu-ai-act", "eu-gdpr", "uk", "singapore", "brazil"],
+		"requiredWhen": {
+			"field": "decision-domains",
+			"operator": "includes",
+			"value": ["credit", "insurance"]
+		}
+	}
+]

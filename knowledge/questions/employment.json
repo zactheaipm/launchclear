@@ -1,0 +1,161 @@
+[
+	{
+		"id": "employment-use-case",
+		"text": "What is the specific employment-related purpose of this AI system? Select all that apply.",
+		"type": "multi-select",
+		"category": "employment",
+		"options": [
+			{
+				"value": "recruitment-screening",
+				"label": "Recruitment screening",
+				"description": "Filtering, ranking, or scoring job applicants"
+			},
+			{
+				"value": "resume-parsing",
+				"label": "Resume parsing/analysis",
+				"description": "Extracting or analyzing information from resumes"
+			},
+			{
+				"value": "interview-analysis",
+				"label": "Interview analysis",
+				"description": "Analyzing video, audio, or text from interviews"
+			},
+			{
+				"value": "performance-evaluation",
+				"label": "Performance evaluation",
+				"description": "Assessing employee performance or productivity"
+			},
+			{
+				"value": "workforce-monitoring",
+				"label": "Workforce monitoring",
+				"description": "Monitoring employee activity, keystrokes, or communications"
+			},
+			{
+				"value": "compensation",
+				"label": "Compensation decisions",
+				"description": "Determining pay, bonuses, or benefits"
+			},
+			{
+				"value": "termination",
+				"label": "Termination decisions",
+				"description": "Identifying employees for layoffs or termination"
+			},
+			{
+				"value": "promotion",
+				"label": "Promotion decisions",
+				"description": "Evaluating employees for promotion eligibility"
+			},
+			{
+				"value": "scheduling",
+				"label": "Scheduling",
+				"description": "Automated employee scheduling or shift assignment"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Other employment-related use"
+			}
+		],
+		"regulatoryRelevance": "Employment AI is classified as high-risk under EU AI Act Annex III. NYC LL144 specifically targets automated employment decision tools. Illinois BIPA governs biometric use in employment.",
+		"jurisdictionRelevance": ["eu-ai-act", "us-ny", "us-il", "us-co", "us-federal"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": ["employees", "job-applicants"]
+		}
+	},
+	{
+		"id": "candidate-notification",
+		"text": "Are candidates or employees notified that AI is used in the decision-making process?",
+		"type": "yes-no-elaborate",
+		"category": "employment",
+		"regulatoryRelevance": "NYC LL144 requires notice to candidates at least 10 days before use. Colorado AI Act requires disclosure. Illinois AI Video Interview Act requires consent. EU AI Act requires transparency.",
+		"jurisdictionRelevance": ["eu-ai-act", "us-ny", "us-il", "us-co"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": ["employees", "job-applicants"]
+		}
+	},
+	{
+		"id": "alternative-process",
+		"text": "Is there an alternative non-AI process available for candidates or employees who prefer not to be evaluated by AI?",
+		"type": "yes-no-elaborate",
+		"category": "employment",
+		"regulatoryRelevance": "Illinois AI Video Interview Act requires an alternative process. Colorado AI Act requires accommodation. GDPR Article 22 grants the right not to be subject to solely automated decisions.",
+		"jurisdictionRelevance": ["eu-gdpr", "us-il", "us-co"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": ["employees", "job-applicants"]
+		}
+	},
+	{
+		"id": "disparate-impact-analysis",
+		"text": "Has a disparate impact analysis been conducted to evaluate whether the system produces different outcomes across protected groups?",
+		"type": "yes-no-elaborate",
+		"category": "employment",
+		"regulatoryRelevance": "NYC LL144 requires annual bias audits published publicly. Title VII of the Civil Rights Act prohibits disparate impact. Colorado AI Act requires impact assessments addressing algorithmic discrimination.",
+		"jurisdictionRelevance": ["us-ny", "us-co", "us-federal", "eu-ai-act"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": ["employees", "job-applicants"]
+		}
+	},
+	{
+		"id": "employment-data-scope",
+		"text": "What employee or candidate data does the system process? Select all that apply.",
+		"type": "multi-select",
+		"category": "employment",
+		"options": [
+			{
+				"value": "resumes",
+				"label": "Resumes/CVs",
+				"description": "Resume content, work history, education"
+			},
+			{
+				"value": "interview-recordings",
+				"label": "Interview recordings",
+				"description": "Video or audio recordings of interviews"
+			},
+			{
+				"value": "performance-metrics",
+				"label": "Performance metrics",
+				"description": "KPIs, productivity scores, output measurements"
+			},
+			{
+				"value": "communications",
+				"label": "Communications",
+				"description": "Emails, messages, or other work communications"
+			},
+			{
+				"value": "biometric-attendance",
+				"label": "Biometric attendance",
+				"description": "Fingerprint, facial recognition, or other biometric attendance tracking"
+			},
+			{
+				"value": "social-media",
+				"label": "Social media",
+				"description": "Publicly available social media profiles or activity"
+			},
+			{
+				"value": "background-checks",
+				"label": "Background checks",
+				"description": "Criminal history, credit checks, reference verification"
+			},
+			{
+				"value": "other",
+				"label": "Other",
+				"description": "Other types of employee/candidate data"
+			}
+		],
+		"regulatoryRelevance": "Illinois BIPA strictly regulates biometric data in employment. Interview recordings may trigger wiretapping laws. Background check data is regulated under FCRA at the federal level.",
+		"jurisdictionRelevance": ["us-il", "us-ny", "us-federal", "eu-gdpr", "eu-ai-act"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": ["employees", "job-applicants"]
+		}
+	}
+]

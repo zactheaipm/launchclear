@@ -1,0 +1,480 @@
+import type {
+	ActionItem,
+	ActionPlan,
+	GeneratedArtifact,
+	JurisdictionResult,
+	LaunchClearReport,
+	MarketReadiness,
+	RiskClassification,
+} from "../core/types.js";
+
+// ─── Risk Level Display ───────────────────────────────────────────────────
+
+const RISK_LABELS: Readonly<Record<string, string>> = {
+	unacceptable: "UNACCEPTABLE (Prohibited)",
+	high: "HIGH",
+	limited: "LIMITED",
+	minimal: "MINIMAL",
+	undetermined: "UNDETERMINED",
+};
+
+const STATUS_LABELS: Readonly<Record<string, string>> = {
+	ready: "Ready to launch",
+	"action-required": "Action required",
+	blocked: "BLOCKED",
+};
+
+// ─── Section Builders ─────────────────────────────────────────────────────
+
+function buildHeader(report: LaunchClearReport): string {
+	const lines: string[] = [];
+	lines.push("# LaunchClear Compliance Report");
+	lines.push("");
+	lines.push(`**Generated:** ${report.generatedAt}`);
+	lines.push(`**Product:** ${report.productContext.description}`);
+	lines.push(`**Product Type:** ${report.productContext.productType}`);
+	lines.push(
+		`**Target Markets:** ${report.productContext.targetMarkets.join(", ")}`,
+	);
+	lines.push(`**Report ID:** ${report.id}`);
+	lines.push("");
+	lines.push("---");
+	lines.push("");
+	return lines.join("\n");
+}
+
+function buildExecutiveSummary(report: LaunchClearReport): string {
+	const lines: string[] = [];
+	const { summary } = report;
+
+	lines.push("## Executive Summary");
+	lines.push("");
+
+	// Market readiness table
+	lines.push("### Market Readiness");
+	lines.push("");
+	lines.push("| Market | Status | Blockers | Est. Time to Compliance |");
+	lines.push("|--------|--------|----------|------------------------|");
+	for (const market of summary.canLaunch) {
+		const status = STATUS_LABELS[market.status] ?? market.status;
+		const blockers =
+			market.blockers.length > 0 ? market.blockers.join("; ") : "None";
+		lines.push(
+			`| ${market.jurisdiction} | ${status} | ${blockers} | ${market.estimatedTimeToCompliance} |`,
+		);
+	}
+	lines.push("");
+
+	// Key metrics
+	lines.push("### Key Metrics");
+	lines.push("");
+	lines.push(`- **Highest Risk Market:** ${summary.highestRiskMarket}`);
+	lines.push(`- **Lowest Friction Market:** ${summary.lowestFrictionMarket}`);
+	lines.push(`- **Total Artifacts Needed:** ${summary.totalArtifactsNeeded}`);
+	lines.push(`- **Total Actions Needed:** ${summary.totalActionsNeeded}`);
+	lines.push(
+		`- **Estimated Compliance Timeline:** ${summary.estimatedComplianceTimeline}`,
+	);
+	lines.push("");
+
+	// Critical blockers
+	if (summary.criticalBlockers.length > 0) {
+		lines.push("### Critical Blockers");
+		lines.push("");
+		for (const blocker of summary.criticalBlockers) {
+			lines.push(`- ${blocker}`);
+		}
+		lines.push("");
+	}
+
+	return lines.join("\n");
+}
+
+function buildRiskClassificationSection(
+	risk: RiskClassification,
+	jurisdiction: string,
+): string {
+	const lines: string[] = [];
+	const level = RISK_LABELS[risk.level] ?? risk.level;
+
+	lines.push(`**Risk Level:** ${level}`);
+	lines.push("");
+	lines.push(`**Justification:** ${risk.justification}`);
+	lines.push("");
+
+	if (risk.applicableCategories.length > 0) {
+		lines.push(
+			`**Applicable Categories:** ${risk.applicableCategories.join(", ")}`,
+		);
+		lines.push("");
+	}
+
+	if (risk.provisions.length > 0) {
+		lines.push(
+			`**Relevant Provisions:** ${risk.provisions.join(", ")}`,
+		);
+		lines.push("");
+	}
+
+	return lines.join("\n");
+}
+
+function buildJurisdictionSection(result: JurisdictionResult): string {
+	const lines: string[] = [];
+
+	lines.push(`### ${result.jurisdiction}`);
+	lines.push("");
+
+	// Applicable laws
+	for (const law of result.applicableLaws) {
+		lines.push(`**${law.name}**`);
+		lines.push("");
+		lines.push(
+			buildRiskClassificationSection(
+				result.riskClassification,
+				result.jurisdiction,
+			),
+		);
+
+		if (law.provisions.length > 0) {
+			lines.push("#### Applicable Provisions");
+			lines.push("");
+			for (const provision of law.provisions) {
+				lines.push(
+					`- **${provision.article} — ${provision.title}**: ${provision.summary}`,
+				);
+			}
+			lines.push("");
+		}
+	}
+
+	// GPAI classification
+	if (result.gpaiClassification) {
+		const gpai = result.gpaiClassification;
+		lines.push("#### GPAI Classification");
+		lines.push("");
+		lines.push(`- **Role:** ${gpai.role}`);
+		lines.push(`- **Systemic Risk:** ${gpai.hasSystemicRisk ? "Yes" : "No"}`);
+		lines.push(`- **Open Source:** ${gpai.isOpenSource ? "Yes" : "No"}`);
+		lines.push(`- **Justification:** ${gpai.justification}`);
+		lines.push(
+			`- **Provisions:** ${gpai.provisions.join(", ")}`,
+		);
+		lines.push("");
+	}
+
+	// Required artifacts
+	if (result.requiredArtifacts.length > 0) {
+		lines.push("#### Required Artifacts");
+		lines.push("");
+		for (const artifact of result.requiredArtifacts) {
+			const tag = artifact.required ? "(mandatory)" : "(recommended)";
+			lines.push(`- **${artifact.name}** ${tag}`);
+			lines.push(`  - Legal basis: ${artifact.legalBasis}`);
+			lines.push(`  - ${artifact.description}`);
+		}
+		lines.push("");
+	}
+
+	// Required actions
+	if (result.requiredActions.length > 0) {
+		lines.push("#### Required Actions");
+		lines.push("");
+		for (const action of result.requiredActions) {
+			lines.push(`- **${action.title}** [${action.priority}]`);
+			lines.push(`  - ${action.description}`);
+			lines.push(`  - Legal basis: ${action.legalBasis}`);
+			if (action.deadline) {
+				lines.push(`  - Deadline: ${action.deadline}`);
+			}
+		}
+		lines.push("");
+	}
+
+	// Recommended actions
+	if (result.recommendedActions.length > 0) {
+		lines.push("#### Recommended Actions");
+		lines.push("");
+		for (const action of result.recommendedActions) {
+			lines.push(`- **${action.title}**`);
+			lines.push(`  - ${action.description}`);
+		}
+		lines.push("");
+	}
+
+	// Compliance timeline
+	if (result.complianceTimeline.deadlines.length > 0) {
+		lines.push("#### Compliance Timeline");
+		lines.push("");
+		lines.push("| Date | Description | Provision | Mandatory |");
+		lines.push("|------|-------------|-----------|-----------|");
+		for (const deadline of result.complianceTimeline.deadlines) {
+			lines.push(
+				`| ${deadline.date} | ${deadline.description} | ${deadline.provision} | ${deadline.isMandatory ? "Yes" : "No"} |`,
+			);
+		}
+		lines.push("");
+
+		if (result.complianceTimeline.notes.length > 0) {
+			for (const note of result.complianceTimeline.notes) {
+				lines.push(`> ${note}`);
+				lines.push("");
+			}
+		}
+	}
+
+	return lines.join("\n");
+}
+
+function buildJurisdictionResults(
+	results: readonly JurisdictionResult[],
+): string {
+	const lines: string[] = [];
+
+	lines.push("## Jurisdiction Analysis");
+	lines.push("");
+
+	for (const result of results) {
+		lines.push(buildJurisdictionSection(result));
+	}
+
+	return lines.join("\n");
+}
+
+function buildActionItemMarkdown(action: ActionItem, index: number): string {
+	const lines: string[] = [];
+
+	lines.push(`${index + 1}. **${action.title}**`);
+	lines.push(`   - ${action.description}`);
+	lines.push(
+		`   - Jurisdictions: ${action.jurisdiction.join(", ")}`,
+	);
+	lines.push(`   - Legal basis: ${action.legalBasis}`);
+	lines.push(`   - Estimated effort: ${action.estimatedEffort}`);
+	if (action.deadline) {
+		lines.push(`   - Deadline: ${action.deadline}`);
+	}
+	if (action.bestPractice) {
+		lines.push(`   - Best practice: ${action.bestPractice}`);
+	}
+	if (action.verificationCriteria.length > 0) {
+		lines.push("   - Verification:");
+		for (const criterion of action.verificationCriteria) {
+			lines.push(`     - [ ] ${criterion}`);
+		}
+	}
+
+	return lines.join("\n");
+}
+
+function buildActionPlanSection(actionPlan: ActionPlan): string {
+	const lines: string[] = [];
+
+	lines.push("## Action Plan");
+	lines.push("");
+
+	if (actionPlan.critical.length > 0) {
+		lines.push("### Critical (Must do before launch)");
+		lines.push("");
+		for (const [i, action] of actionPlan.critical.entries()) {
+			lines.push(buildActionItemMarkdown(action, i));
+		}
+		lines.push("");
+	}
+
+	if (actionPlan.important.length > 0) {
+		lines.push("### Important (Should do before launch)");
+		lines.push("");
+		for (const [i, action] of actionPlan.important.entries()) {
+			lines.push(buildActionItemMarkdown(action, i));
+		}
+		lines.push("");
+	}
+
+	if (actionPlan.recommended.length > 0) {
+		lines.push("### Recommended (Best practice)");
+		lines.push("");
+		for (const [i, action] of actionPlan.recommended.entries()) {
+			lines.push(buildActionItemMarkdown(action, i));
+		}
+		lines.push("");
+	}
+
+	return lines.join("\n");
+}
+
+function buildArtifactIndex(
+	artifacts: readonly GeneratedArtifact[],
+): string {
+	if (artifacts.length === 0) return "";
+
+	const lines: string[] = [];
+
+	lines.push("## Generated Artifacts");
+	lines.push("");
+	lines.push(
+		"The following compliance document drafts have been generated. Each should be reviewed by qualified legal counsel before use.",
+	);
+	lines.push("");
+
+	lines.push("| # | Type | Jurisdiction | Filename |");
+	lines.push("|---|------|-------------|----------|");
+	for (const [i, artifact] of artifacts.entries()) {
+		lines.push(
+			`| ${i + 1} | ${artifact.type} | ${artifact.jurisdiction} | ${artifact.filename} |`,
+		);
+	}
+	lines.push("");
+
+	if (artifacts.some((a) => a.reviewNotes.length > 0)) {
+		lines.push("### Review Notes");
+		lines.push("");
+		for (const artifact of artifacts) {
+			if (artifact.reviewNotes.length > 0) {
+				lines.push(`**${artifact.filename}:**`);
+				for (const note of artifact.reviewNotes) {
+					lines.push(`- ${note}`);
+				}
+				lines.push("");
+			}
+		}
+	}
+
+	return lines.join("\n");
+}
+
+function buildMetadata(report: LaunchClearReport): string {
+	const lines: string[] = [];
+
+	lines.push("## Metadata");
+	lines.push("");
+	lines.push(`- **LLM Provider:** ${report.metadata.provider}`);
+	lines.push(`- **Model:** ${report.metadata.model}`);
+	lines.push(
+		`- **Knowledge Base Version:** ${report.metadata.knowledgeBaseVersion}`,
+	);
+	lines.push("");
+
+	lines.push("---");
+	lines.push("");
+	lines.push(
+		"*This report was generated by LaunchClear. It provides draft compliance documents and checklists to help AI product teams prepare for conversations with qualified legal counsel. It does not constitute legal advice.*",
+	);
+	lines.push("");
+
+	return lines.join("\n");
+}
+
+// ─── Main Export ──────────────────────────────────────────────────────────
+
+export function generateMarkdownReport(report: LaunchClearReport): string {
+	const sections: string[] = [
+		buildHeader(report),
+		buildExecutiveSummary(report),
+		buildJurisdictionResults(report.jurisdictionResults),
+		buildActionPlanSection(report.actionPlan),
+		buildArtifactIndex(report.artifacts),
+		buildMetadata(report),
+	];
+
+	return sections.join("\n");
+}
+
+export function generateArtifactMarkdown(
+	artifact: GeneratedArtifact,
+): string {
+	const lines: string[] = [];
+
+	lines.push(`# ${artifact.type} — ${artifact.jurisdiction}`);
+	lines.push("");
+	lines.push(artifact.content);
+	lines.push("");
+
+	if (artifact.citations.length > 0) {
+		lines.push("---");
+		lines.push("");
+		lines.push("## Citations");
+		lines.push("");
+		for (const citation of artifact.citations) {
+			lines.push(`- **${citation.law}** ${citation.article}: ${citation.text}`);
+		}
+		lines.push("");
+	}
+
+	if (artifact.reviewNotes.length > 0) {
+		lines.push("---");
+		lines.push("");
+		lines.push("## Review Notes");
+		lines.push("");
+		for (const note of artifact.reviewNotes) {
+			lines.push(`- ${note}`);
+		}
+		lines.push("");
+	}
+
+	return lines.join("\n");
+}
+
+// ─── Summary Report (without artifacts) ───────────────────────────────────
+
+export function generateSummaryMarkdown(report: LaunchClearReport): string {
+	const sections: string[] = [
+		buildHeader(report),
+		buildExecutiveSummary(report),
+		buildJurisdictionResults(report.jurisdictionResults),
+		buildActionPlanSection(report.actionPlan),
+	];
+
+	if (report.artifacts.length > 0) {
+		sections.push(buildArtifactIndex(report.artifacts));
+	}
+
+	sections.push(buildMetadata(report));
+
+	return sections.join("\n");
+}
+
+// ─── Market Readiness Builder (used by CLI to build summary) ──────────────
+
+export function buildMarketReadiness(
+	jurisdictionResults: readonly JurisdictionResult[],
+): readonly MarketReadiness[] {
+	return jurisdictionResults.map((result) => {
+		const blockers: string[] = [];
+
+		if (result.riskClassification.level === "unacceptable") {
+			blockers.push(
+				`Prohibited under ${result.jurisdiction}: ${result.riskClassification.justification}`,
+			);
+		}
+
+		for (const action of result.requiredActions) {
+			if (action.priority === "critical") {
+				blockers.push(action.title);
+			}
+		}
+
+		let status: MarketReadiness["status"];
+		if (result.riskClassification.level === "unacceptable") {
+			status = "blocked";
+		} else if (
+			result.requiredActions.some((a) => a.priority === "critical")
+		) {
+			status = "action-required";
+		} else {
+			status = "ready";
+		}
+
+		const hasDeadlines = result.complianceTimeline.deadlines.length > 0;
+		const estimatedTimeToCompliance = hasDeadlines
+			? "See timeline above"
+			: "No mandatory deadlines identified";
+
+		return {
+			jurisdiction: result.jurisdiction,
+			status,
+			blockers,
+			estimatedTimeToCompliance,
+		};
+	});
+}

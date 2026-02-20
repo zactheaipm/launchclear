@@ -1,0 +1,165 @@
+[
+	{
+		"id": "agentic-autonomy-level",
+		"text": "What is the autonomy level of the AI agent?",
+		"type": "single-select",
+		"category": "agentic-ai",
+		"options": [
+			{
+				"value": "narrow",
+				"label": "Narrow",
+				"description": "Single-tool, single-step actions (e.g., auto-reply to email, simple API call)"
+			},
+			{
+				"value": "bounded",
+				"label": "Bounded",
+				"description": "Multi-step actions with guardrails (e.g., customer service bot that can issue refunds within limits)"
+			},
+			{
+				"value": "broad",
+				"label": "Broad",
+				"description": "Open-ended planning and execution (e.g., coding agent, research agent, autonomous decision-maker)"
+			}
+		],
+		"regulatoryRelevance": "Autonomy level directly affects risk classification under Singapore's IMDA Agentic AI Framework (risk bounding dimension) and EU AI Act human oversight requirements (Article 14). Higher autonomy demands stricter controls.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal", "china"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-tool-access",
+		"text": "What tools, APIs, or systems can the AI agent access? List all (e.g., email, payment APIs, databases, web browser, code execution).",
+		"type": "free-text",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "Tool access scope determines the blast radius of agent actions. Singapore IMDA framework requires limiting tool access as a risk bounding control. Broader tool access increases risk classification.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-action-scope",
+		"text": "What real-world actions can the agent take? Select all that apply.",
+		"type": "multi-select",
+		"category": "agentic-ai",
+		"options": [
+			{
+				"value": "send-communications",
+				"label": "Send communications",
+				"description": "Send emails, messages, notifications on behalf of users"
+			},
+			{
+				"value": "make-payments",
+				"label": "Make payments/transactions",
+				"description": "Initiate financial transactions, payments, or transfers"
+			},
+			{
+				"value": "modify-data",
+				"label": "Modify data",
+				"description": "Create, update, or delete records in databases or systems"
+			},
+			{
+				"value": "execute-code",
+				"label": "Execute code",
+				"description": "Run code, scripts, or commands on systems"
+			},
+			{
+				"value": "browse-web",
+				"label": "Browse the web",
+				"description": "Access and interact with websites and web services"
+			},
+			{
+				"value": "access-files",
+				"label": "Access/modify files",
+				"description": "Read, create, edit, or delete files on systems"
+			},
+			{
+				"value": "manage-accounts",
+				"label": "Manage accounts",
+				"description": "Create, modify, or close user accounts or subscriptions"
+			},
+			{
+				"value": "other",
+				"label": "Other actions",
+				"description": "Other real-world actions not listed above"
+			}
+		],
+		"regulatoryRelevance": "Action scope determines potential harm magnitude. Financial transactions trigger financial services regulations. Data modification triggers data protection requirements. Singapore IMDA framework requires explicitly bounding action scope.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal", "china"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-human-checkpoints",
+		"text": "Are there defined points where human approval is required before the agent can proceed?",
+		"type": "yes-no-elaborate",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "Human checkpoints are a core requirement of Singapore's IMDA Agentic AI Framework (human accountability dimension) and EU AI Act Article 14 human oversight requirements. Absence of checkpoints increases risk tier.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-multi-agent",
+		"text": "Do multiple AI agents interact or collaborate in your system?",
+		"type": "yes-no-elaborate",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "Multi-agent systems create complex accountability chains. Singapore IMDA framework specifically addresses multi-agent accountability. EU AI Act requires clear responsibility allocation across interacting AI systems.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-external-systems",
+		"text": "Can the agent access external systems or third-party APIs beyond your organization's infrastructure?",
+		"type": "yes-no",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "External system access expands the risk boundary and may trigger cross-border data transfer requirements. Singapore IMDA framework requires bounding external access as a risk control.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "eu-gdpr", "uk"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-failsafe-mechanisms",
+		"text": "Does the system have failsafe mechanisms such as kill switches, automatic rollback, iteration limits, or budget caps?",
+		"type": "yes-no-elaborate",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "Failsafe mechanisms are a technical control requirement under Singapore's IMDA Agentic AI Framework. EU AI Act requires stop mechanisms for high-risk systems. Absence of failsafes is a significant compliance gap.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	},
+	{
+		"id": "agentic-action-logging",
+		"text": "Are all agent actions logged with timestamps and sufficient detail for audit and review?",
+		"type": "yes-no-elaborate",
+		"category": "agentic-ai",
+		"regulatoryRelevance": "Action logging is required for auditability under Singapore IMDA framework (technical controls dimension), EU AI Act automatic logging requirements (Article 12), and general compliance best practices.",
+		"jurisdictionRelevance": ["singapore", "eu-ai-act", "uk", "us-federal", "china"],
+		"requiredWhen": {
+			"field": "genai-agentic-capabilities",
+			"operator": "equals",
+			"value": true
+		}
+	}
+]

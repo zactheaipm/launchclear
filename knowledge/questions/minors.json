@@ -1,0 +1,94 @@
+[
+	{
+		"id": "age-verification-method",
+		"text": "What age verification mechanism is in place to identify minor users?",
+		"type": "single-select",
+		"category": "minors",
+		"options": [
+			{
+				"value": "self-declaration",
+				"label": "Self-declaration",
+				"description": "User states their age (e.g., date of birth field)"
+			},
+			{
+				"value": "id-verification",
+				"label": "ID verification",
+				"description": "Age verified through government ID or similar document"
+			},
+			{
+				"value": "parental-confirmation",
+				"label": "Parental confirmation",
+				"description": "Parent or guardian confirms the minor's age"
+			},
+			{
+				"value": "age-estimation",
+				"label": "Age estimation",
+				"description": "Technical methods to estimate age (e.g., facial analysis)"
+			},
+			{
+				"value": "none",
+				"label": "None",
+				"description": "No age verification mechanism is in place"
+			}
+		],
+		"regulatoryRelevance": "COPPA requires verifiable parental consent for children under 13. UK Age Appropriate Design Code requires age assurance. GDPR Article 8 sets consent age for information society services.",
+		"jurisdictionRelevance": ["eu-gdpr", "us-federal", "us-ca", "uk"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": "minors"
+		}
+	},
+	{
+		"id": "parental-consent",
+		"text": "Is verifiable parental or guardian consent obtained before collecting personal data from minors?",
+		"type": "yes-no-elaborate",
+		"category": "minors",
+		"regulatoryRelevance": "COPPA requires verifiable parental consent for children under 13. GDPR Article 8 requires parental consent for children below the applicable age (13-16 depending on member state).",
+		"jurisdictionRelevance": ["eu-gdpr", "us-federal", "us-ca", "uk"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": "minors"
+		}
+	},
+	{
+		"id": "minor-data-minimization",
+		"text": "Are data collection and processing practices limited or modified when the user is identified as a minor?",
+		"type": "yes-no-elaborate",
+		"category": "minors",
+		"regulatoryRelevance": "UK Age Appropriate Design Code requires data minimization for children. COPPA limits data collection to what is necessary. California AADC requires DPIAs for products likely used by children.",
+		"jurisdictionRelevance": ["eu-gdpr", "us-federal", "us-ca", "uk"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": "minors"
+		}
+	},
+	{
+		"id": "minor-profiling",
+		"text": "Does the system profile, track, or target minors based on their behavior or characteristics?",
+		"type": "yes-no-elaborate",
+		"category": "minors",
+		"regulatoryRelevance": "UK Age Appropriate Design Code prohibits profiling children by default. GDPR Recital 71 discourages automated decisions about children. California AADC restricts profiling of minors.",
+		"jurisdictionRelevance": ["eu-gdpr", "us-ca", "uk"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": "minors"
+		}
+	},
+	{
+		"id": "age-appropriate-design",
+		"text": "Has the system been designed with age-appropriate considerations (e.g., simplified interfaces, restricted features, default privacy settings)?",
+		"type": "yes-no-elaborate",
+		"category": "minors",
+		"regulatoryRelevance": "UK Age Appropriate Design Code requires 15 standards for children's online services. California AADC requires age-appropriate design for products likely accessed by children.",
+		"jurisdictionRelevance": ["us-ca", "uk"],
+		"requiredWhen": {
+			"field": "user-populations",
+			"operator": "includes",
+			"value": "minors"
+		}
+	}
+]

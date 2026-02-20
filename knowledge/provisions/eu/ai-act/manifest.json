@@ -1,0 +1,113 @@
+{
+	"id": "eu-ai-act",
+	"law": "EU Artificial Intelligence Act",
+	"jurisdiction": "EU",
+	"lastUpdated": "2026-02-20",
+	"sections": [
+		{
+			"id": "eu-ai-act-prohibited",
+			"title": "Prohibited AI Practices",
+			"article": "Article 5",
+			"file": "prohibited-practices.md",
+			"topics": [
+				"prohibited-practices",
+				"social-scoring",
+				"subliminal-manipulation",
+				"vulnerability-exploitation",
+				"biometric-categorization",
+				"real-time-biometric-identification",
+				"emotion-recognition",
+				"predictive-policing"
+			]
+		},
+		{
+			"id": "eu-ai-act-risk-classification",
+			"title": "Classification of AI Systems as High-Risk",
+			"article": "Articles 6-7, Annex III",
+			"file": "risk-classification.md",
+			"topics": [
+				"risk-classification",
+				"high-risk",
+				"annex-iii",
+				"safety-components",
+				"product-safety",
+				"biometric",
+				"critical-infrastructure",
+				"education",
+				"employment",
+				"essential-services",
+				"law-enforcement",
+				"migration",
+				"justice"
+			]
+		},
+		{
+			"id": "eu-ai-act-high-risk-requirements",
+			"title": "Requirements for High-Risk AI Systems",
+			"article": "Articles 8-15",
+			"file": "high-risk-requirements.md",
+			"topics": [
+				"risk-management",
+				"data-governance",
+				"technical-documentation",
+				"record-keeping",
+				"transparency",
+				"human-oversight",
+				"accuracy",
+				"robustness",
+				"cybersecurity"
+			]
+		},
+		{
+			"id": "eu-ai-act-transparency",
+			"title": "Transparency Obligations",
+			"article": "Articles 50-52",
+			"file": "transparency-obligations.md",
+			"topics": [
+				"transparency",
+				"chatbot-disclosure",
+				"deepfake-labeling",
+				"emotion-recognition-disclosure",
+				"biometric-categorization-disclosure",
+				"ai-generated-content",
+				"gpai"
+			]
+		},
+		{
+			"id": "eu-ai-act-gpai",
+			"title": "General-Purpose AI Model Obligations",
+			"article": "Articles 51-56",
+			"file": "gpai-provisions.md",
+			"topics": [
+				"gpai",
+				"foundation-model",
+				"systemic-risk",
+				"training-data-summary",
+				"copyright-compliance",
+				"model-evaluation",
+				"adversarial-testing",
+				"open-source-exemption",
+				"downstream-documentation"
+			]
+		},
+		{
+			"id": "eu-ai-act-financial-services",
+			"title": "Financial Services — Credit Scoring and Insurance Risk/Pricing",
+			"article": "Annex III §5",
+			"file": "financial-services.md",
+			"topics": [
+				"financial-services",
+				"credit-scoring",
+				"creditworthiness",
+				"insurance-risk",
+				"insurance-pricing",
+				"essential-services",
+				"high-risk",
+				"conformity-assessment",
+				"eba",
+				"eiopa",
+				"sectoral-supervision"
+			]
+		}
+	]
+}

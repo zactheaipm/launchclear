@@ -1,0 +1,88 @@
+{
+	"id": "us-federal",
+	"law": "US Federal AI Regulatory Framework",
+	"jurisdiction": "US",
+	"lastUpdated": "2026-02-20",
+	"sections": [
+		{
+			"id": "us-ftc-enforcement",
+			"title": "FTC Enforcement on AI Practices",
+			"article": "FTC Act Section 5",
+			"file": "ftc-enforcement.md",
+			"topics": [
+				"ftc",
+				"deceptive-practices",
+				"unfair-practices",
+				"consumer-protection",
+				"ai-claims",
+				"algorithmic-bias",
+				"automated-decisions"
+			]
+		},
+		{
+			"id": "us-nist-ai-rmf",
+			"title": "NIST AI Risk Management Framework",
+			"article": "NIST AI 100-1",
+			"file": "nist-ai-rmf.md",
+			"topics": [
+				"nist",
+				"risk-management",
+				"ai-governance",
+				"voluntary-framework",
+				"govern",
+				"map",
+				"measure",
+				"manage"
+			]
+		},
+		{
+			"id": "us-nist-genai-profile",
+			"title": "NIST GenAI Risk Profile",
+			"article": "NIST AI 600-1",
+			"file": "nist-genai-profile.md",
+			"topics": [
+				"nist",
+				"generative-ai",
+				"genai-risks",
+				"confabulation",
+				"information-integrity",
+				"content-safety",
+				"intellectual-property",
+				"foundation-models"
+			]
+		},
+		{
+			"id": "us-ftc-genai-guidance",
+			"title": "FTC Guidance on AI-Generated Content",
+			"article": "FTC GenAI Guidance",
+			"file": "ftc-genai-guidance.md",
+			"topics": [
+				"ftc",
+				"generative-ai",
+				"synthetic-content",
+				"deepfakes",
+				"ai-disclosure",
+				"content-labeling",
+				"deceptive-content"
+			]
+		},
+		{
+			"id": "us-federal-financial-ai",
+			"title": "Federal Financial AI Regulatory Guidance",
+			"article": "SR 11-7, ECOA, SEC",
+			"file": "federal-financial-ai.md",
+			"topics": [
+				"financial-services",
+				"model-risk-management",
+				"sr-11-7",
+				"fair-lending",
+				"cfpb",
+				"ecoa",
+				"sec",
+				"investment-advisory",
+				"credit-scoring",
+				"ai-models"
+			]
+		}
+	]
+}

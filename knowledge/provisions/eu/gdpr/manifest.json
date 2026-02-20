@@ -1,0 +1,89 @@
+{
+	"id": "eu-gdpr",
+	"law": "General Data Protection Regulation (GDPR)",
+	"jurisdiction": "EU",
+	"lastUpdated": "2026-02-20",
+	"sections": [
+		{
+			"id": "gdpr-legal-basis",
+			"title": "Legal Basis for Processing",
+			"article": "Articles 6-7",
+			"file": "legal-basis.md",
+			"topics": [
+				"legal-basis",
+				"consent",
+				"legitimate-interest",
+				"contract",
+				"legal-obligation",
+				"vital-interests",
+				"public-interest",
+				"ai-training-data"
+			]
+		},
+		{
+			"id": "gdpr-data-subject-rights",
+			"title": "Data Subject Rights",
+			"article": "Articles 12-23",
+			"file": "data-subject-rights.md",
+			"topics": [
+				"data-subject-rights",
+				"access",
+				"rectification",
+				"erasure",
+				"right-to-be-forgotten",
+				"restriction",
+				"portability",
+				"objection",
+				"automated-decision-making",
+				"explanation"
+			]
+		},
+		{
+			"id": "gdpr-automated-decisions",
+			"title": "Automated Individual Decision-Making",
+			"article": "Article 22",
+			"file": "automated-decisions.md",
+			"topics": [
+				"automated-decision-making",
+				"profiling",
+				"human-intervention",
+				"right-to-explanation",
+				"significant-effects",
+				"ai-decisions"
+			]
+		},
+		{
+			"id": "gdpr-dpia-requirements",
+			"title": "Data Protection Impact Assessment Requirements",
+			"article": "Articles 35-36",
+			"file": "dpia-requirements.md",
+			"topics": [
+				"dpia",
+				"impact-assessment",
+				"high-risk-processing",
+				"prior-consultation",
+				"risk-assessment",
+				"profiling",
+				"special-category-data",
+				"public-monitoring",
+				"ai-training"
+			]
+		},
+		{
+			"id": "gdpr-transfers",
+			"title": "International Data Transfers",
+			"article": "Articles 44-49",
+			"file": "transfers.md",
+			"topics": [
+				"data-transfers",
+				"adequacy-decision",
+				"standard-contractual-clauses",
+				"binding-corporate-rules",
+				"schrems-ii",
+				"supplementary-measures",
+				"cloud-ai-services",
+				"cross-border"
+			]
+		}
+	]
+}
