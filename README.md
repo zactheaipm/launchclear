@@ -3,7 +3,7 @@
 Compliance artifact and action generator for AI product teams.
 
 Describe your AI product feature. Pick your target markets.
-Get the compliance documents you need to file and the actions you need to take.
+Get drafts of the compliance documents you need to file and the actions you need to take - ready for you to take to your Legal team for review without delays from back-and-forth.
 
 ## The Problem
 
