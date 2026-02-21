@@ -1,0 +1,80 @@
+{
+	"id": "uk",
+	"law": "UK AI Governance Framework",
+	"jurisdiction": "UK",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "uk-ico-ai-guidance",
+			"title": "ICO AI and Data Protection Guidance",
+			"article": "ICO Guidance",
+			"file": "ico-ai-guidance.md",
+			"topics": [
+				"data-protection",
+				"ai-governance",
+				"fairness",
+				"transparency",
+				"accountability",
+				"lawful-basis",
+				"dpia",
+				"explainability",
+				"automated-decisions",
+				"data-minimisation"
+			]
+		},
+		{
+			"id": "uk-aisi-frontier-models",
+			"title": "AI Safety Institute Frontier Model Framework",
+			"article": "AISI Framework",
+			"file": "aisi-frontier-models.md",
+			"topics": [
+				"frontier-models",
+				"safety-evaluation",
+				"red-teaming",
+				"systemic-risk",
+				"foundation-models",
+				"voluntary-commitments",
+				"dangerous-capabilities",
+				"societal-impact",
+				"pre-deployment-testing",
+				"post-deployment-monitoring"
+			]
+		},
+		{
+			"id": "uk-dsit-foundation-models",
+			"title": "DSIT Foundation Model Principles",
+			"article": "DSIT Regulatory Approach",
+			"file": "dsit-foundation-models.md",
+			"topics": [
+				"foundation-models",
+				"regulatory-principles",
+				"pro-innovation",
+				"transparency",
+				"accountability",
+				"safety",
+				"fairness",
+				"contestability",
+				"cross-sectoral",
+				"existing-regulators"
+			]
+		},
+		{
+			"id": "uk-fca-ai-guidance",
+			"title": "FCA AI Guidance for Financial Services",
+			"article": "FCA Principles",
+			"file": "fca-ai-guidance.md",
+			"topics": [
+				"financial-services",
+				"consumer-protection",
+				"fairness",
+				"explainability",
+				"model-risk",
+				"senior-managers-regime",
+				"outcomes-focused",
+				"consumer-duty",
+				"ai-sandboxing",
+				"pra-expectations"
+			]
+		}
+	]
+}

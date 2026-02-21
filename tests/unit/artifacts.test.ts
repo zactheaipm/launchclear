@@ -1,4 +1,17 @@
 import { describe, expect, it, vi } from "vitest";
+import {
+	extractCitations,
+	extractPlaceholders,
+	extractSections,
+	fillTemplate,
+	validateFilledTemplate,
+} from "../../src/artifacts/filler.js";
+import {
+	generateArtifacts,
+	listAvailableTemplates,
+	loadTemplate,
+	parseFrontmatter,
+} from "../../src/artifacts/generator.js";
 import type {
 	ArtifactRequirement,
 	GeneratedArtifact,
@@ -7,19 +20,6 @@ import type {
 	LLMRequest,
 	ProductContext,
 } from "../../src/core/types.js";
-import {
-	generateArtifacts,
-	listAvailableTemplates,
-	loadTemplate,
-	parseFrontmatter,
-} from "../../src/artifacts/generator.js";
-import {
-	extractCitations,
-	extractPlaceholders,
-	extractSections,
-	fillTemplate,
-	validateFilledTemplate,
-} from "../../src/artifacts/filler.js";
 
 // ─── Test Helpers ────────────────────────────────────────────────────────────
 
@@ -76,9 +76,7 @@ function makeFailingProvider(errorMessage: string): LLMProvider {
 	};
 }
 
-function makeJurisdictionResult(
-	overrides: Partial<JurisdictionResult> = {},
-): JurisdictionResult {
+function makeJurisdictionResult(overrides: Partial<JurisdictionResult> = {}): JurisdictionResult {
 	return {
 		jurisdiction: overrides.jurisdiction ?? "eu-gdpr",
 		applicableLaws: overrides.applicableLaws ?? [],
@@ -372,10 +370,7 @@ Content here.
 
 Risk content.
 `;
-		const result = validateFilledTemplate(content, [
-			"processing-description",
-			"risk-assessment",
-		]);
+		const result = validateFilledTemplate(content, ["processing-description", "risk-assessment"]);
 		expect(result.valid).toBe(true);
 		expect(result.unfilledPlaceholders).toEqual([]);
 		expect(result.missingSections).toEqual([]);
@@ -492,9 +487,7 @@ Human-in-the-loop review is implemented for all screening decisions.
 		expect(result.ok).toBe(true);
 		if (!result.ok) return;
 
-		expect(
-			result.value.reviewNotes.some((n) => n.includes("Article 22")),
-		).toBe(true);
+		expect(result.value.reviewNotes.some((n) => n.includes("Article 22"))).toBe(true);
 	});
 
 	it("adds context-specific review notes for biometric data", async () => {
@@ -513,9 +506,7 @@ Human-in-the-loop review is implemented for all screening decisions.
 		expect(result.ok).toBe(true);
 		if (!result.ok) return;
 
-		expect(
-			result.value.reviewNotes.some((n) => n.includes("Biometric")),
-		).toBe(true);
+		expect(result.value.reviewNotes.some((n) => n.includes("Biometric"))).toBe(true);
 	});
 });
 
@@ -759,11 +750,12 @@ More content.
 			makeJurisdictionResult({
 				requiredArtifacts: [
 					{
-						type: "gpai-training-data-summary",
-						name: "Training Data Summary",
+						// Use a fabricated type that has no template mapping
+						type: "unknown-future-artifact" as ArtifactType,
+						name: "Unknown Future Artifact",
 						required: true,
-						legalBasis: "Article 53(1)(d)",
-						description: "Summary of training data",
+						legalBasis: "Future Regulation",
+						description: "An artifact type with no template mapping",
 						// No templateId and no default mapping for this type
 					},
 				],

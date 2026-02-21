@@ -450,9 +450,7 @@ describe("GDPR Required Actions", () => {
 
 		const actions = euGdprModule.getRequiredActions(ctx);
 		const titles = actions.map((a) => a.title);
-		expect(titles).toContain(
-			"Implement Article 22 automated decision-making safeguards",
-		);
+		expect(titles).toContain("Implement Article 22 automated decision-making safeguards");
 	});
 
 	it("requires DPO appointment for large-scale sensitive data processing", () => {

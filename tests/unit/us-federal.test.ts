@@ -704,14 +704,8 @@ describe("US Federal Helper Functions", () => {
 	});
 
 	it("detects credit scoring AI", () => {
-		expect(
-			isCreditScoringAi(makeContext({ userPopulations: ["credit-applicants"] })),
-		).toBe(true);
-		expect(
-			isCreditScoringAi(
-				makeContext({ description: "AI credit scoring system" }),
-			),
-		).toBe(true);
+		expect(isCreditScoringAi(makeContext({ userPopulations: ["credit-applicants"] }))).toBe(true);
+		expect(isCreditScoringAi(makeContext({ description: "AI credit scoring system" }))).toBe(true);
 		expect(
 			isCreditScoringAi(
 				makeContext({
@@ -812,8 +806,7 @@ describe("US Federal Registry and Requirement Mapper", () => {
 			id: "us-federal",
 			name: "US Federal AI Regulatory Framework",
 			region: "US",
-			description:
-				"US federal AI regulation through FTC, CFPB, SEC, and banking regulators.",
+			description: "US federal AI regulation through FTC, CFPB, SEC, and banking regulators.",
 			module: usFederalModule,
 		});
 	});

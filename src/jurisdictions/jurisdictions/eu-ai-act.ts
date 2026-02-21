@@ -359,18 +359,31 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 		if (!passesSignificantRiskFilter(ctx)) {
 			return {
 				level: "minimal",
-				justification:
-					"This AI system falls within an Annex III category but does not pose a significant risk of harm under Article 6(3). It performs a narrow procedural task, improves a previously completed human activity, detects patterns without replacing human assessment, or performs a preparatory task.",
+				justification: `This AI system falls within an Annex III category (${annexIIIMatches.map((c) => c.name).join(", ")}) but has been declassified to minimal risk under Article 6(3) based on automated description analysis. The system appears to perform a narrow procedural task, improve a previously completed human activity, detect patterns without replacing human assessment, or perform a preparatory task. REVIEW NOTE: Article 6(3) significant risk filter applied based on description analysis — legal counsel should verify this determination. The exception criteria are narrow and fact-specific; incorrect application could result in non-compliance with high-risk obligations.`,
 				applicableCategories: annexIIIMatches.map((c) => c.id),
 				provisions: ["Article 6(3)"],
 			};
 		}
 
+		// Check if this high-risk system ALSO triggers Article 50 transparency
+		// obligations (chatbot, deepfake, emotion recognition). Under the EU AI Act,
+		// a system can simultaneously be high-risk (Annex III) AND have limited-risk
+		// transparency obligations (Article 50). These are additive, not mutually exclusive.
+		const alsoTriggersArticle50 = isLimitedRiskSystem(ctx);
+		const article50Note = alsoTriggersArticle50
+			? " Note: This system is also subject to Article 50 transparency obligations (chatbot/deepfake/emotion recognition disclosure) in addition to high-risk requirements."
+			: "";
+
+		const highRiskProvisions = ["Article 6(2)", "Annex III", ...annexIIIMatches.map((c) => c.id)];
+		if (alsoTriggersArticle50) {
+			highRiskProvisions.push("Article 50");
+		}
+
 		return {
 			level: "high",
-			justification: `This AI system falls within Annex III high-risk category: ${annexIIIMatches.map((c) => c.name).join(", ")}. It must comply with requirements under Articles 8-15.`,
+			justification: `This AI system falls within Annex III high-risk category: ${annexIIIMatches.map((c) => c.name).join(", ")}. It must comply with requirements under Articles 8-15.${article50Note}`,
 			applicableCategories: annexIIIMatches.map((c) => c.id),
-			provisions: ["Article 6(2)", "Annex III", ...annexIIIMatches.map((c) => c.id)],
+			provisions: highRiskProvisions,
 		};
 	}
 
@@ -417,6 +430,21 @@ function buildApplicableProvisions(
 				"This AI system falls under a prohibited practice and cannot be placed on the EU market or used within the EU.",
 			relevance: "The system's intended purpose matches one or more prohibited use cases.",
 		});
+
+		// Note exceptions for law enforcement biometric identification
+		const descLower = ctx.description.toLowerCase();
+		if (descLower.includes("law enforcement") || descLower.includes("police")) {
+			provisions.push({
+				id: "eu-ai-act-art5-exceptions",
+				law: "EU AI Act",
+				article: "Article 5(2)-(3)",
+				title: "Exceptions to Prohibition on Real-Time Biometric Identification",
+				summary:
+					"Article 5(1)(h) prohibits real-time remote biometric identification in public spaces, but Article 5(2)-(3) provides narrow exceptions for law enforcement: (i) targeted search for missing persons or kidnapping victims, (ii) prevention of specific imminent terrorist threat, (iii) identification of suspects for serious criminal offences (as listed). Requires prior judicial or independent administrative authorisation. Member States may further restrict these exceptions.",
+				relevance:
+					"This system may qualify for limited law enforcement exceptions to biometric identification prohibitions.",
+			});
+		}
 	}
 
 	if (risk.level === "high") {
@@ -493,8 +521,36 @@ function buildApplicableProvisions(
 				relevance: "Required for all high-risk AI systems under Article 15.",
 			},
 		);
+
+		// Safety component classification (medical devices, machinery, etc.)
+		const desc = ctx.description.toLowerCase();
+		const isSafetyComponent =
+			desc.includes("medical device") ||
+			desc.includes("machinery") ||
+			desc.includes("toy") ||
+			desc.includes("marine equipment") ||
+			desc.includes("civil aviation") ||
+			desc.includes("motor vehicle") ||
+			desc.includes("railway");
+		if (isSafetyComponent) {
+			provisions.push({
+				id: "eu-ai-act-art6-2",
+				law: "EU AI Act",
+				article: "Article 6(2)",
+				title: "AI as Safety Component of Regulated Product",
+				summary:
+					"AI systems that are safety components of products covered by Annex I Union harmonisation legislation (e.g., Medical Devices Regulation, Machinery Directive) are classified as high-risk and must undergo the conformity assessment procedure applicable to the product. This may require third-party assessment by a notified body under the product-specific legislation.",
+				relevance:
+					"This AI system appears to be a safety component of a product covered by EU product safety legislation.",
+			});
+		}
 	}
 
+	// Article 50 transparency obligations are checked regardless of primary risk level.
+	// A high-risk system that is also a chatbot, deepfake generator, or emotion recognition
+	// system must comply with BOTH high-risk requirements (Articles 8-15) AND Article 50
+	// transparency obligations. The `isLimitedRiskSystem(ctx)` check ensures these provisions
+	// are additive — they apply even when risk.level is "high", not just "limited".
 	if (risk.level === "limited" || isLimitedRiskSystem(ctx)) {
 		provisions.push({
 			id: "eu-ai-act-art50",
@@ -504,7 +560,9 @@ function buildApplicableProvisions(
 			summary:
 				"Users must be informed of AI interaction, AI-generated content must be labelled, and/or emotion recognition/biometric categorisation must be disclosed.",
 			relevance:
-				"This system has transparency obligations based on its interaction with natural persons or content generation capabilities.",
+				risk.level === "high"
+					? "This high-risk system also triggers Article 50 transparency obligations due to its chatbot, deepfake, or emotion recognition characteristics. These obligations are additive to high-risk requirements."
+					: "This system has transparency obligations based on its interaction with natural persons or content generation capabilities.",
 		});
 	}
 
@@ -571,6 +629,8 @@ function buildRequiredArtifacts(
 		}
 	}
 
+	// Article 50 transparency artifacts are additive — they apply to high-risk systems
+	// that also have chatbot, deepfake, or emotion recognition characteristics.
 	if (risk.level === "limited" || isLimitedRiskSystem(ctx)) {
 		artifacts.push({
 			type: "transparency-notice",
@@ -732,8 +792,54 @@ function buildRequiredActions(
 				deadline: "2026-08-02",
 			},
 		);
+
+		// Article 26 Deployer Obligations
+		actions.push(
+			{
+				id: "eu-ai-act-deployer-instructions",
+				title: "Follow provider's instructions for use of high-risk AI system",
+				description:
+					"Under Article 26(1), deployers must use the high-risk AI system in accordance with the instructions for use accompanying the system. Obtain and review the provider's complete instructions for use before deployment.",
+				jurisdictions: ["eu-ai-act"],
+				legalBasis: "EU AI Act Article 26(1)",
+				priority: "critical",
+				estimatedEffort: "1-2 weeks",
+			},
+			{
+				id: "eu-ai-act-deployer-human-oversight",
+				title: "Assign natural persons for human oversight of high-risk AI system",
+				description:
+					"Under Article 26(2), deployers must assign natural persons with the necessary competence, training, and authority to exercise human oversight of the high-risk AI system. These individuals must understand the system's capabilities, limitations, and monitoring requirements.",
+				jurisdictions: ["eu-ai-act"],
+				legalBasis: "EU AI Act Article 26(2)",
+				priority: "critical",
+				estimatedEffort: "2-4 weeks",
+			},
+			{
+				id: "eu-ai-act-deployer-input-data",
+				title: "Ensure input data relevance and representativeness",
+				description:
+					"Under Article 26(4), deployers must ensure that input data is relevant and sufficiently representative in view of the intended purpose of the high-risk AI system.",
+				jurisdictions: ["eu-ai-act"],
+				legalBasis: "EU AI Act Article 26(4)",
+				priority: "important",
+				estimatedEffort: "2-4 weeks",
+			},
+			{
+				id: "eu-ai-act-deployer-monitoring",
+				title: "Monitor high-risk AI system operation and report serious incidents",
+				description:
+					"Under Article 26(5), deployers must monitor the operation of the high-risk AI system on the basis of the instructions for use and inform the provider of any serious incidents.",
+				jurisdictions: ["eu-ai-act"],
+				legalBasis: "EU AI Act Article 26(5)",
+				priority: "critical",
+				estimatedEffort: "3-6 weeks",
+			},
+		);
 	}
 
+	// Article 50 transparency actions are additive — they apply to high-risk systems
+	// that also have chatbot, deepfake, or emotion recognition characteristics.
 	if (risk.level === "limited" || isLimitedRiskSystem(ctx)) {
 		actions.push({
 			id: "eu-ai-act-transparency-disclosure",
@@ -800,6 +906,7 @@ function buildTimeline(
 		notes.push(
 			"High-risk system obligations apply from 2 August 2026. Plan conformity assessment and documentation well in advance.",
 			"Post-market monitoring and serious incident reporting obligations also apply from August 2026.",
+			"Article 111: AI systems already on the market before 2 August 2026 are not required to undergo new conformity assessment unless substantially modified. Existing systems that are high-risk under Annex III have until 2 August 2027 for full compliance if they are components of products covered by Annex I Union harmonisation legislation.",
 		);
 	}
 
@@ -810,6 +917,7 @@ function buildTimeline(
 	if (gpai?.isGpai) {
 		notes.push(
 			"URGENT: GPAI model obligations under Articles 51-56 have been in force since 2 August 2025. Immediate compliance action required.",
+			"The AI Office has published a Code of Practice for GPAI (November 2025) and may issue additional binding guidance, templates for technical documentation (Annex XI), and the training data summary format.",
 		);
 		if (gpai.hasSystemicRisk) {
 			notes.push(

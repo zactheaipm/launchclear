@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-import type { ActionItem, ActionPlan, ActionPriority } from "../../src/core/types.js";
 import {
 	type ActionCategory,
 	type ActionLibraryEntry,
@@ -9,15 +8,14 @@ import {
 	getActionsByJurisdiction,
 	getAllActions,
 } from "../../src/actions/action-library.js";
-import {
-	generateActionPlanWithoutLLM,
-} from "../../src/actions/generator.js";
+import { generateActionPlanWithoutLLM } from "../../src/actions/generator.js";
 import {
 	bucketByPriority,
 	classifyPriority,
 	compareActionItems,
 	prioritizeActions,
 } from "../../src/actions/prioritizer.js";
+import type { ActionItem, ActionPlan, ActionPriority } from "../../src/core/types.js";
 
 // ─── Test Helper: Build an ActionItem ────────────────────────────────────
 
@@ -190,8 +188,7 @@ describe("Action Prioritizer", () => {
 
 		it("classifies best practice actions as recommended", () => {
 			const action = makeActionItem({
-				description:
-					"This is a recommended best practice for AI governance.",
+				description: "This is a recommended best practice for AI governance.",
 				legalBasis: "Industry best practice",
 				deadline: null,
 			});
@@ -280,8 +277,7 @@ describe("Action Prioritizer", () => {
 				}),
 				makeActionItem({
 					id: "best-practice",
-					description:
-						"This is a recommended best practice for documentation.",
+					description: "This is a recommended best practice for documentation.",
 					legalBasis: "Industry best practice",
 				}),
 			];
@@ -357,8 +353,7 @@ describe("Action Prioritizer", () => {
 			);
 
 			const plan = prioritizeActions(actions);
-			const totalCount =
-				plan.critical.length + plan.important.length + plan.recommended.length;
+			const totalCount = plan.critical.length + plan.important.length + plan.recommended.length;
 			expect(totalCount).toBe(10);
 		});
 	});
@@ -425,8 +420,7 @@ describe("Action Plan Generator (without LLM)", () => {
 		const plan = generateActionPlanWithoutLLM(jurisdictionResults);
 
 		// All 3 actions should be present
-		const totalActions =
-			plan.critical.length + plan.important.length + plan.recommended.length;
+		const totalActions = plan.critical.length + plan.important.length + plan.recommended.length;
 		expect(totalActions).toBe(3);
 
 		// Risk management and human oversight should be critical
@@ -473,9 +467,7 @@ describe("Action Plan Generator (without LLM)", () => {
 					applicableCategories: [],
 				},
 				requiredArtifacts: [],
-				requiredActions: [
-					{ ...sharedAction, jurisdictions: ["uk"] },
-				],
+				requiredActions: [{ ...sharedAction, jurisdictions: ["uk"] }],
 				recommendedActions: [],
 				complianceTimeline: { effectiveDate: "2018-05-25", deadlines: [], notes: [] },
 				enforcementPrecedent: [],
@@ -486,9 +478,7 @@ describe("Action Plan Generator (without LLM)", () => {
 
 		// Same action from two jurisdictions should be deduplicated
 		const allActions = [...plan.critical, ...plan.important, ...plan.recommended];
-		const matchingActions = allActions.filter(
-			(a) => a.id === "transparency-notice-shared",
-		);
+		const matchingActions = allActions.filter((a) => a.id === "transparency-notice-shared");
 		expect(matchingActions).toHaveLength(1);
 
 		// The deduplicated action should reference both jurisdictions

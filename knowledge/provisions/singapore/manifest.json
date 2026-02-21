@@ -1,0 +1,69 @@
+{
+	"id": "singapore",
+	"law": "Singapore AI Governance Framework",
+	"jurisdiction": "Singapore",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "sg-pdpc-ai-governance",
+			"title": "PDPC Model AI Governance Framework",
+			"article": "PDPC Framework 2nd Ed.",
+			"file": "pdpc-ai-governance.md",
+			"topics": [
+				"ai-governance",
+				"data-protection",
+				"pdpa",
+				"accountability",
+				"transparency",
+				"fairness",
+				"human-oversight"
+			]
+		},
+		{
+			"id": "sg-imda-genai-guidelines",
+			"title": "IMDA GenAI Governance Guidelines",
+			"article": "IMDA GenAI Framework",
+			"file": "imda-genai-guidelines.md",
+			"topics": [
+				"generative-ai",
+				"foundation-models",
+				"content-provenance",
+				"testing-evaluation",
+				"incident-reporting",
+				"disclosure",
+				"content-moderation"
+			]
+		},
+		{
+			"id": "sg-imda-agentic-ai",
+			"title": "IMDA Model AI Governance Framework for Agentic AI",
+			"article": "IMDA Agentic AI Framework (Jan 2026)",
+			"file": "imda-agentic-ai.md",
+			"topics": [
+				"agentic-ai",
+				"risk-bounding",
+				"human-accountability",
+				"technical-controls",
+				"end-user-responsibility",
+				"autonomous-actions",
+				"multi-agent"
+			]
+		},
+		{
+			"id": "sg-mas-ai-risk-management",
+			"title": "MAS Guidelines on AI Risk Management for Financial Institutions",
+			"article": "MAS AI Guidelines (2025)",
+			"file": "mas-ai-risk-management.md",
+			"topics": [
+				"financial-services",
+				"ai-risk-management",
+				"materiality-assessment",
+				"governance",
+				"lifecycle-controls",
+				"third-party-ai",
+				"fairness",
+				"explainability"
+			]
+		}
+	]
+}

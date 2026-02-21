@@ -66,11 +66,14 @@ function parseAnthropicResponse(json: unknown): Result<LLMResponse> {
 
 // ─── Create Provider ────────────────────────────────────────────────────────
 
+const DEFAULT_ANTHROPIC_API_VERSION = "2024-10-22";
+
 export function createAnthropicProvider(options: ProviderOptions = {}): LLMProvider {
 	const apiKey = options.apiKey ?? process.env.ANTHROPIC_API_KEY;
 	const baseUrl = options.baseUrl ?? PROVIDER_DEFAULTS.anthropic.baseUrl;
 	const model = options.model ?? PROVIDER_DEFAULTS.anthropic.model;
 	const timeoutMs = options.timeoutMs;
+	const apiVersion = options.apiVersion ?? DEFAULT_ANTHROPIC_API_VERSION;
 
 	return {
 		id: "anthropic",
@@ -104,7 +107,7 @@ export function createAnthropicProvider(options: ProviderOptions = {}): LLMProvi
 				headers: {
 					"Content-Type": "application/json",
 					"x-api-key": apiKey,
-					"anthropic-version": "2023-06-01",
+					"anthropic-version": apiVersion,
 				},
 				body: JSON.stringify(body),
 				timeoutMs,

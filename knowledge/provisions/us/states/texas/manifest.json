@@ -1,0 +1,35 @@
+{
+	"id": "us-tx",
+	"law": "Texas AI and Deepfake Laws",
+	"jurisdiction": "US-TX",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "us-tx-traiga",
+			"title": "Texas Responsible AI Governance Act (TRAIGA)",
+			"article": "TRAIGA",
+			"file": "traiga.md",
+			"topics": [
+				"automated-decisions",
+				"high-risk",
+				"impact-assessment",
+				"transparency",
+				"governance-program",
+				"attorney-general"
+			]
+		},
+		{
+			"id": "us-tx-deepfakes",
+			"title": "Texas Deepfake Laws",
+			"article": "TX Penal Code § 21.165, TX Election Code",
+			"file": "deepfake-laws.md",
+			"topics": [
+				"deepfakes",
+				"synthetic-media",
+				"elections",
+				"sexual-deepfakes",
+				"criminal-liability"
+			]
+		}
+	]
+}

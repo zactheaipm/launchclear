@@ -28,13 +28,16 @@
 		"node": ">=20.0.0"
 	},
 	"dependencies": {
+		"cheerio": "^1.0.0",
 		"commander": "^13.1.0",
+		"diff": "^7.0.0",
 		"hono": "^4.7.0",
 		"inquirer": "^12.4.0",
 		"zod": "^3.24.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.0",
+		"@types/diff": "^7.0.0",
 		"@types/node": "^22.13.0",
 		"tsup": "^8.4.0",
 		"tsx": "^4.19.0",
@@ -48,6 +51,6 @@
 		"outDir": "dist",
 		"splitting": true,
 		"clean": true,
-		"dts": false
+		"dts": true
 	}
 }

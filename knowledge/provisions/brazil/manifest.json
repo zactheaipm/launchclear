@@ -1,0 +1,39 @@
+{
+	"id": "brazil",
+	"law": "Brazil AI and Data Protection Framework",
+	"jurisdiction": "Brazil",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "br-lgpd-ai-processing",
+			"title": "LGPD Automated Decision Provisions",
+			"article": "LGPD Article 20",
+			"file": "lgpd-ai-processing.md",
+			"topics": [
+				"data-protection",
+				"automated-decisions",
+				"transparency",
+				"right-to-review",
+				"sensitive-data",
+				"consent",
+				"legitimate-interest"
+			]
+		},
+		{
+			"id": "br-ai-bill-genai",
+			"title": "AI Bill Foundation Model and GenAI Transparency",
+			"article": "PL 2338/2023",
+			"file": "ai-bill-genai.md",
+			"topics": [
+				"ai-regulation",
+				"foundation-models",
+				"generative-ai",
+				"transparency",
+				"training-data-disclosure",
+				"high-risk",
+				"impact-assessment",
+				"accountability"
+			]
+		}
+	]
+}

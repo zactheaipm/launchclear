@@ -1,0 +1,37 @@
+{
+	"id": "us-il",
+	"law": "Illinois Biometric and AI Employment Laws",
+	"jurisdiction": "US-IL",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "us-il-bipa",
+			"title": "Illinois Biometric Information Privacy Act",
+			"article": "BIPA (740 ILCS 14)",
+			"file": "bipa.md",
+			"topics": [
+				"biometric-data",
+				"consent",
+				"retention",
+				"private-right-of-action",
+				"faceprint",
+				"voiceprint",
+				"fingerprint"
+			]
+		},
+		{
+			"id": "us-il-aivita",
+			"title": "AI Video Interview Act",
+			"article": "820 ILCS 42",
+			"file": "ai-video-interview-act.md",
+			"topics": [
+				"employment",
+				"video-interview",
+				"ai-analysis",
+				"consent",
+				"notice",
+				"data-deletion"
+			]
+		}
+	]
+}

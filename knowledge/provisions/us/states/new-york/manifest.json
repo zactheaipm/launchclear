@@ -1,0 +1,24 @@
+{
+	"id": "us-ny",
+	"law": "New York City Automated Employment Decision Tools Law",
+	"jurisdiction": "US-NY",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "us-ny-ll144",
+			"title": "NYC Local Law 144 — AEDT Bias Audit Requirements",
+			"article": "NYC Local Law 144 (Int. 1894-2020)",
+			"file": "ll144-aedt.md",
+			"topics": [
+				"employment",
+				"bias-audit",
+				"automated-decisions",
+				"hiring",
+				"promotion",
+				"disparate-impact",
+				"transparency",
+				"notice"
+			]
+		}
+	]
+}

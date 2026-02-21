@@ -169,7 +169,7 @@ describe("anthropic provider", () => {
 		const options = fetchCall[1] as RequestInit;
 		const headers = options.headers as Record<string, string>;
 		expect(headers["x-api-key"]).toBe("test-key");
-		expect(headers["anthropic-version"]).toBe("2023-06-01");
+		expect(headers["anthropic-version"]).toBe("2024-10-22");
 		expect(headers["Content-Type"]).toBe("application/json");
 
 		const body = JSON.parse(options.body as string);

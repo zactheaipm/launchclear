@@ -5,6 +5,7 @@ import type {
 	ProductContext,
 	Result,
 } from "../core/types.js";
+import { flagUnverifiedCitations } from "./citation-validator.js";
 import type { LoadedTemplate } from "./generator.js";
 
 // ─── Fill Result ─────────────────────────────────────────────────────────────
@@ -23,6 +24,8 @@ export interface FillTemplateOptions {
 	readonly ctx: ProductContext;
 	readonly jurisdictions: readonly string[];
 	readonly provider: LLMProvider;
+	readonly temperature?: number;
+	readonly maxTokens?: number;
 }
 
 // ─── Placeholder Extraction ──────────────────────────────────────────────────
@@ -31,10 +34,13 @@ const PLACEHOLDER_REGEX = /\{\{(\w+)\}\}/g;
 
 export function extractPlaceholders(templateContent: string): readonly string[] {
 	const matches = new Set<string>();
-	let match: RegExpExecArray | null;
 	const regex = new RegExp(PLACEHOLDER_REGEX.source, "g");
-	while ((match = regex.exec(templateContent)) !== null) {
-		matches.add(match[1]);
+	for (
+		let match = regex.exec(templateContent);
+		match !== null;
+		match = regex.exec(templateContent)
+	) {
+		matches.add(match[1] as string);
 	}
 	return [...matches];
 }
@@ -43,21 +49,27 @@ export function extractPlaceholders(templateContent: string): readonly string[] 
 
 export function extractSections(filledContent: string): readonly ArtifactSection[] {
 	const sections: ArtifactSection[] = [];
-	const sectionRegex = /^##\s+(\d+\.)\s+(.+)$/gm;
-	let match: RegExpExecArray | null;
+	// Match both numbered "## 1. Title" and unnumbered "## Title" headings
+	const sectionRegex = /^##\s+(?:(\d+\.)\s+)?(.+)$/gm;
 	const matches: { title: string; start: number }[] = [];
 
-	while ((match = sectionRegex.exec(filledContent)) !== null) {
-		matches.push({ title: match[2].trim(), start: match.index });
+	for (
+		let match = sectionRegex.exec(filledContent);
+		match !== null;
+		match = sectionRegex.exec(filledContent)
+	) {
+		matches.push({ title: (match[2] as string).trim(), start: match.index });
 	}
 
 	for (let i = 0; i < matches.length; i++) {
-		const start = matches[i].start;
-		const end = i + 1 < matches.length ? matches[i + 1].start : filledContent.length;
+		const current = matches[i] as { title: string; start: number };
+		const start = current.start;
+		const next = matches[i + 1] as { title: string; start: number } | undefined;
+		const end = next ? next.start : filledContent.length;
 		const content = filledContent.slice(start, end).trim();
 
 		sections.push({
-			title: matches[i].title,
+			title: current.title,
 			content,
 			required: true,
 		});
@@ -75,10 +87,7 @@ const DEFAULT_REVIEW_NOTES: readonly string[] = [
 	"Jurisdiction-specific requirements may have changed since this document was generated",
 ];
 
-function buildReviewNotesForContext(
-	ctx: ProductContext,
-	templateId: string,
-): readonly string[] {
+function buildReviewNotesForContext(ctx: ProductContext, templateId: string): readonly string[] {
 	const notes: string[] = [...DEFAULT_REVIEW_NOTES];
 
 	if (ctx.automationLevel === "fully-automated") {
@@ -159,13 +168,9 @@ function buildProductContextSummary(ctx: ProductContext): string {
 		parts.push(`GPAI role: ${ctx.gpaiInfo.gpaiRole}`);
 		if (ctx.gpaiInfo.modelName) parts.push(`Model name: ${ctx.gpaiInfo.modelName}`);
 		parts.push(`Open source: ${ctx.gpaiInfo.isOpenSource}`);
-		parts.push(
-			`Exceeds systemic risk threshold: ${ctx.gpaiInfo.exceedsSystemicRiskThreshold}`,
-		);
+		parts.push(`Exceeds systemic risk threshold: ${ctx.gpaiInfo.exceedsSystemicRiskThreshold}`);
 		if (ctx.gpaiInfo.copyrightComplianceMechanism) {
-			parts.push(
-				`Copyright compliance mechanism: ${ctx.gpaiInfo.copyrightComplianceMechanism}`,
-			);
+			parts.push(`Copyright compliance mechanism: ${ctx.gpaiInfo.copyrightComplianceMechanism}`);
 		}
 	}
 
@@ -292,7 +297,13 @@ export function extractCitations(filledContent: string): readonly Citation[] {
 		const lowerLine = line.toLowerCase();
 
 		let law = "Unknown";
-		if (lowerLine.includes("gdpr") || lowerLine.includes("2016/679")) {
+		if (
+			lowerLine.includes("uk gdpr") ||
+			lowerLine.includes("dpa 2018") ||
+			lowerLine.includes("data protection act 2018")
+		) {
+			law = "UK GDPR / DPA 2018";
+		} else if (lowerLine.includes("gdpr") || lowerLine.includes("2016/679")) {
 			law = "GDPR (EU) 2016/679";
 		} else if (
 			lowerLine.includes("ai act") ||
@@ -309,16 +320,35 @@ export function extractCitations(filledContent: string): readonly Citation[] {
 			law = "California SB 942";
 		} else if (lowerLine.includes("cac") || lowerLine.includes("genai measures")) {
 			law = "China CAC GenAI Measures";
+		} else if (lowerLine.includes("lgpd")) {
+			law = "LGPD";
+		} else if (lowerLine.includes("pdpa") || lowerLine.includes("pdpc")) {
+			law = "PDPA (Singapore)";
+		} else if (lowerLine.includes("consumer duty") || lowerLine.includes("fca")) {
+			law = "FCA";
+		} else if (lowerLine.includes("online safety act")) {
+			law = "Online Safety Act 2023";
+		} else if (lowerLine.includes("equality act")) {
+			law = "Equality Act 2010";
+		} else if (lowerLine.includes("ll144") || lowerLine.includes("local law 144")) {
+			law = "NYC Local Law 144";
+		} else if (lowerLine.includes("colorado ai act") || lowerLine.includes("sb 205")) {
+			law = "Colorado AI Act";
+		} else if (lowerLine.includes("bipa") || lowerLine.includes("biometric information privacy")) {
+			law = "Illinois BIPA";
+		} else if (lowerLine.includes("mas ") || lowerLine.includes("monetary authority")) {
+			law = "MAS Guidelines";
+		} else if (lowerLine.includes("imda") || lowerLine.includes("agentic ai framework")) {
+			law = "IMDA Framework";
 		}
 
-		let match: RegExpExecArray | null;
 		const artRegex = new RegExp(articleRegex.source, "g");
-		while ((match = artRegex.exec(line)) !== null) {
+		for (let match = artRegex.exec(line); match !== null; match = artRegex.exec(line)) {
 			addCitation(match[0], law);
 		}
 
 		const secRegex = new RegExp(sectionRegex.source, "g");
-		while ((match = secRegex.exec(line)) !== null) {
+		for (let match = secRegex.exec(line); match !== null; match = secRegex.exec(line)) {
 			addCitation(match[0], law);
 		}
 	}
@@ -334,7 +364,7 @@ function processJurisdictionConditionals(
 ): string {
 	// Handle {{#if_jurisdiction xxx}} ... {{/if_jurisdiction}} blocks
 	const conditionalRegex =
-		/###?\s*\{\{#if_jurisdiction\s+(\S+)\}\}\s*\n([\s\S]*?)###?\s*\{\{\/if_jurisdiction\}\}\s*\n?/g;
+		/###?\s*\{\{\s*#if_jurisdiction\s+(\S+)\s*\}\}\s*\n([\s\S]*?)###?\s*\{\{\s*\/if_jurisdiction\s*\}\}\s*\n?/g;
 
 	return content.replace(conditionalRegex, (_match, jurisdiction: string, block: string) => {
 		if (jurisdictions.includes(jurisdiction)) {
@@ -358,9 +388,8 @@ export function validateFilledTemplate(
 ): ValidationResult {
 	const unfilledPlaceholders: string[] = [];
 	const regex = new RegExp(PLACEHOLDER_REGEX.source, "g");
-	let match: RegExpExecArray | null;
-	while ((match = regex.exec(filledContent)) !== null) {
-		unfilledPlaceholders.push(match[1]);
+	for (let match = regex.exec(filledContent); match !== null; match = regex.exec(filledContent)) {
+		unfilledPlaceholders.push(match[1] as string);
 	}
 
 	const missingSections: string[] = [];
@@ -393,8 +422,8 @@ export async function fillTemplate(options: FillTemplateOptions): Promise<Result
 		systemPrompt:
 			"You are a regulatory compliance document specialist. You fill in compliance document templates with precise, jurisdiction-specific content. You never invent legal requirements — you only reference real provisions from real regulations. When you don't have enough information to fill a section, you clearly mark it as requiring human input.",
 		messages: [{ role: "user", content: prompt }],
-		temperature: 0.2,
-		maxTokens: 8000,
+		temperature: options.temperature ?? 0.2,
+		maxTokens: options.maxTokens ?? 8000,
 	});
 
 	if (!llmResult.ok) {
@@ -417,12 +446,12 @@ export async function fillTemplate(options: FillTemplateOptions): Promise<Result
 	const reviewNotes = buildReviewNotesForContext(ctx, template.metadata.id);
 
 	// Validate — add warnings to review notes if needed
-	const validation = validateFilledTemplate(
-		filledContent,
-		template.metadata.requiredSections,
-	);
+	const validation = validateFilledTemplate(filledContent, template.metadata.requiredSections);
 
-	const allReviewNotes = [...reviewNotes];
+	const allReviewNotes = [
+		"DRAFT — This document was auto-generated and has not been reviewed by qualified legal counsel",
+		...reviewNotes,
+	];
 	if (validation.unfilledPlaceholders.length > 0) {
 		allReviewNotes.push(
 			`WARNING: ${validation.unfilledPlaceholders.length} placeholder(s) were not filled by the LLM: ${validation.unfilledPlaceholders.join(", ")}`,
@@ -434,12 +463,15 @@ export async function fillTemplate(options: FillTemplateOptions): Promise<Result
 		);
 	}
 
+	// Validate citations against known article registry
+	const finalReviewNotes = flagUnverifiedCitations(citations, allReviewNotes);
+
 	return {
 		ok: true,
 		value: {
 			filledContent,
 			sections: [...sections],
-			reviewNotes: allReviewNotes,
+			reviewNotes: finalReviewNotes,
 			citations: [...citations],
 		},
 	};

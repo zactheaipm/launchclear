@@ -7,14 +7,12 @@ import type {
 	Result,
 } from "../core/types.js";
 import { buildProductContext } from "../intake/context-builder.js";
-import { loadAllQuestions } from "../intake/questions.js";
 import { getNextQuestions } from "../intake/question-router.js";
+import { loadAllQuestions } from "../intake/questions.js";
 
 // ─── Inquirer Question Adapters ───────────────────────────────────────────
 
-function mapQuestionType(
-	q: IntakeQuestion,
-): "input" | "list" | "checkbox" | "confirm" {
+function mapQuestionType(q: IntakeQuestion): "input" | "list" | "checkbox" | "confirm" {
 	switch (q.type) {
 		case "free-text":
 			return "input";
@@ -97,14 +95,8 @@ function recordAnswer(
 
 // ─── Progress Display ─────────────────────────────────────────────────────
 
-function displayProgress(
-	answeredCount: number,
-	totalEstimate: number,
-): void {
-	const pct = Math.min(
-		100,
-		Math.round((answeredCount / totalEstimate) * 100),
-	);
+function displayProgress(answeredCount: number, totalEstimate: number): void {
+	const pct = Math.min(100, Math.round((answeredCount / totalEstimate) * 100));
 	const bar = "█".repeat(Math.floor(pct / 5)) + "░".repeat(20 - Math.floor(pct / 5));
 	console.log(`\n  Progress: [${bar}] ${pct}%\n`);
 }
@@ -132,25 +124,17 @@ async function askFollowUp(questionId: string): Promise<string | undefined> {
 			message: "  Please elaborate (press Enter to skip):",
 		},
 	]);
-	return elaborate && String(elaborate).trim().length > 0
-		? String(elaborate)
-		: undefined;
+	return elaborate && String(elaborate).trim().length > 0 ? String(elaborate) : undefined;
 }
 
 // ─── Main Interactive Interview ───────────────────────────────────────────
 
-export async function runInteractiveIntake(): Promise<
-	Result<ProductContext, string>
-> {
+export async function runInteractiveIntake(): Promise<Result<ProductContext, string>> {
 	console.log("\n╔══════════════════════════════════════════════════╗");
 	console.log("║          LaunchClear — Compliance Intake         ║");
 	console.log("╚══════════════════════════════════════════════════╝\n");
-	console.log(
-		"  Answer the following questions about your AI product.",
-	);
-	console.log(
-		"  LaunchClear will determine your compliance requirements.\n",
-	);
+	console.log("  Answer the following questions about your AI product.");
+	console.log("  LaunchClear will determine your compliance requirements.\n");
 
 	// Load all questions
 	const questionsResult = loadAllQuestions();
@@ -172,11 +156,7 @@ export async function runInteractiveIntake(): Promise<
 		round++;
 
 		const selectedJurisdictions = getSelectedJurisdictions(answers);
-		const nextQuestions = getNextQuestions(
-			allQuestions,
-			answers,
-			selectedJurisdictions,
-		);
+		const nextQuestions = getNextQuestions(allQuestions, answers, selectedJurisdictions);
 
 		if (nextQuestions.length === 0) {
 			break;
@@ -214,14 +194,18 @@ export async function runInteractiveIntake(): Promise<
 		}
 	}
 
+	if (round >= MAX_ROUNDS) {
+		console.warn("\n  Warning: Interview reached the maximum number of rounds (20).");
+		console.warn("  Some conditional questions may not have been asked.");
+		console.warn("  Consider re-running with more specific initial answers.\n");
+	}
+
 	// Build product context
 	console.log("\n  Building product context from your answers...\n");
 
 	const contextResult = buildProductContext(answers);
 	if (!contextResult.ok) {
-		const errorMessages = contextResult.error
-			.map((e) => `${e.field}: ${e.message}`)
-			.join(", ");
+		const errorMessages = contextResult.error.map((e) => `${e.field}: ${e.message}`).join(", ");
 		return {
 			ok: false,
 			error: `Missing required information: ${errorMessages}`,
@@ -241,17 +225,29 @@ export function buildQuickContext(
 	const descLower = description.toLowerCase();
 	let productType: ProductContext["productType"] = "other";
 
-	if (descLower.includes("screen") || descLower.includes("filter") || descLower.includes("classif")) {
+	if (
+		descLower.includes("screen") ||
+		descLower.includes("filter") ||
+		descLower.includes("classif")
+	) {
 		productType = "classifier";
 	} else if (descLower.includes("recommend")) {
 		productType = "recommender";
-	} else if (descLower.includes("generat") || descLower.includes("chatbot") || descLower.includes("llm")) {
+	} else if (
+		descLower.includes("generat") ||
+		descLower.includes("chatbot") ||
+		descLower.includes("llm")
+	) {
 		productType = "generator";
 	} else if (descLower.includes("predict") || descLower.includes("forecast")) {
 		productType = "predictor";
 	} else if (descLower.includes("detect") || descLower.includes("anomal")) {
 		productType = "detector";
-	} else if (descLower.includes("rank") || descLower.includes("sort") || descLower.includes("priorit")) {
+	} else if (
+		descLower.includes("rank") ||
+		descLower.includes("sort") ||
+		descLower.includes("priorit")
+	) {
 		productType = "ranker";
 	} else if (descLower.includes("agent") || descLower.includes("autonom")) {
 		productType = "agent";
@@ -261,28 +257,54 @@ export function buildQuickContext(
 
 	// Infer data categories
 	const dataProcessed: ProductContext["dataProcessed"][number][] = ["personal"];
-	if (descLower.includes("resume") || descLower.includes("hiring") || descLower.includes("employ") || descLower.includes("job")) {
+	if (
+		descLower.includes("resume") ||
+		descLower.includes("hiring") ||
+		descLower.includes("employ") ||
+		descLower.includes("job")
+	) {
 		dataProcessed.push("employment");
 	}
-	if (descLower.includes("health") || descLower.includes("medical") || descLower.includes("patient")) {
+	if (
+		descLower.includes("health") ||
+		descLower.includes("medical") ||
+		descLower.includes("patient")
+	) {
 		dataProcessed.push("health");
 	}
-	if (descLower.includes("biometric") || descLower.includes("face") || descLower.includes("fingerprint")) {
+	if (
+		descLower.includes("biometric") ||
+		descLower.includes("face") ||
+		descLower.includes("fingerprint")
+	) {
 		dataProcessed.push("biometric");
 	}
-	if (descLower.includes("financial") || descLower.includes("credit") || descLower.includes("income")) {
+	if (
+		descLower.includes("financial") ||
+		descLower.includes("credit") ||
+		descLower.includes("income")
+	) {
 		dataProcessed.push("financial");
 	}
 
 	// Infer user populations
 	const userPopulations: ProductContext["userPopulations"][number][] = [];
-	if (descLower.includes("resume") || descLower.includes("hiring") || descLower.includes("applicant") || descLower.includes("candidate")) {
+	if (
+		descLower.includes("resume") ||
+		descLower.includes("hiring") ||
+		descLower.includes("applicant") ||
+		descLower.includes("candidate")
+	) {
 		userPopulations.push("job-applicants");
 	}
 	if (descLower.includes("employee") || descLower.includes("worker")) {
 		userPopulations.push("employees");
 	}
-	if (descLower.includes("consumer") || descLower.includes("user") || descLower.includes("customer")) {
+	if (
+		descLower.includes("consumer") ||
+		descLower.includes("user") ||
+		descLower.includes("customer")
+	) {
 		userPopulations.push("consumers");
 	}
 	if (descLower.includes("student")) {
@@ -297,19 +319,70 @@ export function buildQuickContext(
 
 	// Infer decision impact
 	let decisionImpact: ProductContext["decisionImpact"] = "advisory";
-	if (descLower.includes("auto-reject") || descLower.includes("auto reject") || descLower.includes("automat")) {
+	if (
+		descLower.includes("auto-reject") ||
+		descLower.includes("auto reject") ||
+		descLower.includes("automat")
+	) {
 		decisionImpact = "determinative";
-	} else if (descLower.includes("screen") || descLower.includes("filter") || descLower.includes("rank") || descLower.includes("score")) {
+	} else if (
+		descLower.includes("screen") ||
+		descLower.includes("filter") ||
+		descLower.includes("rank") ||
+		descLower.includes("score")
+	) {
 		decisionImpact = "material";
 	}
 
 	// Infer automation level
 	let automationLevel: ProductContext["automationLevel"] = "human-on-the-loop";
-	if (descLower.includes("auto-reject") || descLower.includes("fully automat") || descLower.includes("automatic")) {
+	if (
+		descLower.includes("auto-reject") ||
+		descLower.includes("fully automat") ||
+		descLower.includes("automatic")
+	) {
 		automationLevel = "fully-automated";
 	} else if (descLower.includes("human review") || descLower.includes("manual review")) {
 		automationLevel = "human-in-the-loop";
 	}
+
+	// Infer financial services sector context
+	const financialKeywords = [
+		"credit",
+		"lending",
+		"insurance",
+		"trading",
+		"aml",
+		"banking",
+		"loan",
+		"underwriting",
+		"kyc",
+		"anti-money",
+	];
+	const isFinancialSector = financialKeywords.some((kw) => descLower.includes(kw));
+
+	const sectorContext: ProductContext["sectorContext"] = isFinancialSector
+		? {
+				sector: "financial-services",
+				financialServices: {
+					subSector: "banking",
+					involvesCredit:
+						descLower.includes("credit") ||
+						descLower.includes("loan") ||
+						descLower.includes("lending"),
+					involvesInsurancePricing: descLower.includes("insurance"),
+					involvesTrading: descLower.includes("trading") || descLower.includes("algorithmic"),
+					involvesAmlKyc:
+						descLower.includes("aml") ||
+						descLower.includes("kyc") ||
+						descLower.includes("anti-money"),
+					involvesRegulatoryReporting: false,
+					regulatoryBodies: [],
+					hasMaterialityAssessment: false,
+					hasModelRiskGovernance: false,
+				},
+			}
+		: undefined;
 
 	const context: ProductContext = {
 		description,
@@ -330,6 +403,7 @@ export function buildQuickContext(
 		existingMeasures: [],
 		answers: {},
 		sourceMode: "cli-interview",
+		...(sectorContext ? { sectorContext } : {}),
 	};
 
 	return { ok: true, value: context };

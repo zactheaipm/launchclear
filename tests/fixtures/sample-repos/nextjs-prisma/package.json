@@ -1,0 +1,17 @@
+{
+	"name": "nextjs-prisma-sample",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"next": "^14.0.0",
+		"react": "^18.0.0",
+		"openai": "^4.0.0",
+		"@pinecone-database/pinecone": "^2.0.0",
+		"@segment/analytics-node": "^1.0.0",
+		"@prisma/client": "^5.0.0"
+	},
+	"devDependencies": {
+		"prisma": "^5.0.0",
+		"typescript": "^5.0.0"
+	}
+}

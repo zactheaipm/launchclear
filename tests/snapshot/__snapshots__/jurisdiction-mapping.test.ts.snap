@@ -1,0 +1,528 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshot: Agentic Customer Service (Singapore focus) > EU AI Act snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 0,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-ai-act",
+  "provisionCount": 0,
+  "recommendedActionIds": [],
+  "requiredActionIds": [],
+  "requiredArtifactTypes": [],
+  "riskLevel": "minimal",
+  "timelineDeadlineCount": 4,
+}
+`;
+
+exports[`Snapshot: Agentic Customer Service (Singapore focus) > EU GDPR snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 6,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-gdpr",
+  "provisionCount": 4,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "gdpr-controller-processor-determination",
+    "gdpr-data-subject-rights",
+    "gdpr-data-transfers",
+    "gdpr-legal-basis-assessment",
+    "gdpr-privacy-notice",
+    "gdpr-records-of-processing",
+    "gdpr-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "transparency-notice",
+  ],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: Agentic Customer Service (Singapore focus) > Singapore snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 4,
+  "hasGpaiClassification": false,
+  "jurisdiction": "singapore",
+  "provisionCount": 11,
+  "recommendedActionIds": [
+    "sg-cross-border-cbpr",
+    "sg-imda-ai-verify",
+  ],
+  "requiredActionIds": [
+    "sg-imda-agentic-end-user",
+    "sg-imda-agentic-human-accountability",
+    "sg-imda-agentic-risk-bound",
+    "sg-imda-agentic-technical-controls",
+    "sg-imda-genai-incident-reporting",
+    "sg-imda-genai-provenance",
+    "sg-imda-genai-testing",
+    "sg-pdpa-access-correction-part-iv",
+    "sg-pdpa-breach-notification-part-via",
+    "sg-pdpa-care-part-v",
+    "sg-pdpa-consent-part-iii",
+  ],
+  "requiredArtifactTypes": [
+    "risk-assessment",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 6,
+}
+`;
+
+exports[`Snapshot: Credit Scoring AI (Financial Services) > EU AI Act snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 0,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-ai-act",
+  "provisionCount": 8,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "eu-ai-act-accuracy-robustness",
+    "eu-ai-act-conformity-assessment",
+    "eu-ai-act-data-governance",
+    "eu-ai-act-deployer-human-oversight",
+    "eu-ai-act-deployer-input-data",
+    "eu-ai-act-deployer-instructions",
+    "eu-ai-act-deployer-monitoring",
+    "eu-ai-act-eu-database-registration",
+    "eu-ai-act-human-oversight",
+    "eu-ai-act-logging",
+    "eu-ai-act-post-market-monitoring",
+    "eu-ai-act-quality-management",
+    "eu-ai-act-risk-management",
+    "eu-ai-act-technical-docs",
+  ],
+  "requiredArtifactTypes": [
+    "conformity-assessment",
+    "model-card",
+    "risk-assessment",
+    "risk-classification",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 4,
+}
+`;
+
+exports[`Snapshot: Credit Scoring AI (Financial Services) > EU GDPR snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 6,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-gdpr",
+  "provisionCount": 4,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "gdpr-conduct-dpia",
+    "gdpr-controller-processor-determination",
+    "gdpr-data-subject-rights",
+    "gdpr-legal-basis-assessment",
+    "gdpr-privacy-notice",
+    "gdpr-records-of-processing",
+    "gdpr-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "dpia",
+    "transparency-notice",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: Credit Scoring AI (Financial Services) > Singapore snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 4,
+  "hasGpaiClassification": false,
+  "jurisdiction": "singapore",
+  "provisionCount": 7,
+  "recommendedActionIds": [
+    "sg-cross-border-cbpr",
+  ],
+  "requiredActionIds": [
+    "sg-mas-credit-fairness-testing",
+    "sg-mas-governance-structure",
+    "sg-mas-lifecycle-controls",
+    "sg-mas-materiality-assessment",
+    "sg-pdpa-access-correction-part-iv",
+    "sg-pdpa-breach-notification-part-via",
+    "sg-pdpa-care-part-v",
+    "sg-pdpa-consent-part-iii",
+  ],
+  "requiredArtifactTypes": [
+    "bias-audit",
+    "model-card",
+    "risk-assessment",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 6,
+}
+`;
+
+exports[`Snapshot: Credit Scoring AI (Financial Services) > US Federal snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 8,
+  "hasGpaiClassification": false,
+  "jurisdiction": "us-federal",
+  "provisionCount": 4,
+  "recommendedActionIds": [
+    "us-nist-rmf-alignment",
+  ],
+  "requiredActionIds": [
+    "us-cfpb-adverse-action",
+    "us-cfpb-fair-lending-testing",
+    "us-ftc-transparency",
+    "us-sr-11-7-governance",
+    "us-sr-11-7-monitoring",
+    "us-sr-11-7-validation",
+  ],
+  "requiredArtifactTypes": [
+    "bias-audit",
+    "model-card",
+    "risk-assessment",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 2,
+}
+`;
+
+exports[`Snapshot: Foundation Model Provider (EU + China) > China snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 3,
+  "hasGpaiClassification": false,
+  "jurisdiction": "china",
+  "provisionCount": 15,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "china-pipl-automated-decisions",
+    "china-pipl-consent",
+    "china-pipl-cross-border",
+    "china-pipl-sensitive-pi",
+    "cn-algorithm-filing",
+    "cn-deep-synthesis-labeling",
+    "cn-deep-synthesis-records",
+  ],
+  "requiredArtifactTypes": [
+    "genai-content-policy",
+    "risk-assessment",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 3,
+}
+`;
+
+exports[`Snapshot: Foundation Model Provider (EU + China) > EU AI Act snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 0,
+  "hasGpaiClassification": true,
+  "jurisdiction": "eu-ai-act",
+  "provisionCount": 2,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "eu-ai-act-gpai-copyright",
+    "eu-ai-act-gpai-downstream-docs",
+    "eu-ai-act-gpai-tech-docs",
+    "eu-ai-act-gpai-training-summary",
+  ],
+  "requiredArtifactTypes": [
+    "gpai-technical-documentation",
+    "gpai-training-data-summary",
+    "model-card",
+  ],
+  "riskLevel": "minimal",
+  "timelineDeadlineCount": 4,
+}
+`;
+
+exports[`Snapshot: Foundation Model Provider (EU + China) > EU GDPR snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 6,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-gdpr",
+  "provisionCount": 6,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "gdpr-conduct-dpia",
+    "gdpr-controller-processor-determination",
+    "gdpr-data-subject-rights",
+    "gdpr-genai-erasure-policy",
+    "gdpr-genai-training-legal-basis",
+    "gdpr-legal-basis-assessment",
+    "gdpr-privacy-notice",
+    "gdpr-records-of-processing",
+    "gdpr-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "dpia",
+    "model-card",
+    "transparency-notice",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: GenAI Chatbot Multi-Market > China snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 3,
+  "hasGpaiClassification": false,
+  "jurisdiction": "china",
+  "provisionCount": 14,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "china-pipl-automated-decisions",
+    "china-pipl-consent",
+    "china-pipl-cross-border",
+    "china-pipl-sensitive-pi",
+    "cn-algorithm-filing",
+    "cn-cac-complaint-mechanism",
+    "cn-cac-content-labeling",
+    "cn-cac-content-review-mechanism",
+    "cn-cac-safety-assessment",
+    "cn-cac-training-data-verification",
+    "cn-cac-user-identity-verification",
+    "cn-deep-synthesis-labeling",
+    "cn-deep-synthesis-records",
+    "cn-safety-governance-committee",
+  ],
+  "requiredArtifactTypes": [
+    "genai-content-policy",
+    "genai-content-policy",
+    "risk-assessment",
+    "risk-assessment",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 3,
+}
+`;
+
+exports[`Snapshot: GenAI Chatbot Multi-Market > EU AI Act snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 0,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-ai-act",
+  "provisionCount": 1,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "eu-ai-act-transparency-disclosure",
+  ],
+  "requiredArtifactTypes": [
+    "transparency-notice",
+  ],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 4,
+}
+`;
+
+exports[`Snapshot: GenAI Chatbot Multi-Market > EU GDPR snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 6,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-gdpr",
+  "provisionCount": 4,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "gdpr-controller-processor-determination",
+    "gdpr-data-subject-rights",
+    "gdpr-data-transfers",
+    "gdpr-legal-basis-assessment",
+    "gdpr-privacy-notice",
+    "gdpr-records-of-processing",
+    "gdpr-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "transparency-notice",
+  ],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: GenAI Chatbot Multi-Market > Singapore snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 4,
+  "hasGpaiClassification": false,
+  "jurisdiction": "singapore",
+  "provisionCount": 7,
+  "recommendedActionIds": [
+    "sg-cross-border-cbpr",
+    "sg-imda-ai-verify",
+  ],
+  "requiredActionIds": [
+    "sg-imda-genai-incident-reporting",
+    "sg-imda-genai-provenance",
+    "sg-imda-genai-testing",
+    "sg-pdpa-access-correction-part-iv",
+    "sg-pdpa-breach-notification-part-via",
+    "sg-pdpa-care-part-v",
+    "sg-pdpa-consent-part-iii",
+  ],
+  "requiredArtifactTypes": [],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 6,
+}
+`;
+
+exports[`Snapshot: GenAI Chatbot Multi-Market > UK snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 4,
+  "hasGpaiClassification": false,
+  "jurisdiction": "uk",
+  "provisionCount": 5,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "uk-data-subject-rights",
+    "uk-dsit-transparency-disclosure",
+    "uk-genai-content-disclosure",
+    "uk-legal-basis-assessment",
+    "uk-privacy-notice",
+    "uk-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "transparency-notice",
+  ],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 9,
+}
+`;
+
+exports[`Snapshot: Resume Screening (Employment AI) > EU AI Act snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 0,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-ai-act",
+  "provisionCount": 8,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "eu-ai-act-accuracy-robustness",
+    "eu-ai-act-conformity-assessment",
+    "eu-ai-act-data-governance",
+    "eu-ai-act-deployer-human-oversight",
+    "eu-ai-act-deployer-input-data",
+    "eu-ai-act-deployer-instructions",
+    "eu-ai-act-deployer-monitoring",
+    "eu-ai-act-eu-database-registration",
+    "eu-ai-act-human-oversight",
+    "eu-ai-act-logging",
+    "eu-ai-act-post-market-monitoring",
+    "eu-ai-act-quality-management",
+    "eu-ai-act-risk-management",
+    "eu-ai-act-technical-docs",
+  ],
+  "requiredArtifactTypes": [
+    "conformity-assessment",
+    "model-card",
+    "risk-assessment",
+    "risk-classification",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 4,
+}
+`;
+
+exports[`Snapshot: Resume Screening (Employment AI) > EU GDPR snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 6,
+  "hasGpaiClassification": false,
+  "jurisdiction": "eu-gdpr",
+  "provisionCount": 5,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "gdpr-art22-safeguards",
+    "gdpr-conduct-dpia",
+    "gdpr-controller-processor-determination",
+    "gdpr-data-subject-rights",
+    "gdpr-legal-basis-assessment",
+    "gdpr-privacy-notice",
+    "gdpr-records-of-processing",
+    "gdpr-security-measures",
+  ],
+  "requiredArtifactTypes": [
+    "dpia",
+    "transparency-notice",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: Resume Screening (Employment AI) > Illinois snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 1,
+  "hasGpaiClassification": false,
+  "jurisdiction": "us-il",
+  "provisionCount": 1,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "us-il-hra-bias-testing",
+    "us-il-hra-notice",
+  ],
+  "requiredArtifactTypes": [
+    "bias-audit",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 3,
+}
+`;
+
+exports[`Snapshot: Resume Screening (Employment AI) > NYC (LL144) snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 1,
+  "hasGpaiClassification": false,
+  "jurisdiction": "us-ny",
+  "provisionCount": 4,
+  "recommendedActionIds": [],
+  "requiredActionIds": [
+    "us-ny-ll144-candidate-notice",
+    "us-ny-ll144-conduct-audit",
+    "us-ny-ll144-data-deletion",
+    "us-ny-ll144-engage-auditor",
+    "us-ny-ll144-publish-results",
+  ],
+  "requiredArtifactTypes": [
+    "bias-audit",
+    "transparency-notice",
+  ],
+  "riskLevel": "high",
+  "timelineDeadlineCount": 1,
+}
+`;
+
+exports[`Snapshot: Resume Screening (Employment AI) > US Federal snapshot 1`] = `
+{
+  "applicableLawCount": 1,
+  "enforcementCaseCount": 8,
+  "hasGpaiClassification": false,
+  "jurisdiction": "us-federal",
+  "provisionCount": 3,
+  "recommendedActionIds": [
+    "us-nist-rmf-alignment",
+  ],
+  "requiredActionIds": [
+    "eeoc-ada-screening",
+    "eeoc-disparate-impact-testing",
+    "us-ftc-fair-ai-decisions",
+    "us-ftc-transparency",
+  ],
+  "requiredArtifactTypes": [],
+  "riskLevel": "limited",
+  "timelineDeadlineCount": 2,
+}
+`;

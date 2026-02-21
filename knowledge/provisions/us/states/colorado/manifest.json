@@ -1,0 +1,23 @@
+{
+	"id": "us-co",
+	"law": "Colorado AI Act",
+	"jurisdiction": "US-CO",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "us-co-ai-act",
+			"title": "Colorado AI Act (SB 24-205)",
+			"article": "SB 24-205",
+			"file": "colorado-ai-act.md",
+			"topics": [
+				"automated-decisions",
+				"high-risk",
+				"algorithmic-discrimination",
+				"transparency",
+				"impact-assessment",
+				"developer-obligations",
+				"deployer-obligations"
+			]
+		}
+	]
+}

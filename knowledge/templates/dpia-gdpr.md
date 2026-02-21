@@ -10,6 +10,9 @@ requiredSections:
   - risk-mitigation
   - dpo-consultation
   - data-subject-views
+  - lawful-basis-analysis
+  - data-retention-schedule
+  - international-data-transfers
 ---
 
 # Data Protection Impact Assessment (DPIA)
@@ -229,6 +232,40 @@ requiredSections:
 **REVIEW NOTES FOR LEGAL TEAM**:
 
 {{review_notes}}
+
+---
+
+## 8. Lawful Basis Analysis
+
+### 8.1 Primary Legal Basis (Article 6)
+{{LAWFUL_BASIS_ASSESSMENT}}
+
+### 8.2 Special Category Data (Article 9)
+{{SPECIAL_CATEGORY_BASIS}}
+
+### 8.3 Legitimate Interest Balancing Test (if Article 6(1)(f) relied upon)
+{{LEGITIMATE_INTEREST_ASSESSMENT}}
+
+## 9. Data Retention Schedule
+
+| Data Category | Retention Period | Legal Basis for Retention | Deletion Process |
+|---|---|---|---|
+| {{DATA_CATEGORY_1}} | {{RETENTION_PERIOD_1}} | {{RETENTION_BASIS_1}} | {{DELETION_PROCESS_1}} |
+| {{DATA_CATEGORY_2}} | {{RETENTION_PERIOD_2}} | {{RETENTION_BASIS_2}} | {{DELETION_PROCESS_2}} |
+
+### 9.1 Retention Review Process
+{{RETENTION_REVIEW_PROCESS}}
+
+## 10. International Data Transfers
+
+### 10.1 Transfer Mapping
+{{TRANSFER_MAP}}
+
+### 10.2 Transfer Mechanism Assessment
+{{TRANSFER_MECHANISM}}
+
+### 10.3 Supplementary Measures (post-Schrems II)
+{{SUPPLEMENTARY_MEASURES}}
 
 ---
 

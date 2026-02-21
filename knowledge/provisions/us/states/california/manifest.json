@@ -1,0 +1,50 @@
+{
+	"id": "us-ca",
+	"law": "California AI and Privacy Laws",
+	"jurisdiction": "US-CA",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "us-ca-ccpa-cpra",
+			"title": "CCPA/CPRA Automated Decision-Making",
+			"article": "CCPA/CPRA",
+			"file": "ccpa-cpra-ai.md",
+			"topics": [
+				"data-privacy",
+				"automated-decisions",
+				"opt-out",
+				"profiling",
+				"consumer-rights",
+				"data-broker"
+			]
+		},
+		{
+			"id": "us-ca-sb942-genai",
+			"title": "SB 942 GenAI Transparency Act",
+			"article": "SB 942",
+			"file": "sb942-genai-transparency.md",
+			"topics": [
+				"generative-ai",
+				"transparency",
+				"disclosure",
+				"content-provenance",
+				"watermarking",
+				"ai-detection"
+			]
+		},
+		{
+			"id": "us-ca-deepfakes",
+			"title": "California Deepfake Laws",
+			"article": "AB 730, AB 602, AB 1836",
+			"file": "deepfake-laws.md",
+			"topics": [
+				"deepfakes",
+				"synthetic-media",
+				"political-deepfakes",
+				"sexual-deepfakes",
+				"right-of-publicity",
+				"elections"
+			]
+		}
+	]
+}

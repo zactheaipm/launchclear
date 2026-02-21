@@ -1,3 +1,28 @@
+// ─── Error Taxonomy ──────────────────────────────────────────────────────────
+
+export type LaunchClearErrorCategory =
+	| "template-load"
+	| "llm-provider"
+	| "validation"
+	| "provision-not-found"
+	| "file-io"
+	| "intake"
+	| "jurisdiction-mapping";
+
+export interface LaunchClearError {
+	readonly category: LaunchClearErrorCategory;
+	readonly message: string;
+	readonly cause?: Error;
+}
+
+export function createLaunchClearError(
+	category: LaunchClearErrorCategory,
+	message: string,
+	cause?: Error,
+): LaunchClearError {
+	return { category, message, cause };
+}
+
 // ─── Result Type (Errors as Values) ────────────────────────────────────────
 export type Result<T, E = Error> =
 	| { readonly ok: true; readonly value: T }
@@ -60,6 +85,13 @@ export type MarketReadinessStatus = "ready" | "action-required" | "blocked";
 export type ActionPriority = "critical" | "important" | "recommended";
 
 export type RiskLevel = "unacceptable" | "high" | "limited" | "minimal" | "undetermined";
+
+export type RegulatoryForce =
+	| "binding-law"
+	| "binding-regulation"
+	| "supervisory-guidance"
+	| "voluntary-framework"
+	| "pending-legislation";
 
 export type ArtifactType =
 	| "dpia"
@@ -289,6 +321,7 @@ export interface ProductContext {
 	readonly existingMeasures: readonly ExistingMeasure[];
 	readonly answers: Readonly<Record<string, Answer>>;
 	readonly sourceMode: SourceMode;
+	readonly launchDate?: string;
 	readonly codebaseInferences?: readonly CodebaseInference[];
 	readonly gpaiInfo?: GpaiInfo;
 	readonly generativeAiContext?: GenerativeAiContext;
@@ -353,6 +386,9 @@ export interface ApplicableProvision {
 	readonly summary: string;
 	readonly relevance: string;
 	readonly url?: string;
+	readonly regulatoryForce?: RegulatoryForce;
+	readonly enforcementAuthority?: string;
+	readonly maxPenalty?: string;
 }
 
 export interface ApplicableLaw {
@@ -369,6 +405,7 @@ export interface RiskClassification {
 	readonly justification: string;
 	readonly applicableCategories: readonly string[];
 	readonly provisions: readonly string[];
+	readonly riskFramework?: string;
 }
 
 // ─── Compliance Timeline ───────────────────────────────────────────────────
@@ -443,6 +480,9 @@ export interface ActionItem {
 	readonly estimatedEffort: string;
 	readonly deadline: string | null;
 	readonly verificationCriteria: readonly string[];
+	readonly basePriority?: ActionPriority;
+	readonly dependsOn?: readonly string[];
+	readonly conflictsWith?: readonly string[];
 }
 
 export interface ActionPlan {
@@ -550,6 +590,22 @@ export interface LLMResponse {
 
 // ─── Codebase Analysis Types ───────────────────────────────────────────────
 
+export type SignalCategory =
+	| "data-collection"
+	| "data-storage"
+	| "pii"
+	| "third-party"
+	| "automated-decision"
+	| "user-auth"
+	| "consent"
+	| "training-data"
+	| "genai"
+	| "rag"
+	| "content-safety"
+	| "watermarking"
+	| "agentic"
+	| "financial-services";
+
 export interface CodebaseContext {
 	readonly dataCollected: readonly CodebaseSignal[];
 	readonly piiDetected: readonly CodebaseSignal[];
@@ -558,15 +614,41 @@ export interface CodebaseContext {
 	readonly consentMechanisms: readonly CodebaseSignal[];
 	readonly authFlows: readonly CodebaseSignal[];
 	readonly trainingDataSources: readonly CodebaseSignal[];
+	readonly genAiSignals: readonly CodebaseSignal[];
+	readonly ragSignals: readonly CodebaseSignal[];
+	readonly contentSafetySignals: readonly CodebaseSignal[];
+	readonly watermarkingSignals: readonly CodebaseSignal[];
+	readonly agenticSignals: readonly CodebaseSignal[];
+	readonly financialServiceSignals: readonly CodebaseSignal[];
 }
 
 export interface CodebaseSignal {
+	readonly category: SignalCategory;
 	readonly type: string;
 	readonly description: string;
 	readonly filePath: string;
 	readonly lineNumber?: number;
 	readonly confidence: ConfidenceLevel;
 	readonly evidence: string;
+}
+
+export interface SignalPattern {
+	readonly id: string;
+	readonly category: SignalCategory;
+	readonly description: string;
+	readonly pattern: RegExp;
+	readonly confidence: ConfidenceLevel;
+	readonly fileGlobs?: readonly string[];
+}
+
+export interface ExtractorResult {
+	readonly signals: readonly CodebaseSignal[];
+}
+
+export interface CodebaseAnalysisResult {
+	readonly context: CodebaseContext;
+	readonly inferences: readonly CodebaseInference[];
+	readonly remainingQuestions: readonly IntakeQuestion[];
 }
 
 // ─── Regulation Pipeline Types ─────────────────────────────────────────────
@@ -594,6 +676,107 @@ export interface SectionDiff {
 	readonly previousText?: string;
 	readonly currentText?: string;
 	readonly summary: string;
+}
+
+// ─── Regulation Pipeline Extended Types ─────────────────────────────────────
+
+export type RegulationFormat = "json" | "html" | "xml" | "pdf";
+
+export interface ApiSourceConfig {
+	readonly apiKeyEnvVar?: string;
+	readonly headers?: Readonly<Record<string, string>>;
+	readonly queryParams?: Readonly<Record<string, string>>;
+	readonly resultPath?: string;
+}
+
+export interface ScrapeSourceConfig {
+	readonly articleSelector: string;
+	readonly sectionSelector: string;
+	readonly titleSelector?: string;
+	readonly encoding?: string;
+}
+
+export interface RegulationSourceConfig {
+	readonly id: string;
+	readonly name: string;
+	readonly jurisdiction: string;
+	readonly baseUrl: string;
+	readonly type: "api" | "scrape";
+	readonly format: RegulationFormat;
+	readonly rateLimitMs: number;
+	readonly apiConfig?: ApiSourceConfig;
+	readonly scrapeConfig?: ScrapeSourceConfig;
+	readonly lastFetched?: string;
+}
+
+export interface FetchedRegulation {
+	readonly sourceId: string;
+	readonly fetchedAt: string;
+	readonly rawContent: string;
+	readonly format: RegulationFormat;
+	readonly url: string;
+	readonly etag?: string;
+	readonly contentHash: string;
+}
+
+export interface ProcessedSection {
+	readonly id: string;
+	readonly title: string;
+	readonly article: string;
+	readonly content: string;
+	readonly topics: readonly string[];
+}
+
+export interface ProcessedRegulation {
+	readonly sourceId: string;
+	readonly processedAt: string;
+	readonly manifest: ProvisionManifest;
+	readonly sections: readonly ProcessedSection[];
+}
+
+export interface ValidationError {
+	readonly sectionId: string;
+	readonly message: string;
+	readonly severity: "error" | "warning";
+}
+
+export interface ValidationWarning {
+	readonly sectionId: string;
+	readonly message: string;
+	readonly suggestion: string;
+}
+
+export interface ValidationResult {
+	readonly isValid: boolean;
+	readonly errors: readonly ValidationError[];
+	readonly warnings: readonly ValidationWarning[];
+}
+
+export interface ChangelogEntry {
+	readonly sectionId: string;
+	readonly type: "added" | "removed" | "modified";
+	readonly title: string;
+	readonly description: string;
+}
+
+export interface RegulationChangelog {
+	readonly sourceId: string;
+	readonly generatedAt: string;
+	readonly previousVersion: string;
+	readonly currentVersion: string;
+	readonly summary: string;
+	readonly entries: readonly ChangelogEntry[];
+	readonly affectedMappings: readonly string[];
+}
+
+export interface RegulationPipelineResult {
+	readonly sourceId: string;
+	readonly fetched: FetchedRegulation;
+	readonly processed: ProcessedRegulation;
+	readonly diff: RegulationDiff | null;
+	readonly changelog: RegulationChangelog | null;
+	readonly validation: ValidationResult;
+	readonly snapshotPath: string;
 }
 
 // ─── Configuration ─────────────────────────────────────────────────────────

@@ -1,0 +1,79 @@
+{
+	"id": "china",
+	"law": "China AI Regulatory Framework",
+	"jurisdiction": "China",
+	"lastUpdated": "2026-02-21",
+	"sections": [
+		{
+			"id": "cn-cac-genai-measures",
+			"title": "CAC Interim Measures for Generative AI Services",
+			"article": "CAC GenAI Measures (Aug 2023)",
+			"file": "cac-genai-measures.md",
+			"topics": [
+				"generative-ai",
+				"algorithm-filing",
+				"content-review",
+				"training-data",
+				"labeling",
+				"socialist-core-values",
+				"content-moderation"
+			]
+		},
+		{
+			"id": "cn-cac-algorithm-registry",
+			"title": "Algorithm Registration Requirements",
+			"article": "Algorithm Filing Provisions",
+			"file": "cac-algorithm-registry.md",
+			"topics": [
+				"algorithm-filing",
+				"registration",
+				"transparency",
+				"assessment",
+				"public-opinion",
+				"recommendation"
+			]
+		},
+		{
+			"id": "cn-cac-deep-synthesis",
+			"title": "Deep Synthesis Technology Regulations",
+			"article": "Deep Synthesis Provisions (Jan 2023)",
+			"file": "cac-deep-synthesis.md",
+			"topics": [
+				"deep-synthesis",
+				"deepfakes",
+				"synthetic-media",
+				"face-generation",
+				"voice-synthesis",
+				"labeling",
+				"consent"
+			]
+		},
+		{
+			"id": "cn-cac-recommendation-algo",
+			"title": "Recommendation Algorithm Provisions",
+			"article": "Algorithm Recommendation Provisions (Mar 2022)",
+			"file": "cac-recommendation-algo.md",
+			"topics": [
+				"recommendation-algorithm",
+				"algorithmic-transparency",
+				"user-rights",
+				"information-service",
+				"personalization"
+			]
+		},
+		{
+			"id": "cn-pipl-cross-border",
+			"title": "PIPL Cross-Border Personal Information Transfer",
+			"article": "PIPL Articles 38-40",
+			"file": "pipl-cross-border.md",
+			"topics": [
+				"personal-information",
+				"cross-border-transfer",
+				"data-localization",
+				"security-assessment",
+				"consent",
+				"pipl"
+			]
+		}
+	]
+}

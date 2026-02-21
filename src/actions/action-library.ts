@@ -30,8 +30,11 @@ export interface ActionLibraryEntry {
 	readonly legalBasis: string;
 	readonly defaultPriority: ActionPriority;
 	readonly estimatedEffort: string;
+	readonly deadline?: string | null;
 	readonly verificationCriteria: readonly string[];
 	readonly bestPracticeRef?: string;
+	readonly dependsOn?: readonly string[];
+	readonly conflictsWith?: readonly string[];
 }
 
 // ─── Action Library ──────────────────────────────────────────────────────
@@ -126,6 +129,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Mitigation measures identified and implementation planned",
 			"Supervisory authority consultation completed if residual risk remains high",
 		],
+		dependsOn: ["data-governance-legal-basis"],
 	},
 	{
 		id: "data-governance-data-subject-rights",
@@ -133,7 +137,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		description:
 			"Enable data subjects to exercise their rights: access, rectification, erasure, restriction, portability, and objection. For AI systems, consider how these rights apply to automated processing and model training data.",
 		category: "data-governance",
-		jurisdictions: ["eu-gdpr", "uk", "brazil", "us-california"],
+		jurisdictions: ["eu-gdpr", "uk", "brazil", "us-ca"],
 		legalBasis: "GDPR Articles 12-23, LGPD Articles 17-21, CCPA/CPRA",
 		defaultPriority: "critical",
 		estimatedEffort: "3-6 weeks",
@@ -154,17 +158,8 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		description:
 			"Provide transparent information to users and data subjects about AI processing: purposes, legal basis, data categories, retention periods, rights, and meaningful information about the logic involved in automated decision-making.",
 		category: "transparency",
-		jurisdictions: [
-			"eu-ai-act",
-			"eu-gdpr",
-			"uk",
-			"us-federal",
-			"us-california",
-			"singapore",
-			"brazil",
-		],
-		legalBasis:
-			"EU AI Act Articles 50-52, GDPR Articles 13-14, CCPA §1798.100, LGPD Article 9",
+		jurisdictions: ["eu-ai-act", "eu-gdpr", "uk", "us-federal", "us-ca", "singapore", "brazil"],
+		legalBasis: "EU AI Act Articles 50-52, GDPR Articles 13-14, CCPA §1798.100, LGPD Article 9",
 		defaultPriority: "critical",
 		estimatedEffort: "1-2 weeks",
 		verificationCriteria: [
@@ -237,8 +232,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Define and implement human approval checkpoints for autonomous AI actions, especially those with financial, legal, or safety implications. Implement kill switches, rollback capabilities, and action scope limits. Log all autonomous actions for audit.",
 		category: "human-oversight",
 		jurisdictions: ["singapore", "eu-ai-act", "uk", "us-federal"],
-		legalBasis:
-			"Singapore IMDA Agentic AI Framework, EU AI Act Article 14, NIST AI RMF",
+		legalBasis: "Singapore IMDA Agentic AI Framework, EU AI Act Article 14, NIST AI RMF",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
 		verificationCriteria: [
@@ -283,6 +277,108 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		bestPracticeRef: "bias-testing",
 	},
 	{
+		id: "bias-testing-eu-protected-groups",
+		title: "Conduct EU AI Act bias testing across protected grounds",
+		description:
+			"Test AI system for bias across EU-recognised protected grounds: racial or ethnic origin, sex, disability, age, religion or belief, sexual orientation, and nationality. EU AI Act Article 10(2)(f) requires bias examination of training data. Testing methodology should align with emerging EU harmonised standards for AI bias assessment.",
+		category: "bias-testing",
+		jurisdictions: ["eu-ai-act", "eu-gdpr"],
+		legalBasis: "EU AI Act Article 10(2)(f), EU Charter of Fundamental Rights",
+		defaultPriority: "critical",
+		estimatedEffort: "4-8 weeks",
+		dependsOn: ["data-governance-quality"],
+		verificationCriteria: [
+			"Testing covers all EU Treaty-recognised protected grounds",
+			"Bias metrics calculated with disaggregated analysis per protected ground",
+			"Training data bias examination documented per Article 10(2)(f)",
+			"Testing methodology aligns with emerging EU harmonised standards",
+			"Results documented for conformity assessment evidence",
+			"Remediation measures documented for identified disparities",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
+		id: "bias-testing-uk-equality-act",
+		title: "Conduct UK Equality Act protected characteristics bias testing",
+		description:
+			"Test AI system for discriminatory outcomes across all nine protected characteristics under the Equality Act 2010: age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, and sexual orientation. FCA Consumer Duty reinforces outcomes-focused testing for financial services AI.",
+		category: "bias-testing",
+		jurisdictions: ["uk"],
+		legalBasis: "Equality Act 2010, UK GDPR, FCA Consumer Duty",
+		defaultPriority: "critical",
+		estimatedEffort: "4-8 weeks",
+		verificationCriteria: [
+			"Testing covers all nine Equality Act 2010 protected characteristics",
+			"Disparate impact analysis completed for each characteristic",
+			"Intersectional analysis performed where data permits",
+			"Testing methodology documented for ICO / FCA review",
+			"Consumer outcomes analysis completed (if financial services)",
+			"Remediation plan for identified disparities documented",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
+		id: "bias-testing-cfpb-fair-lending",
+		title: "Conduct CFPB-aligned fair lending AI testing",
+		description:
+			"Test AI credit models for disparate impact across ECOA protected classes: race, color, religion, national origin, sex, marital status, age, receipt of public assistance. Generate specific and accurate adverse action reason codes per Regulation B. CFPB has stated that 'black box' AI models do not excuse failure to provide specific reasons for adverse actions.",
+		category: "bias-testing",
+		jurisdictions: ["us-federal"],
+		legalBasis: "ECOA, Regulation B, CFPB Circular 2022-03",
+		defaultPriority: "critical",
+		estimatedEffort: "4-8 weeks",
+		dependsOn: ["financial-model-risk-governance"],
+		verificationCriteria: [
+			"Disparate impact testing completed across all ECOA protected classes",
+			"Four-fifths (80%) rule analysis documented",
+			"Adverse action reason codes generated and validated for specificity",
+			"CFPB 'black box' model risk addressed — explainability approach documented",
+			"Less discriminatory alternative analysis completed",
+			"Testing methodology documented for regulatory examination",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
+		id: "bias-testing-singapore-fairness",
+		title: "Conduct Singapore Model AI Governance Framework fairness testing",
+		description:
+			"Test AI system for fairness aligned with Singapore's Model AI Governance Framework and PDPC guidelines. Testing should be proportionate to risk materiality. For financial services AI, align with MAS expectations on fairness in AI-driven decisions.",
+		category: "bias-testing",
+		jurisdictions: ["singapore"],
+		legalBasis: "PDPC Model AI Governance Framework, MAS AI Risk Management Guidelines",
+		defaultPriority: "important",
+		estimatedEffort: "3-6 weeks",
+		verificationCriteria: [
+			"Fairness metrics selected appropriate to use case and context",
+			"Testing proportionate to risk materiality level",
+			"Results documented with consideration of Singapore's multi-ethnic context",
+			"For financial services: MAS fairness expectations addressed",
+			"AI Verify toolkit considered for structured testing",
+			"Remediation measures documented for identified issues",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
+		id: "bias-testing-colorado-ai-act",
+		title: "Conduct Colorado AI Act algorithmic discrimination testing",
+		description:
+			"Test high-risk AI system for algorithmic discrimination as required by the Colorado AI Act (SB 205). Deployers of high-risk AI must conduct impact assessments and test for discrimination based on age, color, disability, ethnicity, genetic information, national origin, race, religion, sex, veteran status, or other protected classes under Colorado law.",
+		category: "bias-testing",
+		jurisdictions: ["us-colorado"],
+		legalBasis: "Colorado AI Act (SB 21-169, SB 24-205)",
+		defaultPriority: "critical",
+		estimatedEffort: "4-8 weeks",
+		verificationCriteria: [
+			"Impact assessment completed per Colorado AI Act requirements",
+			"Testing covers all Colorado-recognised protected classes",
+			"Risk management policy for algorithmic discrimination documented",
+			"Consumer notification mechanisms for AI decisions implemented",
+			"Testing results retained per Colorado record-keeping requirements",
+			"Annual review cycle established for high-risk AI assessments",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
 		id: "bias-audit-nyc",
 		title: "Complete NYC LL144 bias audit for automated employment decisions",
 		description:
@@ -292,6 +388,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "NYC Local Law 144 (2021)",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "Annual — within one year of prior audit",
 		verificationCriteria: [
 			"Independent auditor engaged",
 			"Bias audit completed within the past year",
@@ -301,6 +398,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Audit summary published on company website",
 			"Candidates notified of AEDT use at least 10 business days before use",
 		],
+		dependsOn: ["bias-testing-fairness"],
 	},
 
 	// ── Consent ──────────────────────────────────────────────────────────
@@ -311,7 +409,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		description:
 			"Design and implement consent collection that meets jurisdictional requirements: freely given, specific, informed, unambiguous (GDPR); clear affirmative act; ability to withdraw consent easily; separate consent for different processing purposes.",
 		category: "consent",
-		jurisdictions: ["eu-gdpr", "uk", "brazil", "singapore", "us-california"],
+		jurisdictions: ["eu-gdpr", "uk", "brazil", "singapore", "us-ca"],
 		legalBasis: "GDPR Article 7, LGPD Article 8, PDPA, CCPA/CPRA",
 		defaultPriority: "critical",
 		estimatedEffort: "2-4 weeks",
@@ -323,6 +421,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Pre-ticked boxes or bundled consent avoided",
 		],
 		bestPracticeRef: "consent-mechanisms",
+		dependsOn: ["data-governance-legal-basis"],
 	},
 	{
 		id: "consent-children",
@@ -364,6 +463,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Re-validation triggers defined",
 		],
 		bestPracticeRef: "monitoring",
+		dependsOn: ["documentation-technical"],
 	},
 	{
 		id: "monitoring-logging",
@@ -396,6 +496,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 11, Annex IV",
 		defaultPriority: "critical",
 		estimatedEffort: "2-4 weeks",
+		deadline: "2026-08-02",
 		verificationCriteria: [
 			"System description and intended purpose documented",
 			"Development process and design choices documented",
@@ -452,6 +553,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Articles 43-44",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "2026-08-02",
 		verificationCriteria: [
 			"Conformity assessment procedure completed",
 			"Quality management system established (Article 17)",
@@ -460,6 +562,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"CE marking affixed",
 			"Third-party notified body engaged (if biometric identification)",
 		],
+		dependsOn: ["documentation-technical", "documentation-risk-management"],
 	},
 	{
 		id: "documentation-quality-management",
@@ -489,8 +592,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Deploy content safety filters to prevent harmful, illegal, or policy-violating generated content. Use moderation APIs, custom classifiers, or human review for high-risk output categories. Test filters across diverse inputs and edge cases.",
 		category: "genai-content-safety",
 		jurisdictions: ["eu-ai-act", "china", "us-federal", "uk", "singapore", "brazil"],
-		legalBasis:
-			"EU AI Act Article 55, China CAC GenAI Measures Articles 4-7, FTC Act Section 5",
+		legalBasis: "EU AI Act Article 55, China CAC GenAI Measures Articles 4-7, FTC Act Section 5",
 		defaultPriority: "critical",
 		estimatedEffort: "3-6 weeks",
 		verificationCriteria: [
@@ -513,6 +615,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "CAC Interim Measures for GenAI Services Articles 4-7",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "Before providing GenAI services in China",
 		verificationCriteria: [
 			"Content review system implemented per CAC requirements",
 			"Prohibited content categories from CAC measures addressed",
@@ -530,16 +633,8 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		description:
 			"Mark AI-generated content with machine-readable and/or human-visible indicators of its AI origin. Implement watermarking, metadata embedding, or content provenance mechanisms (C2PA). Different jurisdictions have different labeling requirements.",
 		category: "genai-labeling",
-		jurisdictions: [
-			"eu-ai-act",
-			"china",
-			"us-federal",
-			"us-california",
-			"uk",
-			"singapore",
-		],
-		legalBasis:
-			"EU AI Act Article 50, China CAC GenAI Measures Article 12, California SB 942",
+		jurisdictions: ["eu-ai-act", "china", "us-federal", "us-ca", "uk", "singapore"],
+		legalBasis: "EU AI Act Article 50, China CAC GenAI Measures Article 12, California SB 942",
 		defaultPriority: "critical",
 		estimatedEffort: "2-4 weeks",
 		verificationCriteria: [
@@ -557,13 +652,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		description:
 			"For AI systems that can generate realistic synthetic media of real people (deepfakes), implement clear disclosure and labeling. Multiple jurisdictions have specific deepfake disclosure requirements with varying definitions and penalties.",
 		category: "genai-labeling",
-		jurisdictions: [
-			"eu-ai-act",
-			"china",
-			"us-federal",
-			"us-california",
-			"us-texas",
-		],
+		jurisdictions: ["eu-ai-act", "china", "us-federal", "us-ca", "us-texas"],
 		legalBasis:
 			"EU AI Act Article 50(4), China Deep Synthesis Regulations, California AB 730/AB 602",
 		defaultPriority: "critical",
@@ -575,6 +664,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Consent mechanism for use of real persons' likeness implemented",
 			"Deepfake-specific terms of service provisions added",
 		],
+		dependsOn: ["genai-labeling-content"],
 	},
 
 	// ── GenAI Training Data ──────────────────────────────────────────────
@@ -628,6 +718,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "CAC Interim Measures for GenAI Services Article 7",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "Before providing GenAI services in China",
 		verificationCriteria: [
 			"Training data sources verified for lawful acquisition",
 			"Intellectual property assessment completed",
@@ -649,6 +740,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "CAC Algorithm Recommendation Provisions, CAC GenAI Measures",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "10 working days from service launch",
 		verificationCriteria: [
 			"Algorithm filing application submitted to CAC",
 			"Algorithm description and technical details provided",
@@ -668,6 +760,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "CAC Interim Measures for GenAI Services Article 17",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "Before providing GenAI services in China",
 		verificationCriteria: [
 			"Safety assessment completed covering all required areas",
 			"Content safety evaluation documented",
@@ -689,12 +782,14 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 49",
 		defaultPriority: "critical",
 		estimatedEffort: "1-2 weeks",
+		deadline: "2026-08-02",
 		verificationCriteria: [
 			"EU AI database registration completed",
 			"System description and intended purpose provided",
 			"Conformity assessment status recorded",
 			"Registration maintained and updated for material changes",
 		],
+		dependsOn: ["documentation-conformity-assessment"],
 	},
 
 	// ── Security ─────────────────────────────────────────────────────────
@@ -728,6 +823,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 55(1)(d)",
 		defaultPriority: "critical",
 		estimatedEffort: "4-8 weeks",
+		deadline: "2025-08-02",
 		verificationCriteria: [
 			"Cybersecurity assessment for GPAI model completed",
 			"Protection against adversarial attacks implemented",
@@ -774,6 +870,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Ongoing monitoring framework established",
 			"Re-validation triggers defined for material changes",
 		],
+		dependsOn: ["financial-model-risk-governance"],
 	},
 	{
 		id: "financial-fair-lending",
@@ -824,6 +921,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 53(1)(a-b), Annex XI",
 		defaultPriority: "critical",
 		estimatedEffort: "3-6 weeks",
+		deadline: "2025-08-02",
 		verificationCriteria: [
 			"Technical documentation prepared per Annex XI requirements",
 			"Training methodology and computational resources documented",
@@ -842,6 +940,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 53(1)(b)",
 		defaultPriority: "critical",
 		estimatedEffort: "2-4 weeks",
+		deadline: "2025-08-02",
 		verificationCriteria: [
 			"Downstream deployer documentation package prepared",
 			"Information sufficient for deployer compliance assessments",
@@ -849,6 +948,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Model capabilities and limitations clearly communicated",
 			"Update and notification process for downstream deployers established",
 		],
+		dependsOn: ["gpai-technical-documentation"],
 	},
 	{
 		id: "gpai-systemic-risk-assessment",
@@ -860,6 +960,7 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 		legalBasis: "EU AI Act Article 55",
 		defaultPriority: "critical",
 		estimatedEffort: "6-12 weeks",
+		deadline: "2025-08-02",
 		verificationCriteria: [
 			"Model evaluation conducted with standardised protocols",
 			"Adversarial testing (red-teaming) performed",
@@ -867,6 +968,48 @@ const ACTION_LIBRARY: readonly ActionLibraryEntry[] = [
 			"Incident tracking and reporting mechanism established",
 			"Risk mitigation measures implemented",
 			"Evaluation results reported to AI Office",
+		],
+	},
+
+	// ── EEOC Employment AI ──────────────────────────────────────────────
+
+	{
+		id: "eeoc-disparate-impact-testing",
+		title: "Conduct EEOC-aligned disparate impact testing for AI employment tool",
+		description:
+			"Per EEOC guidance on AI and Title VII, test the AI system for disparate impact on protected classes (race, color, religion, sex, national origin). Document selection rates, adverse impact ratios (four-fifths rule), and any less discriminatory alternatives considered. Employers remain liable for vendor-provided AI tools.",
+		category: "bias-testing",
+		jurisdictions: ["us-federal"],
+		legalBasis:
+			"EEOC Technical Assistance on AI and Title VII (2023), Title VII of the Civil Rights Act",
+		defaultPriority: "critical",
+		estimatedEffort: "4-8 weeks",
+		verificationCriteria: [
+			"Selection rates calculated for all protected classes",
+			"Four-fifths (80%) rule analysis completed",
+			"Adverse impact ratios documented",
+			"Less discriminatory alternatives evaluated",
+			"Testing methodology documented and repeatable",
+			"Remediation plan for identified disparities created",
+		],
+		bestPracticeRef: "bias-testing",
+	},
+	{
+		id: "eeoc-ada-screening",
+		title: "Review AI employment tool for ADA compliance",
+		description:
+			"Ensure the AI tool does not screen out or disadvantage applicants/employees with disabilities in violation of the ADA. Consider whether the tool asks health-related questions, assesses physical/mental characteristics, or uses criteria that correlate with disability status.",
+		category: "bias-testing",
+		jurisdictions: ["us-federal"],
+		legalBasis:
+			"EEOC Technical Assistance on AI and the ADA (2022), Americans with Disabilities Act",
+		defaultPriority: "important",
+		estimatedEffort: "2-4 weeks",
+		verificationCriteria: [
+			"Assessment of health-related inquiry risks completed",
+			"Disability screening-out risk analysis documented",
+			"Reasonable accommodation procedures reviewed for AI tool context",
+			"ADA compliance review documented",
 		],
 	},
 ] as const;

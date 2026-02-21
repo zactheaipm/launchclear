@@ -10,7 +10,7 @@ import type {
 	ProductContext,
 	Result,
 } from "../core/types.js";
-import { getActionById, type ActionLibraryEntry } from "./action-library.js";
+import { type ActionLibraryEntry, getActionById } from "./action-library.js";
 import { prioritizeActions } from "./prioritizer.js";
 
 // ─── Types ───────────────────────────────────────────────────────────────
@@ -217,10 +217,7 @@ async function generateBestPractice(
 
 // ─── Action Item Builder ─────────────────────────────────────────────────
 
-function buildActionItem(
-	action: DeduplicatedAction,
-	bestPractice: string,
-): ActionItem {
+function buildActionItem(action: DeduplicatedAction, bestPractice: string): ActionItem {
 	const verificationCriteria = action.libraryEntry?.verificationCriteria ?? [
 		"Implementation completed and documented",
 		"Reviewed by relevant stakeholders",
@@ -233,9 +230,13 @@ function buildActionItem(
 		jurisdiction: [...action.jurisdictions],
 		legalBasis: action.requirement.legalBasis,
 		bestPractice,
-		estimatedEffort: action.requirement.estimatedEffort ?? action.libraryEntry?.estimatedEffort ?? "2-4 weeks",
+		estimatedEffort:
+			action.requirement.estimatedEffort ?? action.libraryEntry?.estimatedEffort ?? "2-4 weeks",
 		deadline: action.requirement.deadline ?? null,
 		verificationCriteria,
+		basePriority: action.requirement.priority,
+		dependsOn: action.libraryEntry?.dependsOn,
+		conflictsWith: action.libraryEntry?.conflictsWith,
 	};
 }
 

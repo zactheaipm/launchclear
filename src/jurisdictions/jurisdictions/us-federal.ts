@@ -81,6 +81,47 @@ const NIST_TRIGGERS: readonly RegulatoryTrigger[] = [
 	},
 ];
 
+const EEOC_TRIGGERS: readonly RegulatoryTrigger[] = [
+	{
+		id: "eeoc-title-vii-ai",
+		name: "EEOC Guidance on AI and Title VII",
+		framework: "Title VII of the Civil Rights Act",
+		matchesContext: (ctx) => {
+			const desc = ctx.description.toLowerCase();
+			return (
+				ctx.userPopulations.includes("job-applicants") ||
+				ctx.userPopulations.includes("employees") ||
+				ctx.dataProcessed.includes("employment") ||
+				desc.includes("hiring") ||
+				desc.includes("recruit") ||
+				desc.includes("resume screen") ||
+				desc.includes("employment") ||
+				desc.includes("job applicat") ||
+				desc.includes("workforce")
+			);
+		},
+	},
+	{
+		id: "eeoc-ada-ai",
+		name: "EEOC Guidance on AI and the ADA",
+		framework: "Americans with Disabilities Act",
+		matchesContext: (ctx) => {
+			const desc = ctx.description.toLowerCase();
+			return (
+				ctx.userPopulations.includes("job-applicants") ||
+				ctx.userPopulations.includes("employees") ||
+				ctx.dataProcessed.includes("employment") ||
+				desc.includes("hiring") ||
+				desc.includes("recruit") ||
+				desc.includes("resume screen") ||
+				desc.includes("employment") ||
+				desc.includes("job applicat") ||
+				desc.includes("workforce")
+			);
+		},
+	},
+];
+
 const FINANCIAL_TRIGGERS: readonly RegulatoryTrigger[] = [
 	{
 		id: "sr-11-7-model-risk",
@@ -136,6 +177,10 @@ function getMatchingNistTriggers(ctx: ProductContext): readonly RegulatoryTrigge
 	return NIST_TRIGGERS.filter((t) => t.matchesContext(ctx));
 }
 
+function getMatchingEeocTriggers(ctx: ProductContext): readonly RegulatoryTrigger[] {
+	return EEOC_TRIGGERS.filter((t) => t.matchesContext(ctx));
+}
+
 function getMatchingFinancialTriggers(ctx: ProductContext): readonly RegulatoryTrigger[] {
 	return FINANCIAL_TRIGGERS.filter((t) => t.matchesContext(ctx));
 }
@@ -163,6 +208,21 @@ function isCreditScoringAi(ctx: ProductContext): boolean {
 	);
 }
 
+function isEmploymentAi(ctx: ProductContext): boolean {
+	const desc = ctx.description.toLowerCase();
+	return (
+		ctx.userPopulations.includes("job-applicants") ||
+		ctx.userPopulations.includes("employees") ||
+		ctx.dataProcessed.includes("employment") ||
+		desc.includes("hiring") ||
+		desc.includes("recruit") ||
+		desc.includes("resume screen") ||
+		desc.includes("employment") ||
+		desc.includes("job applicat") ||
+		desc.includes("workforce")
+	);
+}
+
 function isHighImpactAutomatedDecision(ctx: ProductContext): boolean {
 	return (
 		(ctx.decisionImpact === "material" || ctx.decisionImpact === "determinative") &&
@@ -183,17 +243,11 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 	if (isCreditScoringAi(ctx)) {
 		return {
 			level: "high",
+			riskFramework: "launchclear-internal",
 			justification:
-				"This AI system is used in credit scoring or lending decisions, subject to heightened regulatory scrutiny under ECOA/Regulation B (CFPB fair lending), OCC/Fed SR 11-7 (model risk management), and FTC Section 5 (unfair practices). Supervisory examination and enforcement is active in this area.",
-			applicableCategories: [
-				"credit-scoring",
-				...financialTriggers.map((t) => t.id),
-			],
-			provisions: [
-				"ECOA/Regulation B",
-				"SR 11-7",
-				"FTC Act Section 5",
-			],
+				"High-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This AI system is used in credit scoring or lending decisions, subject to heightened regulatory scrutiny under ECOA/Regulation B (CFPB fair lending), OCC/Fed SR 11-7 (model risk management), and FTC Section 5 (unfair practices). Supervisory examination and enforcement is active in this area.",
+			applicableCategories: ["credit-scoring", ...financialTriggers.map((t) => t.id)],
+			provisions: ["ECOA/Regulation B", "SR 11-7", "FTC Act Section 5"],
 		};
 	}
 
@@ -201,7 +255,8 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 	if (isFinancialServicesAi(ctx) && financialTriggers.length > 0) {
 		return {
 			level: "high",
-			justification: `This AI system operates in financial services and is subject to regulatory oversight: ${financialTriggers.map((t) => t.name).join("; ")}. Supervised institutions must comply with model risk management expectations.`,
+			riskFramework: "launchclear-internal",
+			justification: `High-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This AI system operates in financial services and is subject to regulatory oversight: ${financialTriggers.map((t) => t.name).join("; ")}. Supervised institutions must comply with model risk management expectations.`,
 			applicableCategories: financialTriggers.map((t) => t.id),
 			provisions: financialTriggers.map((t) => t.framework),
 		};
@@ -211,8 +266,9 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 	if (isHighImpactAutomatedDecision(ctx)) {
 		return {
 			level: "limited",
+			riskFramework: "launchclear-internal",
 			justification:
-				"This AI system makes automated decisions with material impact on consumers, triggering FTC scrutiny for unfair or deceptive practices. While no mandatory pre-market assessment exists at the federal level, failure to ensure fairness and transparency creates significant enforcement risk.",
+				"Limited-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This AI system makes automated decisions with material impact on consumers, triggering FTC scrutiny for unfair or deceptive practices. While no mandatory pre-market assessment exists at the federal level, failure to ensure fairness and transparency creates significant enforcement risk.",
 			applicableCategories: ["ftc-unfair-ai-decisions"],
 			provisions: ["FTC Act Section 5"],
 		};
@@ -224,8 +280,9 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 		if (ftcTriggers.some((t) => t.id === "ftc-genai-synthetic-content")) {
 			return {
 				level: "limited",
+				riskFramework: "launchclear-internal",
 				justification:
-					"This generative AI system creates content that may be mistaken for human-created content. FTC guidance emphasizes disclosure obligations for AI-generated content and has taken enforcement actions against deceptive AI-generated content. NIST AI 600-1 provides a risk management profile for GenAI systems.",
+					"Limited-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This generative AI system creates content that may be mistaken for human-created content. FTC guidance emphasizes disclosure obligations for AI-generated content and has taken enforcement actions against deceptive AI-generated content. NIST AI 600-1 provides a risk management profile for GenAI systems.",
 				applicableCategories: ["ftc-genai-synthetic-content", "nist-genai-profile"],
 				provisions: ["FTC Act Section 5", "NIST AI 600-1"],
 			};
@@ -237,8 +294,9 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 	if (ftcTriggers.length > 0) {
 		return {
 			level: "limited",
+			riskFramework: "launchclear-internal",
 			justification:
-				"This AI system interacts with consumers and is subject to FTC oversight for unfair or deceptive practices. While US federal law does not mandate pre-market AI classification, FTC enforcement creates compliance obligations.",
+				"Limited-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This AI system interacts with consumers and is subject to FTC oversight for unfair or deceptive practices. FTC enforcement creates compliance obligations.",
 			applicableCategories: ftcTriggers.map((t) => t.id),
 			provisions: ["FTC Act Section 5"],
 		};
@@ -246,8 +304,9 @@ function classifyRisk(ctx: ProductContext): RiskClassification {
 
 	return {
 		level: "minimal",
+		riskFramework: "launchclear-internal",
 		justification:
-			"This AI system does not trigger specific US federal regulatory obligations beyond general FTC consumer protection. Voluntary alignment with the NIST AI RMF is recommended as a best practice.",
+			"Minimal-risk (LaunchClear assessment — the US does not have a formal AI risk classification framework): This AI system does not trigger specific US federal regulatory obligations beyond general FTC consumer protection. Voluntary alignment with the NIST AI RMF is recommended as a best practice.",
 		applicableCategories: [],
 		provisions: [],
 	};
@@ -357,6 +416,20 @@ function buildApplicableProvisions(
 				"SEC examines registered investment advisers' use of AI for conflicts of interest, disclosure obligations, and fiduciary duty compliance. Firms using AI for portfolio management, recommendations, or trading must disclose AI use to clients and ensure AI does not create undisclosed conflicts.",
 			relevance:
 				"This AI system is used in investment advisory or trading, subject to SEC examination and fiduciary duty requirements.",
+		});
+	}
+
+	// EEOC employment provisions
+	if (isEmploymentAi(ctx)) {
+		provisions.push({
+			id: "eeoc-ai-employment",
+			law: "EEOC AI Guidance",
+			article: "Title VII / ADA",
+			title: "EEOC Guidance on AI in Employment Decisions",
+			summary:
+				"EEOC guidance clarifies that employers may be liable under Title VII for disparate impact caused by AI hiring tools, even when provided by third-party vendors. The ADA also restricts use of AI that screens out individuals with disabilities.",
+			relevance:
+				"Product involves employment decisions that may affect protected classes under federal anti-discrimination law.",
 		});
 	}
 
@@ -590,6 +663,35 @@ function buildRequiredActions(
 		}
 	}
 
+	// EEOC employment actions
+	if (isEmploymentAi(ctx)) {
+		actions.push({
+			id: "eeoc-disparate-impact-testing",
+			title: "Conduct EEOC-aligned disparate impact testing for AI employment tool",
+			description:
+				"Per EEOC guidance on AI and Title VII, test the AI system for disparate impact on protected classes (race, color, religion, sex, national origin). Document selection rates, adverse impact ratios (four-fifths rule), and any less discriminatory alternatives considered. Employers remain liable for vendor-provided AI tools.",
+			priority: "critical",
+			legalBasis:
+				"EEOC Technical Assistance on AI and Title VII (2023), Title VII of the Civil Rights Act",
+			jurisdictions: ["us-federal"],
+			estimatedEffort: "4-8 weeks",
+			deadline: null,
+		});
+
+		actions.push({
+			id: "eeoc-ada-screening",
+			title: "Review AI employment tool for ADA compliance",
+			description:
+				"Ensure the AI tool does not screen out or disadvantage applicants/employees with disabilities in violation of the ADA. Consider whether the tool asks health-related questions, assesses physical/mental characteristics, or uses criteria that correlate with disability status.",
+			priority: "important",
+			legalBasis:
+				"EEOC Technical Assistance on AI and the ADA (2022), Americans with Disabilities Act",
+			jurisdictions: ["us-federal"],
+			estimatedEffort: "2-4 weeks",
+			deadline: null,
+		});
+	}
+
 	return actions;
 }
 
@@ -677,11 +779,14 @@ export {
 	getMatchingFtcTriggers,
 	getMatchingNistTriggers,
 	getMatchingFinancialTriggers,
+	getMatchingEeocTriggers,
 	isGenAiProduct,
 	isFinancialServicesAi,
 	isCreditScoringAi,
 	isHighImpactAutomatedDecision,
+	isEmploymentAi,
 	FTC_TRIGGERS,
 	NIST_TRIGGERS,
 	FINANCIAL_TRIGGERS,
+	EEOC_TRIGGERS,
 };

@@ -71,6 +71,14 @@ export const RiskLevelSchema = z.enum([
 	"undetermined",
 ]);
 
+export const RegulatoryForceSchema = z.enum([
+	"binding-law",
+	"binding-regulation",
+	"supervisory-guidance",
+	"voluntary-framework",
+	"pending-legislation",
+]);
+
 export const ArtifactTypeSchema = z.enum([
 	"dpia",
 	"risk-classification",
@@ -125,6 +133,23 @@ export const JurisdictionSchema = z.enum([
 	"china",
 	"brazil",
 ]);
+
+// ─── Error Taxonomy ──────────────────────────────────────────────────────────
+
+export const LaunchClearErrorCategorySchema = z.enum([
+	"template-load",
+	"llm-provider",
+	"validation",
+	"provision-not-found",
+	"file-io",
+	"intake",
+	"jurisdiction-mapping",
+]);
+
+export const LaunchClearErrorSchema = z.object({
+	category: LaunchClearErrorCategorySchema,
+	message: z.string(),
+});
 
 // ─── GPAI (General-Purpose AI) ─────────────────────────────────────────────
 
@@ -297,6 +322,7 @@ export const ProductContextSchema = z.object({
 	existingMeasures: z.array(ExistingMeasureSchema),
 	answers: z.record(z.string(), AnswerSchema),
 	sourceMode: SourceModeSchema,
+	launchDate: z.string().optional(),
 	codebaseInferences: z.array(CodebaseInferenceSchema).optional(),
 	gpaiInfo: GpaiInfoSchema.optional(),
 	generativeAiContext: GenerativeAiContextSchema.optional(),
@@ -346,6 +372,9 @@ export const ApplicableProvisionSchema = z.object({
 	summary: z.string(),
 	relevance: z.string(),
 	url: z.string().optional(),
+	regulatoryForce: RegulatoryForceSchema.optional(),
+	enforcementAuthority: z.string().optional(),
+	maxPenalty: z.string().optional(),
 });
 
 export const ApplicableLawSchema = z.object({
@@ -362,6 +391,7 @@ export const RiskClassificationSchema = z.object({
 	justification: z.string(),
 	applicableCategories: z.array(z.string()),
 	provisions: z.array(z.string()),
+	riskFramework: z.string().optional(),
 });
 
 // ─── Compliance Timeline ───────────────────────────────────────────────────
@@ -436,6 +466,9 @@ export const ActionItemSchema = z.object({
 	estimatedEffort: z.string(),
 	deadline: z.string().nullable(),
 	verificationCriteria: z.array(z.string()),
+	basePriority: ActionPrioritySchema.optional(),
+	dependsOn: z.array(z.string()).readonly().optional(),
+	conflictsWith: z.array(z.string()).readonly().optional(),
 });
 
 export const ActionPlanSchema = z.object({
@@ -536,7 +569,25 @@ export const LLMResponseSchema = z.object({
 
 // ─── Codebase Analysis ─────────────────────────────────────────────────────
 
+export const SignalCategorySchema = z.enum([
+	"data-collection",
+	"data-storage",
+	"pii",
+	"third-party",
+	"automated-decision",
+	"user-auth",
+	"consent",
+	"training-data",
+	"genai",
+	"rag",
+	"content-safety",
+	"watermarking",
+	"agentic",
+	"financial-services",
+]);
+
 export const CodebaseSignalSchema = z.object({
+	category: SignalCategorySchema,
 	type: z.string(),
 	description: z.string(),
 	filePath: z.string(),
@@ -553,6 +604,31 @@ export const CodebaseContextSchema = z.object({
 	consentMechanisms: z.array(CodebaseSignalSchema),
 	authFlows: z.array(CodebaseSignalSchema),
 	trainingDataSources: z.array(CodebaseSignalSchema),
+	genAiSignals: z.array(CodebaseSignalSchema),
+	ragSignals: z.array(CodebaseSignalSchema),
+	contentSafetySignals: z.array(CodebaseSignalSchema),
+	watermarkingSignals: z.array(CodebaseSignalSchema),
+	agenticSignals: z.array(CodebaseSignalSchema),
+	financialServiceSignals: z.array(CodebaseSignalSchema),
+});
+
+export const SignalPatternSchema = z.object({
+	id: z.string(),
+	category: SignalCategorySchema,
+	description: z.string(),
+	pattern: z.string(),
+	confidence: ConfidenceLevelSchema,
+	fileGlobs: z.array(z.string()).optional(),
+});
+
+export const ExtractorResultSchema = z.object({
+	signals: z.array(CodebaseSignalSchema),
+});
+
+export const CodebaseAnalysisResultSchema = z.object({
+	context: CodebaseContextSchema,
+	inferences: z.array(CodebaseInferenceSchema),
+	remainingQuestions: z.array(IntakeQuestionSchema),
 });
 
 // ─── Regulation Pipeline ───────────────────────────────────────────────────
@@ -580,6 +656,107 @@ export const RegulationDiffSchema = z.object({
 	currentVersion: z.string(),
 	changedSections: z.array(SectionDiffSchema),
 	timestamp: z.string(),
+});
+
+// ─── Regulation Pipeline Extended Schemas ─────────────────────────────────
+
+export const RegulationFormatSchema = z.enum(["json", "html", "xml", "pdf"]);
+
+export const ApiSourceConfigSchema = z.object({
+	apiKeyEnvVar: z.string().optional(),
+	headers: z.record(z.string(), z.string()).optional(),
+	queryParams: z.record(z.string(), z.string()).optional(),
+	resultPath: z.string().optional(),
+});
+
+export const ScrapeSourceConfigSchema = z.object({
+	articleSelector: z.string(),
+	sectionSelector: z.string(),
+	titleSelector: z.string().optional(),
+	encoding: z.string().optional(),
+});
+
+export const RegulationSourceConfigSchema = z.object({
+	id: z.string(),
+	name: z.string(),
+	jurisdiction: z.string(),
+	baseUrl: z.string().url(),
+	type: z.enum(["api", "scrape"]),
+	format: RegulationFormatSchema,
+	rateLimitMs: z.number().int().min(0),
+	apiConfig: ApiSourceConfigSchema.optional(),
+	scrapeConfig: ScrapeSourceConfigSchema.optional(),
+	lastFetched: z.string().optional(),
+});
+
+export const FetchedRegulationSchema = z.object({
+	sourceId: z.string(),
+	fetchedAt: z.string(),
+	rawContent: z.string(),
+	format: RegulationFormatSchema,
+	url: z.string(),
+	etag: z.string().optional(),
+	contentHash: z.string(),
+});
+
+export const ProcessedSectionSchema = z.object({
+	id: z.string(),
+	title: z.string(),
+	article: z.string(),
+	content: z.string(),
+	topics: z.array(z.string()),
+});
+
+export const ProcessedRegulationSchema = z.object({
+	sourceId: z.string(),
+	processedAt: z.string(),
+	manifest: z.lazy(() => ProvisionManifestSchema),
+	sections: z.array(ProcessedSectionSchema),
+});
+
+export const ValidationErrorSchema = z.object({
+	sectionId: z.string(),
+	message: z.string(),
+	severity: z.enum(["error", "warning"]),
+});
+
+export const ValidationWarningSchema = z.object({
+	sectionId: z.string(),
+	message: z.string(),
+	suggestion: z.string(),
+});
+
+export const ValidationResultSchema = z.object({
+	isValid: z.boolean(),
+	errors: z.array(ValidationErrorSchema),
+	warnings: z.array(ValidationWarningSchema),
+});
+
+export const ChangelogEntrySchema = z.object({
+	sectionId: z.string(),
+	type: z.enum(["added", "removed", "modified"]),
+	title: z.string(),
+	description: z.string(),
+});
+
+export const RegulationChangelogSchema = z.object({
+	sourceId: z.string(),
+	generatedAt: z.string(),
+	previousVersion: z.string(),
+	currentVersion: z.string(),
+	summary: z.string(),
+	entries: z.array(ChangelogEntrySchema),
+	affectedMappings: z.array(z.string()),
+});
+
+export const RegulationPipelineResultSchema = z.object({
+	sourceId: z.string(),
+	fetched: FetchedRegulationSchema,
+	processed: ProcessedRegulationSchema,
+	diff: RegulationDiffSchema.nullable(),
+	changelog: RegulationChangelogSchema.nullable(),
+	validation: ValidationResultSchema,
+	snapshotPath: z.string(),
 });
 
 // ─── Configuration ─────────────────────────────────────────────────────────
@@ -632,3 +809,7 @@ export type ProductContextOutput = z.output<typeof ProductContextSchema>;
 export type LaunchClearReportInput = z.input<typeof LaunchClearReportSchema>;
 export type LaunchClearConfigInput = z.input<typeof LaunchClearConfigSchema>;
 export type IntakeQuestionInput = z.input<typeof IntakeQuestionSchema>;
+export type SignalPatternInput = z.input<typeof SignalPatternSchema>;
+export type ExtractorResultInput = z.input<typeof ExtractorResultSchema>;
+export type CodebaseAnalysisResultInput = z.input<typeof CodebaseAnalysisResultSchema>;
+export type RegulationPipelineResultInput = z.input<typeof RegulationPipelineResultSchema>;

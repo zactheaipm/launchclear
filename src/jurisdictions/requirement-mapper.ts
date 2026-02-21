@@ -1,3 +1,6 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import type {
 	ActionRequirement,
 	ApplicableProvision,
@@ -10,6 +13,49 @@ import type {
 	RiskClassification,
 } from "../core/types.js";
 import { getJurisdictionModule } from "./registry.js";
+
+// ─── Enforcement Case Loader ─────────────────────────────────────────────
+
+interface EnforcementCaseRaw {
+	readonly id: string;
+	readonly jurisdiction: string;
+	readonly authority: string;
+	readonly date: string;
+	readonly respondent: string;
+	readonly summary: string;
+	readonly relevantProvisions: readonly string[];
+	readonly outcome: string;
+	readonly fine?: number;
+	readonly url?: string;
+}
+
+let cachedCases: readonly EnforcementCaseRaw[] | null = null;
+
+function loadEnforcementCases(): readonly EnforcementCaseRaw[] {
+	if (cachedCases) return cachedCases;
+	try {
+		const casesPath = resolve(
+			fileURLToPath(import.meta.url),
+			"..",
+			"..",
+			"..",
+			"knowledge",
+			"enforcement",
+			"cases.json",
+		);
+		const raw = readFileSync(casesPath, "utf-8");
+		cachedCases = JSON.parse(raw) as EnforcementCaseRaw[];
+		return cachedCases;
+	} catch {
+		cachedCases = [];
+		return cachedCases;
+	}
+}
+
+function getEnforcementCasesForJurisdiction(jurisdictionId: string): readonly EnforcementCaseRaw[] {
+	const cases = loadEnforcementCases();
+	return cases.filter((c) => c.jurisdiction === jurisdictionId);
+}
 
 // ─── Map a Single Jurisdiction ────────────────────────────────────────────
 
@@ -52,7 +98,18 @@ export function mapJurisdiction(
 			requiredActions: [...requiredActions],
 			recommendedActions: [...recommendedActions],
 			complianceTimeline: timeline,
-			enforcementPrecedent: [],
+			enforcementPrecedent: getEnforcementCasesForJurisdiction(jurisdictionId).map((c) => ({
+				id: c.id,
+				jurisdiction: c.jurisdiction,
+				authority: c.authority,
+				date: c.date,
+				respondent: c.respondent,
+				summary: c.summary,
+				relevantProvisions: [...c.relevantProvisions],
+				outcome: c.outcome,
+				fine: c.fine,
+				url: c.url,
+			})),
 			gpaiClassification: gpaiClassification ?? undefined,
 		},
 	};

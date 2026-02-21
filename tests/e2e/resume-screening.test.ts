@@ -1,4 +1,6 @@
-import { describe, it, expect, beforeAll } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
+import { generateActionPlanWithoutLLM } from "../../src/actions/generator.js";
+import { buildQuickContext } from "../../src/cli/interactive.js";
 import type {
 	ActionPlan,
 	JurisdictionResult,
@@ -6,24 +8,16 @@ import type {
 	ProductContext,
 } from "../../src/core/types.js";
 import { buildProductContext } from "../../src/intake/context-builder.js";
-import {
-	mapAllJurisdictions,
-	aggregateRequirements,
-} from "../../src/jurisdictions/requirement-mapper.js";
-import {
-	registerJurisdiction,
-	clearRegistry,
-} from "../../src/jurisdictions/registry.js";
 import { euAiActModule } from "../../src/jurisdictions/jurisdictions/eu-ai-act.js";
 import { euGdprModule } from "../../src/jurisdictions/jurisdictions/eu-gdpr.js";
 import { usFederalModule } from "../../src/jurisdictions/jurisdictions/us-federal.js";
-import { generateActionPlanWithoutLLM } from "../../src/actions/generator.js";
+import { clearRegistry, registerJurisdiction } from "../../src/jurisdictions/registry.js";
 import {
-	generateMarkdownReport,
-	buildMarketReadiness,
-} from "../../src/output/markdown.js";
+	aggregateRequirements,
+	mapAllJurisdictions,
+} from "../../src/jurisdictions/requirement-mapper.js";
 import { generateJsonReport } from "../../src/output/json.js";
-import { buildQuickContext } from "../../src/cli/interactive.js";
+import { buildMarketReadiness, generateMarkdownReport } from "../../src/output/markdown.js";
 
 // ─── Test Setup ───────────────────────────────────────────────────────────
 
@@ -129,23 +123,17 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 	});
 
 	it("identifies EU AI Act jurisdiction result", () => {
-		const euAiAct = mapResult.results.find(
-			(r) => r.jurisdiction === "eu-ai-act",
-		);
+		const euAiAct = mapResult.results.find((r) => r.jurisdiction === "eu-ai-act");
 		expect(euAiAct).toBeDefined();
 	});
 
 	it("identifies EU GDPR jurisdiction result", () => {
-		const euGdpr = mapResult.results.find(
-			(r) => r.jurisdiction === "eu-gdpr",
-		);
+		const euGdpr = mapResult.results.find((r) => r.jurisdiction === "eu-gdpr");
 		expect(euGdpr).toBeDefined();
 	});
 
 	it("identifies US Federal jurisdiction result", () => {
-		const usFederal = mapResult.results.find(
-			(r) => r.jurisdiction === "us-federal",
-		);
+		const usFederal = mapResult.results.find((r) => r.jurisdiction === "us-federal");
 		expect(usFederal).toBeDefined();
 	});
 
@@ -165,9 +153,7 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("identifies employment category in Annex III", () => {
-			expect(
-				euResult.riskClassification.applicableCategories,
-			).toContain("annex-iii-4-employment");
+			expect(euResult.riskClassification.applicableCategories).toContain("annex-iii-4-employment");
 		});
 
 		it("requires risk classification artifact", () => {
@@ -179,38 +165,30 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("requires conformity assessment", () => {
-			const conformity = euResult.requiredArtifacts.find(
-				(a) => a.type === "conformity-assessment",
-			);
+			const conformity = euResult.requiredArtifacts.find((a) => a.type === "conformity-assessment");
 			expect(conformity).toBeDefined();
 		});
 
 		it("requires risk management system action", () => {
-			const riskMgmt = euResult.requiredActions.find(
-				(a) => a.id === "eu-ai-act-risk-management",
-			);
+			const riskMgmt = euResult.requiredActions.find((a) => a.id === "eu-ai-act-risk-management");
 			expect(riskMgmt).toBeDefined();
 			expect(riskMgmt?.priority).toBe("critical");
 		});
 
 		it("requires human oversight action", () => {
-			const oversight = euResult.requiredActions.find(
-				(a) => a.id === "eu-ai-act-human-oversight",
-			);
+			const oversight = euResult.requiredActions.find((a) => a.id === "eu-ai-act-human-oversight");
 			expect(oversight).toBeDefined();
 			expect(oversight?.priority).toBe("critical");
 		});
 
 		it("requires data governance action", () => {
-			const dataGov = euResult.requiredActions.find(
-				(a) => a.id === "eu-ai-act-data-governance",
-			);
+			const dataGov = euResult.requiredActions.find((a) => a.id === "eu-ai-act-data-governance");
 			expect(dataGov).toBeDefined();
 		});
 
 		it("has compliance timeline with 2026 deadline", () => {
-			const deadline2026 = euResult.complianceTimeline.deadlines.find(
-				(d) => d.date.startsWith("2026"),
+			const deadline2026 = euResult.complianceTimeline.deadlines.find((d) =>
+				d.date.startsWith("2026"),
 			);
 			expect(deadline2026).toBeDefined();
 		});
@@ -228,9 +206,7 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("identifies DPIA requirement for automated employment decisions", () => {
-			const dpia = gdprResult.requiredArtifacts.find(
-				(a) => a.type === "dpia",
-			);
+			const dpia = gdprResult.requiredArtifacts.find((a) => a.type === "dpia");
 			expect(dpia).toBeDefined();
 		});
 
@@ -255,9 +231,7 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("has required or recommended actions", () => {
-			const totalActions =
-				usResult.requiredActions.length +
-				usResult.recommendedActions.length;
+			const totalActions = usResult.requiredActions.length + usResult.recommendedActions.length;
 			expect(totalActions).toBeGreaterThan(0);
 		});
 	});
@@ -270,9 +244,7 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("critical actions include EU AI Act requirements", () => {
-			const euActions = actionPlan.critical.filter((a) =>
-				a.jurisdiction.includes("eu-ai-act"),
-			);
+			const euActions = actionPlan.critical.filter((a) => a.jurisdiction.includes("eu-ai-act"));
 			expect(euActions.length).toBeGreaterThan(0);
 		});
 
@@ -345,60 +317,51 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 
 	describe("Quick Context Builder (CLI check mode)", () => {
 		it("infers classifier type from resume screening description", () => {
-			const result = buildQuickContext(
-				"AI-powered resume screening that auto-rejects bottom 50%",
-				["eu-ai-act", "us-federal"],
-			);
+			const result = buildQuickContext("AI-powered resume screening that auto-rejects bottom 50%", [
+				"eu-ai-act",
+				"us-federal",
+			]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 			expect(result.value.productType).toBe("classifier");
 		});
 
 		it("infers employment data category", () => {
-			const result = buildQuickContext(
-				"AI resume screening tool for hiring",
-				["eu-ai-act"],
-			);
+			const result = buildQuickContext("AI resume screening tool for hiring", ["eu-ai-act"]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 			expect(result.value.dataProcessed).toContain("employment");
 		});
 
 		it("infers job-applicants user population", () => {
-			const result = buildQuickContext(
-				"AI tool to screen job applicants' resumes",
-				["eu-ai-act"],
-			);
+			const result = buildQuickContext("AI tool to screen job applicants' resumes", ["eu-ai-act"]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 			expect(result.value.userPopulations).toContain("job-applicants");
 		});
 
 		it("infers determinative decision impact for auto-reject", () => {
-			const result = buildQuickContext(
-				"AI tool that auto-rejects applications based on scoring",
-				["eu-ai-act"],
-			);
+			const result = buildQuickContext("AI tool that auto-rejects applications based on scoring", [
+				"eu-ai-act",
+			]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 			expect(result.value.decisionImpact).toBe("determinative");
 		});
 
 		it("infers fully-automated for auto-reject", () => {
-			const result = buildQuickContext(
-				"AI tool that auto-rejects applications automatically",
-				["eu-ai-act"],
-			);
+			const result = buildQuickContext("AI tool that auto-rejects applications automatically", [
+				"eu-ai-act",
+			]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 			expect(result.value.automationLevel).toBe("fully-automated");
 		});
 
 		it("quick context feeds into jurisdiction mapping correctly", () => {
-			const result = buildQuickContext(
-				"AI-powered resume screening that auto-rejects bottom 50%",
-				["eu-ai-act"],
-			);
+			const result = buildQuickContext("AI-powered resume screening that auto-rejects bottom 50%", [
+				"eu-ai-act",
+			]);
 			expect(result.ok).toBe(true);
 			if (!result.ok) return;
 
@@ -421,9 +384,7 @@ describe("E2E: AI Resume Screening → EU + US Federal", () => {
 		});
 
 		it("EU AI Act market has blockers", () => {
-			const euMarket = report.summary.canLaunch.find(
-				(m) => m.jurisdiction === "eu-ai-act",
-			);
+			const euMarket = report.summary.canLaunch.find((m) => m.jurisdiction === "eu-ai-act");
 			expect(euMarket).toBeDefined();
 			expect(euMarket?.blockers.length).toBeGreaterThan(0);
 		});

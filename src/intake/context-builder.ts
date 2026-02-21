@@ -79,14 +79,39 @@ function buildGpaiInfo(answers: Readonly<Record<string, Answer>>): GpaiInfo | un
 	};
 }
 
-function buildTrainingDataInfo(_answers: Readonly<Record<string, Answer>>): TrainingDataInfo {
+function buildTrainingDataInfo(answers: Readonly<Record<string, Answer>>): TrainingDataInfo {
+	const usesTrainingData = getBooleanAnswer(answers, "uses-training-data") ?? false;
+	if (!usesTrainingData) {
+		return {
+			usesTrainingData: false,
+			sources: [],
+			containsPersonalData: false,
+			consentObtained: null,
+			optOutMechanism: false,
+			syntheticData: false,
+		};
+	}
+
+	const sources = getArrayAnswer(answers, "training-data-sources");
+	const containsPersonalData =
+		getBooleanAnswer(answers, "training-data-contains-personal") ?? false;
+	const consentAnswer = getBooleanAnswer(answers, "training-data-consent-obtained");
+	const consentObtained = consentAnswer === undefined ? null : consentAnswer;
+	const optOutMechanism = getBooleanAnswer(answers, "training-data-opt-out") ?? false;
+	const syntheticData = getBooleanAnswer(answers, "training-data-synthetic") ?? false;
+
+	// Also check GenAI training data categories as a source signal
+	const genaiCategories = getArrayAnswer(answers, "genai-training-data-categories");
+	const allSources = sources.length > 0 ? sources : genaiCategories;
+	const hasSyntheticFromCategories = genaiCategories.includes("synthetic-data");
+
 	return {
-		usesTrainingData: false,
-		sources: [],
-		containsPersonalData: false,
-		consentObtained: null,
-		optOutMechanism: false,
-		syntheticData: false,
+		usesTrainingData: true,
+		sources: allSources,
+		containsPersonalData: containsPersonalData || genaiCategories.includes("personal-data"),
+		consentObtained,
+		optOutMechanism,
+		syntheticData: syntheticData || hasSyntheticFromCategories,
 	};
 }
 

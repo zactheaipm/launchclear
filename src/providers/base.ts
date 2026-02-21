@@ -27,6 +27,7 @@ export interface ProviderOptions {
 	readonly baseUrl?: string;
 	readonly model?: string;
 	readonly timeoutMs?: number;
+	readonly apiVersion?: string;
 }
 
 // ─── Error Helpers ──────────────────────────────────────────────────────────
@@ -102,6 +103,54 @@ export async function fetchJSON(
 		}
 		return err(providerError("http", "Request failed", error));
 	}
+}
+
+// ─── Retry with Exponential Backoff ──────────────────────────────────────
+
+export interface RetryOptions {
+	readonly maxRetries?: number;
+	readonly initialDelayMs?: number;
+	readonly maxDelayMs?: number;
+}
+
+const DEFAULT_RETRY: Required<RetryOptions> = {
+	maxRetries: 3,
+	initialDelayMs: 1000,
+	maxDelayMs: 30000,
+};
+
+function isRetryableStatus(status: number): boolean {
+	return status === 429 || (status >= 500 && status < 600);
+}
+
+export async function retryWithBackoff<T>(
+	fn: () => Promise<T>,
+	options?: RetryOptions,
+): Promise<T> {
+	const opts = { ...DEFAULT_RETRY, ...options };
+	let lastError: unknown;
+
+	for (let attempt = 0; attempt <= opts.maxRetries; attempt++) {
+		try {
+			return await fn();
+		} catch (err) {
+			lastError = err;
+			const isRetryable =
+				err instanceof Error &&
+				"status" in err &&
+				typeof (err as { status: unknown }).status === "number" &&
+				isRetryableStatus((err as { status: number }).status);
+
+			if (!isRetryable || attempt === opts.maxRetries) {
+				throw err;
+			}
+
+			const delay = Math.min(opts.initialDelayMs * 2 ** attempt, opts.maxDelayMs);
+			await new Promise((resolve) => setTimeout(resolve, delay));
+		}
+	}
+
+	throw lastError;
 }
 
 // ─── Response Type Guard Helpers ────────────────────────────────────────────

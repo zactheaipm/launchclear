@@ -599,6 +599,18 @@ function buildRequiredActions(
 		);
 	}
 
+	// Controller/processor determination
+	actions.push({
+		id: "gdpr-controller-processor-determination",
+		title: "Determine data controller vs. processor roles",
+		description:
+			"Determine whether your organization acts as data controller, data processor, or joint controller for each processing activity. This determination affects which GDPR obligations apply: controllers choose the legal basis and conduct DPIAs; processors process on the controller's instruction and require a Data Processing Agreement (Article 28). For GenAI products using third-party APIs, the relationship is complex — the LLM API provider may be a processor or joint controller.",
+		jurisdictions: ["eu-gdpr"],
+		legalBasis: "GDPR Articles 4(7), 4(8), 26, 28",
+		priority: "important",
+		estimatedEffort: "1-2 weeks",
+	});
+
 	// Security measures
 	actions.push({
 		id: "gdpr-security-measures",
@@ -638,8 +650,7 @@ function buildTimeline(risk: RiskClassification): ComplianceTimeline {
 		deadlines: [
 			{
 				date: "2018-05-25",
-				description:
-					"GDPR entered into application. All data protection obligations are in force.",
+				description: "GDPR entered into application. All data protection obligations are in force.",
 				provision: "GDPR",
 				isMandatory: true,
 			},

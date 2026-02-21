@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ProvisionManifestSchema } from "../core/schema.js";
 import type { ProvisionManifest, Result } from "../core/types.js";
 
 // ─── Constants ────────────────────────────────────────────────────────────
@@ -21,7 +22,14 @@ export async function loadManifest(jurisdictionPath: string): Promise<Result<Pro
 	try {
 		const raw = await readFile(manifestPath, "utf-8");
 		const parsed: unknown = JSON.parse(raw);
-		return { ok: true, value: parsed as ProvisionManifest };
+		const validated = ProvisionManifestSchema.safeParse(parsed);
+		if (!validated.success) {
+			return {
+				ok: false,
+				error: new Error(`Invalid manifest at ${manifestPath}: ${validated.error.message}`),
+			};
+		}
+		return { ok: true, value: validated.data };
 	} catch (err) {
 		return {
 			ok: false,
