@@ -1,3 +1,18 @@
+---
+id: "eu-gdpr-data-subject-rights"
+law: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+articles: ["Articles 12-23"]
+effectiveDate: "25 May 2018"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-gdpr"
+    articles: ["Articles 12-23"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # GDPR — Data Subject Rights
 
 **Law**: Regulation (EU) 2016/679 (General Data Protection Regulation)

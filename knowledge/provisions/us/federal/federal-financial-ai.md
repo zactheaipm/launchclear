@@ -1,3 +1,17 @@
+---
+id: "us-federal-federal-financial-ai"
+law: "federal-financial-ai"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "sr-11-7"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # US Federal — Financial AI Regulatory Guidance
 
 **Authorities**: OCC, Federal Reserve, FDIC, CFPB, SEC

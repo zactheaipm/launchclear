@@ -1,0 +1,3169 @@
+{
+	"generatedAt": "2026-02-21T17:10:57.742Z",
+	"summary": {
+		"totalProvisionFiles": 41,
+		"totalEnforcementCases": 30,
+		"totalUrls": 0,
+		"totalClaims": 483,
+		"byVerificationStatus": {
+			"unverified": 71,
+			"in-review": 0,
+			"verified": 0,
+			"disputed": 0
+		}
+	},
+	"criticalFlags": [
+		{
+			"category": "generic-enforcement-url",
+			"description": "Enforcement case \"cn-cac-algorithm-filings-2023\" has generic homepage URL: http://www.cac.gov.cn",
+			"url": "http://www.cac.gov.cn"
+		},
+		{
+			"category": "duplicate-section",
+			"description": "Duplicate heading \"### Prohibition\" in file",
+			"file": "knowledge/provisions/us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "duplicate-section",
+			"description": "Duplicate heading \"### Definition\" in file",
+			"file": "knowledge/provisions/us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "duplicate-section",
+			"description": "Duplicate heading \"### Criminal Penalties\" in file",
+			"file": "knowledge/provisions/us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "duplicate-section",
+			"description": "Duplicate heading \"### Elements\" in file",
+			"file": "knowledge/provisions/us/states/texas/deepfake-laws.md"
+		}
+	],
+	"warningFlags": [
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Brazilian Congress (Congresso Nacional) — Senate (Senado\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"PL 2338/2023\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"December 10, 2024\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"PL 2338/2023\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"PL 2338/2023\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 23\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 24\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 25\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 19\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 31\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 33\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"BRL 50 million\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 10 million\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 14-35\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"PL 2338/2023\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"December 10, 2024\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"PL 2338/2023\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Autoridade Nacional de Proteção de Dados (ANPD — National\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"September 18, 2020\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"August 1, 2021\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20(1)\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20(2)\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20(3)\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20(2)\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 33\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 33\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 38\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 41\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 52\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"BRL 50 million\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 10\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20(3)\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 33\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 186-187\"",
+			"file": "brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Cyberspace Administration of China (CAC)\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"March 1, 2022\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 24\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 8\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 31\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 10,000\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 100,000\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 1,400\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 14,000\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 24-31\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 8\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 19\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Cyberspace Administration of China (CAC), Ministry of Industry\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"January 10, 2023\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 2\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 28\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 10\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 16-18\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 16\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 19\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 1 million\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 50 million\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 16\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 1-25\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Cyberspace Administration of China (CAC), jointly with the\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"August 15, 2023\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 3\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 4\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 8\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 50 million\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 17-18\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 1-24\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 21-25\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 27-32\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 13-18\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 24\"",
+			"file": "china/cac-genai-measures.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Cyberspace Administration of China (CAC), Ministry of Industry\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"March 1, 2022\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 3\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 8\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 16\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 24-26\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 24\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 25\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 26\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 31\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 10,000\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"RMB 100,000\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 1,400\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"USD 14,000\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 1-35\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 27-32\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 64-80\"",
+			"file": "china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 38\"",
+			"file": "china/pipl-cross-border.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 39\"",
+			"file": "china/pipl-cross-border.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 40\"",
+			"file": "china/pipl-cross-border.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"5% of the previous year's turnover\"",
+			"file": "china/pipl-cross-border.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§5\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 43-44\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 10\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 43-44\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 10\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§5\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§1\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 8-15\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 47\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 48\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 49\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2026\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 8-15\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 43-44\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 47-49\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 51-56\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2025\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 51\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"10^25 FLOPs\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 53\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 4(3)\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 51\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 54\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 55\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 53\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 56\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 53\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 50\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 50\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 15 million\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"3% of total worldwide annual turnover\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 15 million\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 51-56\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2025\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2025\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"10^25 FLOPs\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"10^25 FLOPs\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 51-56\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 4(3)\"",
+			"file": "eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 8-15\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2026\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 8\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 10\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9(1)\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 11\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 43-44\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 19\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 43\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 48\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 49\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 72\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 73\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 8-15\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 43-44\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 February 2025\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 35 million\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 35 million\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 February 2025\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2026\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 8-15\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(2)\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(3)\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(3)\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 50-52\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 50-52\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2025\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2026\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 50\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 52\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 50\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 15 million\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"EUR 15 million\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2025\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2 August 2026\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 50-52\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2024/1689\"",
+			"file": "eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"25 May 2018\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22(1)\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22(2)\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22(3)\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22(2)(a)\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 29\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 12-23\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"25 May 2018\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 12\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13-14\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 13\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 16\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 18\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 12-23\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 35-36\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"25 May 2018\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(1)\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(3)\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 10\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(7)\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 36\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(4)\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 35-36\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"25 May 2018\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(a)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(b)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(c)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(d)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(e)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)(f)\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 7\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 14\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 6-7\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 44-49\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"25 May 2018\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 45\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 46\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 44-49\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Regulation (EU) 2016/679\"",
+			"file": "eu/gdpr/transfers.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Infocomm Media Development Authority (IMDA), Singapore\"",
+			"file": "singapore/imda-agentic-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Infocomm Media Development Authority (IMDA), Singapore\"",
+			"file": "singapore/imda-genai-guidelines.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Monetary Authority of Singapore (MAS)\"",
+			"file": "singapore/mas-ai-risk-management.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Personal Data Protection Commission (PDPC), Singapore\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 18\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 13(a)\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 17\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 18\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 26\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 18\"",
+			"file": "singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"UK AI Safety Institute (AISI), formerly the Frontier AI Taskforce\"",
+			"file": "uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"10^25 FLOPs\"",
+			"file": "uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 55\"",
+			"file": "uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"1 November 2023\"",
+			"file": "uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"21 May 2024\"",
+			"file": "uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Department for Science, Innovation and Technology (DSIT)\"",
+			"file": "uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 13-14\"",
+			"file": "uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5(1)(a)\"",
+			"file": "uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 14\"",
+			"file": "uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"1 November 2023\"",
+			"file": "uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Financial Conduct Authority (FCA); Prudential Regulation Authority (PRA)\"",
+			"file": "uk/fca-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"31 July 2024\"",
+			"file": "uk/fca-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Information Commissioner's Office (ICO)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6(1)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 6\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 9\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(3)(a)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(3)(b)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 35(3)(c)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5(1)(a)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Articles 13-14\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 14\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 22\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 14\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5(1)(c)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 5(1)(d)\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 15\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 16\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 17\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 21\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Article 20\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"2% of annual worldwide turnover\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"GBP 8.7 million\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"4% of annual worldwide turnover\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"GBP 17.5 million\"",
+			"file": "uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1691\"",
+			"file": "us/federal/federal-financial-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Federal Trade Commission\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 45\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 45\"",
+			"file": "us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Federal Trade Commission\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 45\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 5\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 45\"",
+			"file": "us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"National Institute of Standards and Technology (NIST)\"",
+			"file": "us/federal/nist-ai-rmf.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"National Institute of Standards and Technology (NIST)\"",
+			"file": "us/federal/nist-genai-profile.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"California Privacy Protection Agency (CPPA)\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§§ 1798\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"January 1, 2023\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$2,500 \"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$7,500 \"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1798\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§§ 1798\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1798\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 7150\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 7154\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1798\"",
+			"file": "us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"California Legislature\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 20010\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1708\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 3344\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$1,500 \"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$30,000\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 3344\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 230\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 20010\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1708\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 3344\"",
+			"file": "us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"California Legislature\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§§ 22947\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"January 1, 2026\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 942\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§§ 22947\"",
+			"file": "us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 24\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Colorado Legislature; Colorado Attorney General\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 6\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 24\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"February 1, 2026\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$20,000 \"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 6\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"SB 24\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 6\"",
+			"file": "us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Illinois Legislature\"",
+			"file": "us/states/illinois/ai-video-interview-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"January 1, 2020\"",
+			"file": "us/states/illinois/ai-video-interview-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$500 \"",
+			"file": "us/states/illinois/ai-video-interview-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$1,000 \"",
+			"file": "us/states/illinois/ai-video-interview-act.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Illinois Legislature; Illinois courts (private right of action)\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 15(b)\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 15(a)\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 15(c)\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 15(d)\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Section 20\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$1,000 \"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$5,000 \"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$650 million\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$228 million\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$92 million\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$100 million\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$52 million\"",
+			"file": "us/states/illinois/bipa.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"New York City Department of Consumer and Worker Protection (DCWP)\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 20\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 5\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"July 5, 2023\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$500\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$500 \"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$1,500\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"LL144\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 20\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 5\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 1607\"",
+			"file": "us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Texas Legislature\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 21\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 255\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 255\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$4,000\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 21\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"$10,000\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 255\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"September 1, 2019\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 21\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"September 1, 2023\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 12\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 12\"",
+			"file": "us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"Texas Legislature; Texas Attorney General\"",
+			"file": "us/states/texas/traiga.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"LL144\"",
+			"file": "us/states/texas/traiga.md"
+		},
+		{
+			"category": "uncited-claim",
+			"description": "Claim without citation key: \"§ 17\"",
+			"file": "us/states/texas/traiga.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/brazil/ai-bill-genai.md",
+			"file": "knowledge/provisions/brazil/ai-bill-genai.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/brazil/lgpd-ai-processing.md",
+			"file": "knowledge/provisions/brazil/lgpd-ai-processing.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/china/cac-algorithm-registry.md",
+			"file": "knowledge/provisions/china/cac-algorithm-registry.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/china/cac-deep-synthesis.md",
+			"file": "knowledge/provisions/china/cac-deep-synthesis.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/china/cac-genai-measures.md",
+			"file": "knowledge/provisions/china/cac-genai-measures.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/china/cac-recommendation-algo.md",
+			"file": "knowledge/provisions/china/cac-recommendation-algo.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/china/pipl-cross-border.md",
+			"file": "knowledge/provisions/china/pipl-cross-border.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/financial-services.md",
+			"file": "knowledge/provisions/eu/ai-act/financial-services.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/gpai-provisions.md",
+			"file": "knowledge/provisions/eu/ai-act/gpai-provisions.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/high-risk-requirements.md",
+			"file": "knowledge/provisions/eu/ai-act/high-risk-requirements.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/prohibited-practices.md",
+			"file": "knowledge/provisions/eu/ai-act/prohibited-practices.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/risk-classification.md",
+			"file": "knowledge/provisions/eu/ai-act/risk-classification.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/ai-act/transparency-obligations.md",
+			"file": "knowledge/provisions/eu/ai-act/transparency-obligations.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/gdpr/automated-decisions.md",
+			"file": "knowledge/provisions/eu/gdpr/automated-decisions.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/gdpr/data-subject-rights.md",
+			"file": "knowledge/provisions/eu/gdpr/data-subject-rights.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/gdpr/dpia-requirements.md",
+			"file": "knowledge/provisions/eu/gdpr/dpia-requirements.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/gdpr/legal-basis.md",
+			"file": "knowledge/provisions/eu/gdpr/legal-basis.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/eu/gdpr/transfers.md",
+			"file": "knowledge/provisions/eu/gdpr/transfers.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/singapore/imda-agentic-ai.md",
+			"file": "knowledge/provisions/singapore/imda-agentic-ai.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/singapore/imda-genai-guidelines.md",
+			"file": "knowledge/provisions/singapore/imda-genai-guidelines.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/singapore/mas-ai-risk-management.md",
+			"file": "knowledge/provisions/singapore/mas-ai-risk-management.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/singapore/pdpc-ai-governance.md",
+			"file": "knowledge/provisions/singapore/pdpc-ai-governance.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/uk/aisi-frontier-models.md",
+			"file": "knowledge/provisions/uk/aisi-frontier-models.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/uk/dsit-foundation-models.md",
+			"file": "knowledge/provisions/uk/dsit-foundation-models.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/uk/fca-ai-guidance.md",
+			"file": "knowledge/provisions/uk/fca-ai-guidance.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/uk/ico-ai-guidance.md",
+			"file": "knowledge/provisions/uk/ico-ai-guidance.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/eeoc-ai-guidance.md",
+			"file": "knowledge/provisions/us/federal/eeoc-ai-guidance.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/federal-financial-ai.md",
+			"file": "knowledge/provisions/us/federal/federal-financial-ai.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/ftc-enforcement.md",
+			"file": "knowledge/provisions/us/federal/ftc-enforcement.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/ftc-genai-guidance.md",
+			"file": "knowledge/provisions/us/federal/ftc-genai-guidance.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/nist-ai-rmf.md",
+			"file": "knowledge/provisions/us/federal/nist-ai-rmf.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/federal/nist-genai-profile.md",
+			"file": "knowledge/provisions/us/federal/nist-genai-profile.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/california/ccpa-cpra-ai.md",
+			"file": "knowledge/provisions/us/states/california/ccpa-cpra-ai.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/california/deepfake-laws.md",
+			"file": "knowledge/provisions/us/states/california/deepfake-laws.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/california/sb942-genai-transparency.md",
+			"file": "knowledge/provisions/us/states/california/sb942-genai-transparency.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/colorado/colorado-ai-act.md",
+			"file": "knowledge/provisions/us/states/colorado/colorado-ai-act.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/illinois/ai-video-interview-act.md",
+			"file": "knowledge/provisions/us/states/illinois/ai-video-interview-act.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/illinois/bipa.md",
+			"file": "knowledge/provisions/us/states/illinois/bipa.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/new-york/ll144-aedt.md",
+			"file": "knowledge/provisions/us/states/new-york/ll144-aedt.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/texas/deepfake-laws.md",
+			"file": "knowledge/provisions/us/states/texas/deepfake-laws.md"
+		},
+		{
+			"category": "unverified-file",
+			"description": "Provision file is unverified: knowledge/provisions/us/states/texas/traiga.md",
+			"file": "knowledge/provisions/us/states/texas/traiga.md"
+		}
+	],
+	"jurisdictionSummaries": [
+		{
+			"jurisdiction": "brazil",
+			"fileCount": 2,
+			"claimCount": 57,
+			"byStatus": {
+				"unverified": 2,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "china",
+			"fileCount": 5,
+			"claimCount": 88,
+			"byStatus": {
+				"unverified": 5,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "eu/ai-act",
+			"fileCount": 6,
+			"claimCount": 122,
+			"byStatus": {
+				"unverified": 6,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "eu/gdpr",
+			"fileCount": 5,
+			"claimCount": 62,
+			"byStatus": {
+				"unverified": 5,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "singapore",
+			"fileCount": 4,
+			"claimCount": 10,
+			"byStatus": {
+				"unverified": 4,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "uk",
+			"fileCount": 4,
+			"claimCount": 40,
+			"byStatus": {
+				"unverified": 4,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/federal",
+			"fileCount": 6,
+			"claimCount": 18,
+			"byStatus": {
+				"unverified": 6,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/states/california",
+			"fileCount": 3,
+			"claimCount": 33,
+			"byStatus": {
+				"unverified": 3,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/states/colorado",
+			"fileCount": 1,
+			"claimCount": 9,
+			"byStatus": {
+				"unverified": 1,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/states/illinois",
+			"fileCount": 2,
+			"claimCount": 17,
+			"byStatus": {
+				"unverified": 2,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/states/new-york",
+			"fileCount": 1,
+			"claimCount": 11,
+			"byStatus": {
+				"unverified": 1,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		},
+		{
+			"jurisdiction": "us/states/texas",
+			"fileCount": 2,
+			"claimCount": 16,
+			"byStatus": {
+				"unverified": 2,
+				"in-review": 0,
+				"verified": 0,
+				"disputed": 0
+			}
+		}
+	],
+	"fileDetails": [
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/brazil/ai-bill-genai.md",
+			"relativePath": "knowledge/provisions/brazil/ai-bill-genai.md",
+			"jurisdiction": "brazil",
+			"id": "brazil-ai-bill-genai",
+			"verificationStatus": "unverified",
+			"claimCount": 25,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/brazil/lgpd-ai-processing.md",
+			"relativePath": "knowledge/provisions/brazil/lgpd-ai-processing.md",
+			"jurisdiction": "brazil",
+			"id": "brazil-lgpd-ai-processing",
+			"verificationStatus": "unverified",
+			"claimCount": 32,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/china/cac-algorithm-registry.md",
+			"relativePath": "knowledge/provisions/china/cac-algorithm-registry.md",
+			"jurisdiction": "china",
+			"id": "china-cac-algorithm-registry",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/china/cac-deep-synthesis.md",
+			"relativePath": "knowledge/provisions/china/cac-deep-synthesis.md",
+			"jurisdiction": "china",
+			"id": "china-cac-deep-synthesis",
+			"verificationStatus": "unverified",
+			"claimCount": 24,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/china/cac-genai-measures.md",
+			"relativePath": "knowledge/provisions/china/cac-genai-measures.md",
+			"jurisdiction": "china",
+			"id": "china-cac-genai-measures",
+			"verificationStatus": "unverified",
+			"claimCount": 23,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/china/cac-recommendation-algo.md",
+			"relativePath": "knowledge/provisions/china/cac-recommendation-algo.md",
+			"jurisdiction": "china",
+			"id": "china-cac-recommendation-algo",
+			"verificationStatus": "unverified",
+			"claimCount": 24,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/china/pipl-cross-border.md",
+			"relativePath": "knowledge/provisions/china/pipl-cross-border.md",
+			"jurisdiction": "china",
+			"id": "china-pipl-cross-border",
+			"verificationStatus": "unverified",
+			"claimCount": 4,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/financial-services.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/financial-services.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-financial-services",
+			"verificationStatus": "unverified",
+			"claimCount": 32,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/gpai-provisions.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/gpai-provisions.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-gpai-provisions",
+			"verificationStatus": "unverified",
+			"claimCount": 28,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/high-risk-requirements.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/high-risk-requirements.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-high-risk-requirements",
+			"verificationStatus": "unverified",
+			"claimCount": 26,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/prohibited-practices.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/prohibited-practices.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-prohibited-practices",
+			"verificationStatus": "unverified",
+			"claimCount": 10,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/risk-classification.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/risk-classification.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-risk-classification",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/ai-act/transparency-obligations.md",
+			"relativePath": "knowledge/provisions/eu/ai-act/transparency-obligations.md",
+			"jurisdiction": "eu/ai-act",
+			"id": "eu-ai-act-transparency-obligations",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/gdpr/automated-decisions.md",
+			"relativePath": "knowledge/provisions/eu/gdpr/automated-decisions.md",
+			"jurisdiction": "eu/gdpr",
+			"id": "eu-gdpr-automated-decisions",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/gdpr/data-subject-rights.md",
+			"relativePath": "knowledge/provisions/eu/gdpr/data-subject-rights.md",
+			"jurisdiction": "eu/gdpr",
+			"id": "eu-gdpr-data-subject-rights",
+			"verificationStatus": "unverified",
+			"claimCount": 16,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/gdpr/dpia-requirements.md",
+			"relativePath": "knowledge/provisions/eu/gdpr/dpia-requirements.md",
+			"jurisdiction": "eu/gdpr",
+			"id": "eu-gdpr-dpia-requirements",
+			"verificationStatus": "unverified",
+			"claimCount": 12,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/gdpr/legal-basis.md",
+			"relativePath": "knowledge/provisions/eu/gdpr/legal-basis.md",
+			"jurisdiction": "eu/gdpr",
+			"id": "eu-gdpr-legal-basis",
+			"verificationStatus": "unverified",
+			"claimCount": 14,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/eu/gdpr/transfers.md",
+			"relativePath": "knowledge/provisions/eu/gdpr/transfers.md",
+			"jurisdiction": "eu/gdpr",
+			"id": "eu-gdpr-transfers",
+			"verificationStatus": "unverified",
+			"claimCount": 7,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/singapore/imda-agentic-ai.md",
+			"relativePath": "knowledge/provisions/singapore/imda-agentic-ai.md",
+			"jurisdiction": "singapore",
+			"id": "singapore-imda-agentic-ai",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/singapore/imda-genai-guidelines.md",
+			"relativePath": "knowledge/provisions/singapore/imda-genai-guidelines.md",
+			"jurisdiction": "singapore",
+			"id": "singapore-imda-genai-guidelines",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/singapore/mas-ai-risk-management.md",
+			"relativePath": "knowledge/provisions/singapore/mas-ai-risk-management.md",
+			"jurisdiction": "singapore",
+			"id": "singapore-mas-ai-risk-management",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/singapore/pdpc-ai-governance.md",
+			"relativePath": "knowledge/provisions/singapore/pdpc-ai-governance.md",
+			"jurisdiction": "singapore",
+			"id": "singapore-pdpc-ai-governance",
+			"verificationStatus": "unverified",
+			"claimCount": 7,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/uk/aisi-frontier-models.md",
+			"relativePath": "knowledge/provisions/uk/aisi-frontier-models.md",
+			"jurisdiction": "uk",
+			"id": "uk-aisi-frontier-models",
+			"verificationStatus": "unverified",
+			"claimCount": 5,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/uk/dsit-foundation-models.md",
+			"relativePath": "knowledge/provisions/uk/dsit-foundation-models.md",
+			"jurisdiction": "uk",
+			"id": "uk-dsit-foundation-models",
+			"verificationStatus": "unverified",
+			"claimCount": 5,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/uk/fca-ai-guidance.md",
+			"relativePath": "knowledge/provisions/uk/fca-ai-guidance.md",
+			"jurisdiction": "uk",
+			"id": "uk-fca-ai-guidance",
+			"verificationStatus": "unverified",
+			"claimCount": 2,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/uk/ico-ai-guidance.md",
+			"relativePath": "knowledge/provisions/uk/ico-ai-guidance.md",
+			"jurisdiction": "uk",
+			"id": "uk-ico-ai-guidance",
+			"verificationStatus": "unverified",
+			"claimCount": 28,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/eeoc-ai-guidance.md",
+			"relativePath": "knowledge/provisions/us/federal/eeoc-ai-guidance.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-eeoc-ai-guidance",
+			"verificationStatus": "unverified",
+			"claimCount": 0,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/federal-financial-ai.md",
+			"relativePath": "knowledge/provisions/us/federal/federal-financial-ai.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-federal-financial-ai",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/ftc-enforcement.md",
+			"relativePath": "knowledge/provisions/us/federal/ftc-enforcement.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-ftc-enforcement",
+			"verificationStatus": "unverified",
+			"claimCount": 7,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/ftc-genai-guidance.md",
+			"relativePath": "knowledge/provisions/us/federal/ftc-genai-guidance.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-ftc-genai-guidance",
+			"verificationStatus": "unverified",
+			"claimCount": 8,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/nist-ai-rmf.md",
+			"relativePath": "knowledge/provisions/us/federal/nist-ai-rmf.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-nist-ai-rmf",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/federal/nist-genai-profile.md",
+			"relativePath": "knowledge/provisions/us/federal/nist-genai-profile.md",
+			"jurisdiction": "us/federal",
+			"id": "us-federal-nist-genai-profile",
+			"verificationStatus": "unverified",
+			"claimCount": 1,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/california/ccpa-cpra-ai.md",
+			"relativePath": "knowledge/provisions/us/states/california/ccpa-cpra-ai.md",
+			"jurisdiction": "us/states/california",
+			"id": "us-california-ccpa-cpra-ai",
+			"verificationStatus": "unverified",
+			"claimCount": 11,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/california/deepfake-laws.md",
+			"relativePath": "knowledge/provisions/us/states/california/deepfake-laws.md",
+			"jurisdiction": "us/states/california",
+			"id": "us-california-deepfake-laws",
+			"verificationStatus": "unverified",
+			"claimCount": 11,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/california/sb942-genai-transparency.md",
+			"relativePath": "knowledge/provisions/us/states/california/sb942-genai-transparency.md",
+			"jurisdiction": "us/states/california",
+			"id": "us-california-sb942-genai-transparency",
+			"verificationStatus": "unverified",
+			"claimCount": 11,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/colorado/colorado-ai-act.md",
+			"relativePath": "knowledge/provisions/us/states/colorado/colorado-ai-act.md",
+			"jurisdiction": "us/states/colorado",
+			"id": "us-colorado-colorado-ai-act",
+			"verificationStatus": "unverified",
+			"claimCount": 9,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/illinois/ai-video-interview-act.md",
+			"relativePath": "knowledge/provisions/us/states/illinois/ai-video-interview-act.md",
+			"jurisdiction": "us/states/illinois",
+			"id": "us-illinois-ai-video-interview-act",
+			"verificationStatus": "unverified",
+			"claimCount": 4,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/illinois/bipa.md",
+			"relativePath": "knowledge/provisions/us/states/illinois/bipa.md",
+			"jurisdiction": "us/states/illinois",
+			"id": "us-illinois-bipa",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/new-york/ll144-aedt.md",
+			"relativePath": "knowledge/provisions/us/states/new-york/ll144-aedt.md",
+			"jurisdiction": "us/states/new-york",
+			"id": "us-new-york-ll144-aedt",
+			"verificationStatus": "unverified",
+			"claimCount": 11,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/texas/deepfake-laws.md",
+			"relativePath": "knowledge/provisions/us/states/texas/deepfake-laws.md",
+			"jurisdiction": "us/states/texas",
+			"id": "us-texas-deepfake-laws",
+			"verificationStatus": "unverified",
+			"claimCount": 13,
+			"urlIssues": []
+		},
+		{
+			"path": "/Users/yapjiaqing/Documents/launchclear/knowledge/provisions/us/states/texas/traiga.md",
+			"relativePath": "knowledge/provisions/us/states/texas/traiga.md",
+			"jurisdiction": "us/states/texas",
+			"id": "us-texas-traiga",
+			"verificationStatus": "unverified",
+			"claimCount": 3,
+			"urlIssues": []
+		}
+	]
+}

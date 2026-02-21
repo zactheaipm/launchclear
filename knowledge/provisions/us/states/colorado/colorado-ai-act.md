@@ -1,3 +1,17 @@
+---
+id: "us-colorado-colorado-ai-act"
+law: "SB 24-205, Colorado Revised Statutes § 6-1-1701 et seq."
+articles: []
+effectiveDate: "February 1, 2026"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "colorado-ai-act"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Colorado AI Act (SB 24-205)
 
 **Authority**: Colorado Legislature; Colorado Attorney General

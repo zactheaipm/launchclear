@@ -1,3 +1,18 @@
+---
+id: "china-cac-genai-measures"
+law: "Cybersecurity Law of the People's Republic of China,"
+articles: []
+effectiveDate: "August 15, 2023"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "cn-cac-genai-measures"
+  - id: "cn-cac-genai-measures-en"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # China — CAC Interim Measures for Generative AI Services
 
 **Authority**: Cyberspace Administration of China (CAC), jointly with the

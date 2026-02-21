@@ -1,3 +1,18 @@
+---
+id: "singapore-pdpc-ai-governance"
+law: "Personal Data Protection Act 2012 (PDPA), as amended 2020"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "sg-pdpc-ai-governance"
+  - id: "sg-pdpa"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Singapore — PDPC Model AI Governance Framework
 
 **Authority**: Personal Data Protection Commission (PDPC), Singapore

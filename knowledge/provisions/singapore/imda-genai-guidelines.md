@@ -1,3 +1,17 @@
+---
+id: "singapore-imda-genai-guidelines"
+law: "Companion framework to PDPC Model AI Governance Framework"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "sg-imda-genai"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Singapore — IMDA GenAI Governance Framework
 
 **Authority**: Infocomm Media Development Authority (IMDA), Singapore

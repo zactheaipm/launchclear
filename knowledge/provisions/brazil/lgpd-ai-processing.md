@@ -1,3 +1,17 @@
+---
+id: "brazil-lgpd-ai-processing"
+law: "Lei Geral de Proteção de Dados (LGPD, Law No. 13.709/2018),"
+articles: []
+effectiveDate: "September 18, 2020"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "br-lgpd"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Brazil — LGPD Automated Decision Provisions
 
 **Authority**: Autoridade Nacional de Proteção de Dados (ANPD — National

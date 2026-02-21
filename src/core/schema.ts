@@ -802,6 +802,156 @@ export const ProvisionManifestSchema = z.object({
 	sections: z.array(ProvisionSectionSchema),
 });
 
+// ─── Knowledge Base Verification ──────────────────────────────────────────
+
+export const SourceCitationTypeSchema = z.enum([
+	"primary-legislation",
+	"primary-decision",
+	"official-guidance",
+	"secondary-analysis",
+]);
+
+export const VerificationStatusSchema = z.enum(["unverified", "in-review", "verified", "disputed"]);
+
+export const SourceCitationSchema = z.object({
+	id: z.string(),
+	type: SourceCitationTypeSchema,
+	title: z.string(),
+	url: z.string().url(),
+	accessDate: z.string(),
+	verifiedBy: z.string().nullable(),
+	verifiedDate: z.string().nullable(),
+});
+
+export const VerificationIssueSchema = z.object({
+	line: z.number().optional(),
+	claim: z.string(),
+	description: z.string(),
+	severity: z.enum(["error", "warning"]),
+});
+
+export const VerificationSchema = z.object({
+	status: VerificationStatusSchema,
+	lastAuditDate: z.string().nullable(),
+	auditor: z.string().nullable(),
+	issues: z.array(VerificationIssueSchema),
+});
+
+export const ProvisionSourceRefSchema = z.object({
+	id: z.string(),
+	articles: z.array(z.string()).optional(),
+});
+
+export const ProvisionFrontmatterSchema = z.object({
+	id: z.string(),
+	law: z.string(),
+	articles: z.array(z.string()),
+	effectiveDate: z.string().nullable(),
+	generatedBy: z.string(),
+	sources: z.array(ProvisionSourceRefSchema),
+	verification: VerificationSchema,
+});
+
+export const CentralSourceSchema = z.object({
+	type: SourceCitationTypeSchema,
+	jurisdiction: z.string(),
+	title: z.string(),
+	officialReference: z.string().optional(),
+	urls: z.array(z.string().url()),
+	language: z.string(),
+	lastChecked: z.string().nullable(),
+	status: z.enum(["active", "superseded", "repealed"]),
+});
+
+export const CitationRegistrySchema = z.object({
+	sources: z.record(z.string(), CentralSourceSchema),
+});
+
+export const EnforcementCaseVerificationSchema = z.object({
+	status: VerificationStatusSchema,
+	fineVerified: z.boolean(),
+	dateVerified: z.boolean(),
+	factsVerified: z.boolean(),
+	auditor: z.string().nullable(),
+	auditDate: z.string().nullable(),
+	notes: z.array(z.string()),
+});
+
+export const EnforcementCaseSourceSchema = z.object({
+	type: z.enum(["primary-decision", "press-release", "secondary-analysis"]),
+	title: z.string(),
+	url: z.string().url(),
+	decisionNumber: z.string().optional(),
+	accessDate: z.string(),
+});
+
+export const VerifiedEnforcementCaseSchema = EnforcementCaseSchema.extend({
+	fineCurrency: z.enum(["EUR", "USD", "GBP", "SGD", "RMB", "BRL"]).optional(),
+	sources: z.array(EnforcementCaseSourceSchema),
+	verification: EnforcementCaseVerificationSchema,
+	generatedBy: z.string(),
+});
+
+export const AuditFindingSchema = z.object({
+	file: z.string(),
+	line: z.number().optional(),
+	claim: z.string(),
+	finding: z.string(),
+	status: z.enum(["verified", "disputed", "unverifiable", "corrected"]),
+	correctionNeeded: z.string().optional(),
+});
+
+export const AuditEntrySchema = z.object({
+	id: z.string(),
+	date: z.string(),
+	auditor: z.string(),
+	scope: z.string(),
+	primarySourcesUsed: z.array(z.string()),
+	findings: z.array(AuditFindingSchema),
+});
+
+export const AuditLogSchema = z.object({
+	audits: z.array(AuditEntrySchema),
+});
+
+export const ExtractedClaimSchema = z.object({
+	file: z.string(),
+	line: z.number(),
+	claimType: z.enum([
+		"article-number",
+		"effective-date",
+		"threshold",
+		"fine-amount",
+		"document-number",
+		"case-citation",
+		"organization",
+		"date-claim",
+	]),
+	claimText: z.string(),
+	context: z.string(),
+	citationKey: z.string().nullable(),
+	verified: z.boolean(),
+});
+
+export const UrlCheckResultSchema = z.object({
+	url: z.string(),
+	source: z.string(),
+	status: z.enum(["passed", "redirected", "failed", "unreachable", "generic"]),
+	httpStatus: z.number().optional(),
+	redirectUrl: z.string().optional(),
+	error: z.string().optional(),
+});
+
+export const UrlReportSchema = z.object({
+	checkedAt: z.string(),
+	total: z.number(),
+	passed: z.array(UrlCheckResultSchema),
+	redirected: z.array(UrlCheckResultSchema),
+	failed: z.array(UrlCheckResultSchema),
+	unreachable: z.array(UrlCheckResultSchema),
+	generic: z.array(UrlCheckResultSchema),
+});
+
 // ─── Inferred Types (Zod as source of truth) ──────────────────────────────
 
 export type ProductContextInput = z.input<typeof ProductContextSchema>;
@@ -813,3 +963,9 @@ export type SignalPatternInput = z.input<typeof SignalPatternSchema>;
 export type ExtractorResultInput = z.input<typeof ExtractorResultSchema>;
 export type CodebaseAnalysisResultInput = z.input<typeof CodebaseAnalysisResultSchema>;
 export type RegulationPipelineResultInput = z.input<typeof RegulationPipelineResultSchema>;
+export type ProvisionFrontmatterInput = z.input<typeof ProvisionFrontmatterSchema>;
+export type CitationRegistryInput = z.input<typeof CitationRegistrySchema>;
+export type VerifiedEnforcementCaseInput = z.input<typeof VerifiedEnforcementCaseSchema>;
+export type AuditLogInput = z.input<typeof AuditLogSchema>;
+export type ExtractedClaimInput = z.input<typeof ExtractedClaimSchema>;
+export type UrlReportInput = z.input<typeof UrlReportSchema>;

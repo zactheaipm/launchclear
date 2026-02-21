@@ -2,7 +2,7 @@
 	"id": "china",
 	"law": "China AI Regulatory Framework",
 	"jurisdiction": "China",
-	"lastUpdated": "2026-02-21",
+	"lastUpdated": null,
 	"sections": [
 		{
 			"id": "cn-cac-genai-measures",

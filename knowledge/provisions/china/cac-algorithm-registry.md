@@ -1,3 +1,17 @@
+---
+id: "china-cac-algorithm-registry"
+law: "Provisions on the Management of Algorithmic Recommendations"
+articles: []
+effectiveDate: "March 1, 2022"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "cn-cac-algorithm-provisions"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # China — Algorithm Registration and Filing Requirements
 
 **Authority**: Cyberspace Administration of China (CAC)

@@ -1,3 +1,17 @@
+---
+id: "china-cac-recommendation-algo"
+law: "Provisions on the Management of Algorithmic Recommendations"
+articles: []
+effectiveDate: "March 1, 2022"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "cn-cac-recommendation-algo"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # China — Recommendation Algorithm Provisions
 
 **Authority**: Cyberspace Administration of China (CAC), Ministry of Industry

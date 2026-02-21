@@ -1,3 +1,17 @@
+---
+id: "us-california-sb942-genai-transparency"
+law: "SB 942 — California Generative AI Transparency Act"
+articles: []
+effectiveDate: "January 1, 2026"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "ca-sb942"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # California — SB 942 GenAI Transparency Act
 
 **Authority**: California Legislature

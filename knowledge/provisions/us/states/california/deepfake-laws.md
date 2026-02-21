@@ -1,3 +1,17 @@
+---
+id: "us-california-deepfake-laws"
+law: "AB 730 (Elections Code § 20010), AB 602 (Civ. Code § 1708.86),"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "ccpa"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # California — Deepfake Laws
 
 **Authority**: California Legislature

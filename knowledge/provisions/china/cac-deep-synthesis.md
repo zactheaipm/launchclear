@@ -1,3 +1,17 @@
+---
+id: "china-cac-deep-synthesis"
+law: "Provisions on the Management of Deep Synthesis of Internet"
+articles: []
+effectiveDate: "January 10, 2023"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "cn-cac-deep-synthesis"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # China — Deep Synthesis Technology Regulations
 
 **Authority**: Cyberspace Administration of China (CAC), Ministry of Industry

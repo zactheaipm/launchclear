@@ -1,3 +1,17 @@
+---
+id: "uk-dsit-foundation-models"
+law: "AI Regulation White Paper (Cm 9809, March 2023; updated February 2024). Non-statutory framework implemented through existing regulators' powers. No AI-specific primary legislation."
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "dsit-foundation-models"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # UK — DSIT Foundation Model Principles and Regulatory Approach
 
 **Authority**: Department for Science, Innovation and Technology (DSIT)

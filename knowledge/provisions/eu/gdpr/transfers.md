@@ -1,3 +1,18 @@
+---
+id: "eu-gdpr-transfers"
+law: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+articles: ["Articles 44-49"]
+effectiveDate: "25 May 2018"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-gdpr"
+    articles: ["Articles 44-49"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # GDPR — International Data Transfers
 
 **Law**: Regulation (EU) 2016/679 (General Data Protection Regulation)

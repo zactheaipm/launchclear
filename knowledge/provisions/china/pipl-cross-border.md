@@ -1,3 +1,17 @@
+---
+id: "china-pipl-cross-border"
+law: "pipl-cross-border"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "cn-pipl"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # China PIPL — Cross-Border Personal Information Transfer
 
 ## Overview

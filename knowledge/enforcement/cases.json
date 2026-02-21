@@ -14,7 +14,26 @@
 		],
 		"outcome": "Fine of EUR 20 million. Order to cease collecting and processing data of individuals in France and to delete existing data within two months.",
 		"fine": 20000000,
-		"url": "https://www.cnil.fr/en/facial-recognition-cnil-fines-clearview-ai-eu20-million"
+		"url": "https://www.cnil.fr/en/facial-recognition-cnil-fines-clearview-ai-eu20-million",
+		"fineCurrency": "EUR",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "CNIL (France) — Clearview AI",
+				"url": "https://www.cnil.fr/en/facial-recognition-cnil-fines-clearview-ai-eu20-million",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "eu-garante-clearview-2022",
@@ -33,7 +52,26 @@
 		],
 		"outcome": "Fine of EUR 20 million. Ban on further processing of Italian residents' data. Order to delete all data of Italian residents and appoint an EU representative.",
 		"fine": 20000000,
-		"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9751362"
+		"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9751362",
+		"fineCurrency": "EUR",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "Garante (Italy) — Clearview AI",
+				"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9751362",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "eu-dpc-meta-transfers-2023",
@@ -48,7 +86,26 @@
 		],
 		"outcome": "Record fine of EUR 1.2 billion. Order to suspend transatlantic data transfers and bring processing into GDPR compliance within five months.",
 		"fine": 1200000000,
-		"url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-conclusion-inquiry-meta-ireland"
+		"url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-conclusion-inquiry-meta-ireland",
+		"fineCurrency": "EUR",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "DPC (Ireland) — Meta Platforms Ireland Limited",
+				"url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-conclusion-inquiry-meta-ireland",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "eu-garante-openai-chatgpt-2023",
@@ -65,7 +122,25 @@
 			"GDPR Article 22 (Automated individual decision-making)"
 		],
 		"outcome": "Temporary ban on ChatGPT in Italy (March 31 to April 28, 2023). OpenAI implemented corrective measures: privacy notice, age verification, EU-based opt-out mechanism for training data. Formal investigation opened with potential fine pending.",
-		"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832"
+		"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "Garante (Italy) — OpenAI (ChatGPT)",
+				"url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "eu-cnpd-amazon-2021",
@@ -81,7 +156,28 @@
 		],
 		"outcome": "Fine of EUR 746 million. Order to revise data processing practices to comply with GDPR. Amazon appealed the decision.",
 		"fine": 746000000,
-		"url": "https://cnpd.public.lu/en.html"
+		"url": "https://cnpd.public.lu/en.html",
+		"fineCurrency": "EUR",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "CNPD (Luxembourg) — Amazon Europe Core S.a.r.l.",
+				"url": "https://cnpd.public.lu/en.html",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"URL is generic homepage (https://cnpd.public.lu/en.html), not a specific decision page. Needs replacement with decision-specific URL."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "eu-hmbfdi-hm-2020",
@@ -98,7 +194,26 @@
 		],
 		"outcome": "Fine of EUR 35.3 million. H&M also paid compensation to affected employees and implemented comprehensive data protection reforms.",
 		"fine": 35300000,
-		"url": "https://datenschutz-hamburg.de/pressemitteilungen/2020/10/2020-10-01-h-m-bussgeld"
+		"url": "https://datenschutz-hamburg.de/pressemitteilungen/2020/10/2020-10-01-h-m-bussgeld",
+		"fineCurrency": "EUR",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "HmbBfDI (Hamburg, Germany) — H&M Hennes & Mauritz Online Shop A.B. & Co. KG",
+				"url": "https://datenschutz-hamburg.de/pressemitteilungen/2020/10/2020-10-01-h-m-bussgeld",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-rite-aid-2023",
@@ -112,7 +227,25 @@
 			"FTC Policy Statement on Biometric Information"
 		],
 		"outcome": "Rite Aid banned from using facial recognition technology for surveillance purposes for five years. Required to delete all images collected and any AI models trained on improperly collected data. Must implement a comprehensive AI fairness program.",
-		"url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without"
+		"url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC (Federal Trade Commission) — Rite Aid Corporation",
+				"url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-amazon-alexa-2023",
@@ -127,7 +260,26 @@
 		],
 		"outcome": "Fine of USD 25 million. Required to delete certain voice recordings and geolocation data. Required to implement a comprehensive privacy program.",
 		"fine": 25000000,
-		"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazon-alexa"
+		"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazon-alexa",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC (Federal Trade Commission) — Amazon.com Inc (Alexa)",
+				"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazon-alexa",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-bipa-meta-facebook-2021",
@@ -142,7 +294,28 @@
 		],
 		"outcome": "Settlement of $650 million, the largest BIPA settlement at the time. Facebook also disabled the Tag Suggestions feature and deleted all stored face templates.",
 		"fine": 650000000,
-		"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184/facebook-inc"
+		"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184/facebook-inc",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "Circuit Court of Cook County, Illinois — Facebook, Inc. (now Meta Platforms)",
+				"url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184/facebook-inc",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"Original URL pointed to FTC proceeding, not the BIPA class action settlement. URL needs replacement with court settlement documentation."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-everalbum-2021",
@@ -153,7 +326,25 @@
 		"summary": "FTC charged Everalbum with deceiving users of its Ever photo storage app about its use of facial recognition technology and its data retention practices. The company used users' photos and videos to train its facial recognition technology without users' knowledge, then sold the technology as Paravision to enterprise and government clients.",
 		"relevantProvisions": ["FTC Act Section 5 (Deceptive acts or practices)"],
 		"outcome": "Consent order requiring Everalbum to delete all face embeddings and models/algorithms derived from photos of users who did not give express consent. Required to obtain express consent before using facial recognition. Landmark 'algorithmic disgorgement' remedy — deletion of AI models trained on improperly collected data.",
-		"url": "https://www.ftc.gov/news-events/news/press-releases/2021/01/california-company-settles-ftc-allegations-it-deceived-consumers-about-use-facial-recognition-photo"
+		"url": "https://www.ftc.gov/news-events/news/press-releases/2021/01/california-company-settles-ftc-allegations-it-deceived-consumers-about-use-facial-recognition-photo",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC (Federal Trade Commission) — Everalbum, Inc. (now Paravision)",
+				"url": "https://www.ftc.gov/news-events/news/press-releases/2021/01/california-company-settles-ftc-allegations-it-deceived-consumers-about-use-facial-recognition-photo",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-ww-kurbo-2022",
@@ -168,7 +359,26 @@
 		],
 		"outcome": "Fine of $1.5 million. Required to delete personal information collected from children and destroy all work product — including algorithms and AI models — derived from that data. Established precedent that AI models trained on improperly collected children's data must be destroyed.",
 		"fine": 1500000,
-		"url": "https://www.ftc.gov/news-events/news/press-releases/2022/03/ftc-takes-action-against-weight-watchers-illegally-collecting-kids-sensitive-health-data"
+		"url": "https://www.ftc.gov/news-events/news/press-releases/2022/03/ftc-takes-action-against-weight-watchers-illegally-collecting-kids-sensitive-health-data",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC (Federal Trade Commission) — WW International, Inc. (Weight Watchers) / Kurbo",
+				"url": "https://www.ftc.gov/news-events/news/press-releases/2022/03/ftc-takes-action-against-weight-watchers-illegally-collecting-kids-sensitive-health-data",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-epic-fortnite-2022",
@@ -183,7 +393,26 @@
 		],
 		"outcome": "Two record-setting settlements totaling $520 million: $275 million for COPPA violations (largest COPPA penalty ever) and $245 million in refunds to consumers affected by dark pattern billing practices.",
 		"fine": 520000000,
-		"url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations"
+		"url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC (Federal Trade Commission) — Epic Games, Inc.",
+				"url": "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-eeoc-itutor-2023",
@@ -198,7 +427,26 @@
 		],
 		"outcome": "Settlement of $365,000 paid to affected applicants. iTutorGroup required to adopt anti-discrimination policies for AI hiring tools, train staff, and report to EEOC. First EEOC resolution of AI age discrimination in hiring.",
 		"fine": 365000,
-		"url": "https://www.eeoc.gov/newsroom/itutor-group-pay-365000-settle-eeoc-age-discrimination-lawsuit"
+		"url": "https://www.eeoc.gov/newsroom/itutor-group-pay-365000-settle-eeoc-age-discrimination-lawsuit",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "EEOC (Equal Employment Opportunity Commission) — iTutorGroup, Inc.",
+				"url": "https://www.eeoc.gov/newsroom/itutor-group-pay-365000-settle-eeoc-age-discrimination-lawsuit",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ca-sephora-ccpa-2022",
@@ -215,7 +463,26 @@
 		],
 		"outcome": "Settlement of $1.2 million in penalties. Sephora required to clarify its online disclosures regarding sale of personal data, process opt-out signals including GPC, and conform its service provider agreements.",
 		"fine": 1200000,
-		"url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement"
+		"url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "California Attorney General — Sephora, Inc.",
+				"url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-settlement-sephora-part-ongoing-enforcement",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-state-ag-google-location-2022",
@@ -230,7 +497,26 @@
 		],
 		"outcome": "Settlement of $391.5 million across 40 states — the largest multistate attorney general consumer privacy settlement in US history. Google required to improve location tracking disclosures and provide clearer user controls.",
 		"fine": 391500000,
-		"url": "https://www.oregonattorneygeneral.gov/media/comm_newsreleases/2022/ro_Google_settlement_111422.html"
+		"url": "https://www.oregonattorneygeneral.gov/media/comm_newsreleases/2022/ro_Google_settlement_111422.html",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "40 State Attorneys General (led by Oregon, Nebraska, Texas) — Google LLC",
+				"url": "https://www.oregonattorneygeneral.gov/media/comm_newsreleases/2022/ro_Google_settlement_111422.html",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-nyc-ll144-enforcement-2023",
@@ -244,7 +530,25 @@
 			"NYC Admin Code Section 20-870 to 20-874"
 		],
 		"outcome": "Active enforcement program with DCWP conducting compliance reviews. Employers failing to conduct bias audits or provide required notices face civil penalties of $500 for a first violation and $500-$1,500 for subsequent violations per violation.",
-		"url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+		"url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "NYC Department of Consumer and Worker Protection (DCWP) — Multiple employers (enforcement program)",
+				"url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "cn-cac-didi-2022",
@@ -261,7 +565,26 @@
 		],
 		"outcome": "Fine of RMB 8.026 billion (approximately $1.2 billion USD). Didi's CEO and President each fined RMB 1 million personally. Largest data security fine in Chinese history.",
 		"fine": 1200000000,
-		"url": "http://www.cac.gov.cn/2022-07/21/c_1659362034177877.htm"
+		"url": "http://www.cac.gov.cn/2022-07/21/c_1659362034177877.htm",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "CAC (Cyberspace Administration of China) — Didi Global Inc.",
+				"url": "http://www.cac.gov.cn/2022-07/21/c_1659362034177877.htm",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "cn-cac-algorithm-filings-2023",
@@ -276,12 +599,32 @@
 			"Interim Measures for the Management of Generative AI Services (2023)"
 		],
 		"outcome": "Multiple apps removed from app stores for failing to complete algorithm filing. Companies given rectification deadlines. Over 40 generative AI services approved for public release after completing filing by end of 2023.",
-		"url": "http://www.cac.gov.cn"
+		"url": "http://www.cac.gov.cn",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "CAC (Cyberspace Administration of China) — Multiple technology companies",
+				"url": "http://www.cac.gov.cn",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"URL is generic homepage (http://www.cac.gov.cn), not a specific decision page. Needs replacement with decision-specific URL."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "cn-cac-ant-group-2023",
 		"jurisdiction": "china",
-		"authority": "PBOC, CBIRC, CSRC, SAFE (coordinated)",
+		"authority": "PBOC, NFRA (formerly CBIRC), CSRC, SAFE (coordinated)",
 		"date": "2023-07-07",
 		"respondent": "Ant Group Co., Ltd.",
 		"summary": "Chinese financial regulators concluded their multi-year rectification of Ant Group, addressing concerns about data governance, consumer protection in AI-driven financial services (credit scoring via Sesame Credit and lending via Huabei/Jiebei), and algorithmic governance of its financial platform. Ant Group was required to restructure as a financial holding company with enhanced data governance.",
@@ -293,7 +636,26 @@
 		],
 		"outcome": "Fine of RMB 7.123 billion (approximately $984 million USD) across multiple entities. Ant Group completed corporate restructuring, established data governance framework, and received financial holding company license. Operations required to meet traditional financial regulatory standards.",
 		"fine": 984000000,
-		"url": "http://www.pbc.gov.cn/en/3688006/3688978/4756560/index.html"
+		"url": "http://www.pbc.gov.cn/en/3688006/3688978/4756560/index.html",
+		"fineCurrency": "USD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "PBOC, NFRA (formerly CBIRC), CSRC, SAFE (coordinated) — Ant Group Co., Ltd.",
+				"url": "http://www.pbc.gov.cn/en/3688006/3688978/4756560/index.html",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": ["Authority corrected: CBIRC renamed to NFRA in May 2023"]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "sg-pdpc-singhealth-2019",
@@ -308,7 +670,28 @@
 		],
 		"outcome": "IHiS fined SGD 750,000 and SingHealth fined SGD 250,000 (total SGD 1 million). Multiple remedial measures mandated including enhanced cybersecurity monitoring, security governance improvements, and mandatory incident response procedures.",
 		"fine": 250000,
-		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2019/01/grounds-of-decision-singhealth"
+		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2019/01/grounds-of-decision-singhealth",
+		"fineCurrency": "SGD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "PDPC (Personal Data Protection Commission) — SingHealth and Integrated Health Information Systems (IHiS)",
+				"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2019/01/grounds-of-decision-singhealth",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"Fine field (SGD 250,000) captures only SingHealth's portion. IHiS was separately fined SGD 750,000. Total enforcement action was SGD 1,000,000."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "sg-pdpc-grab-2020",
@@ -322,7 +705,26 @@
 		],
 		"outcome": "Financial penalty of SGD 10,000. PDPC directed Grab to review and improve its software development and testing processes for features handling personal data.",
 		"fine": 10000,
-		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/09/grounds-of-decision-grab"
+		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/09/grounds-of-decision-grab",
+		"fineCurrency": "SGD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "PDPC (Personal Data Protection Commission) — Grab Holdings Inc.",
+				"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/09/grounds-of-decision-grab",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "sg-pdpc-ninjavan-2022",
@@ -337,7 +739,28 @@
 		],
 		"outcome": "Financial penalty of SGD 90,000. Ninja Van directed to implement enhanced access controls, conduct staff training on data protection, and audit its automated data processing systems.",
 		"fine": 90000,
-		"url": "https://www.pdpc.gov.sg/all-commissions-decisions"
+		"url": "https://www.pdpc.gov.sg/all-commissions-decisions",
+		"fineCurrency": "SGD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "PDPC (Personal Data Protection Commission) — Ninja Logistics Pte Ltd (Ninja Van)",
+				"url": "https://www.pdpc.gov.sg/all-commissions-decisions",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"URL is generic homepage (https://www.pdpc.gov.sg/all-commissions-decisions), not a specific decision page. Needs replacement with decision-specific URL."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "uk-ico-clearview-2022",
@@ -356,7 +779,26 @@
 		],
 		"outcome": "Fine of GBP 7,552,800 (approximately $9.4 million USD). Enforcement notice ordering Clearview to stop obtaining and using personal data of UK residents, and to delete UK residents' data from its systems.",
 		"fine": 7552800,
-		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2022/05/ico-fines-facial-recognition-database-company-clearview-ai-inc/"
+		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2022/05/ico-fines-facial-recognition-database-company-clearview-ai-inc/",
+		"fineCurrency": "GBP",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ICO (Information Commissioner's Office) — Clearview AI Inc.",
+				"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2022/05/ico-fines-facial-recognition-database-company-clearview-ai-inc/",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "uk-ico-british-airways-2020",
@@ -371,7 +813,26 @@
 		],
 		"outcome": "Fine of GBP 20 million (reduced from initial notice of GBP 183 million due to BA's representations, COVID-19 economic impact, and mitigating steps taken). BA required to enhance security monitoring and detection capabilities.",
 		"fine": 20000000,
-		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-british-airways-20m-for-data-breach-affecting-more-than-400-000-customers/"
+		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-british-airways-20m-for-data-breach-affecting-more-than-400-000-customers/",
+		"fineCurrency": "GBP",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ICO (Information Commissioner's Office) — British Airways",
+				"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-british-airways-20m-for-data-breach-affecting-more-than-400-000-customers/",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "uk-ico-marriott-2020",
@@ -386,7 +847,26 @@
 		],
 		"outcome": "Fine of GBP 18.4 million (reduced from initial notice of GBP 99 million). Marriott required to improve its data protection and security monitoring, particularly for automated database systems handling personal data at scale.",
 		"fine": 18400000,
-		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-marriott-international-inc-184-million-for-failing-to-keep-customers-personal-data-secure/"
+		"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-marriott-international-inc-184-million-for-failing-to-keep-customers-personal-data-secure/",
+		"fineCurrency": "GBP",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ICO (Information Commissioner's Office) — Marriott International, Inc.",
+				"url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2020/10/ico-fines-marriott-international-inc-184-million-for-failing-to-keep-customers-personal-data-secure/",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "br-anpd-telekall-2023",
@@ -402,7 +882,26 @@
 		],
 		"outcome": "Warning and fine of BRL 14,400 (approximately $2,900 USD). Relatively small fine reflecting the company's microenterprise status, but significant as Brazil's first LGPD enforcement action, establishing ANPD's willingness to exercise its sanctioning powers.",
 		"fine": 14400,
-		"url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aplica-a-primeira-sancao"
+		"url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aplica-a-primeira-sancao",
+		"fineCurrency": "BRL",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ANPD (Autoridade Nacional de Protecao de Dados) — Telekall Infoservice",
+				"url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aplica-a-primeira-sancao",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "us-ftc-hirevue-context-2024",
@@ -417,7 +916,27 @@
 			"Title VII of the Civil Rights Act of 1964"
 		],
 		"outcome": "No formal fine imposed. HireVue proactively discontinued facial analysis features in response to regulatory pressure. Illustrative case demonstrating how FTC and EEOC scrutiny of AI hiring tools drives market behavior changes even absent formal enforcement.",
-		"url": "https://www.eeoc.gov/ai"
+		"url": "https://www.eeoc.gov/ai",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "FTC / EEOC (regulatory context) — HireVue, Inc. (regulatory context)",
+				"url": "https://www.eeoc.gov/ai",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"URL is generic homepage (https://www.eeoc.gov/ai), not a specific decision page. Needs replacement with decision-specific URL."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "uk-ico-serco-leisure-2023",
@@ -432,7 +951,25 @@
 			"UK GDPR Article 9 (Special category data — biometric)"
 		],
 		"outcome": "Enforcement notice requiring Serco to stop processing biometric data for attendance monitoring.",
-		"url": "https://ico.org.uk/action-weve-taken/enforcement/serco-leisure/"
+		"url": "https://ico.org.uk/action-weve-taken/enforcement/serco-leisure/",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ICO (UK) — Serco Leisure",
+				"url": "https://ico.org.uk/action-weve-taken/enforcement/serco-leisure/",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "sg-pdpc-sph-magazines-2020",
@@ -447,7 +984,26 @@
 		],
 		"outcome": "Financial penalty of SGD 26,000 and directions to implement security measures.",
 		"fine": 26000,
-		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/02/breach-of-the-protection-obligation-by-sph-magazines-pte-ltd"
+		"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/02/breach-of-the-protection-obligation-by-sph-magazines-pte-ltd",
+		"fineCurrency": "SGD",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "PDPC (Singapore) — SPH Magazines Pte Ltd",
+				"url": "https://www.pdpc.gov.sg/all-commissions-decisions/2020/02/breach-of-the-protection-obligation-by-sph-magazines-pte-ltd",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": []
+		},
+		"generatedBy": "claude-opus-4"
 	},
 	{
 		"id": "br-anpd-inss-2024",
@@ -462,6 +1018,26 @@
 			"LGPD Article 41 (Data protection officer)"
 		],
 		"outcome": "Public warning and requirement to comply within 30 days. Significant precedent for public sector LGPD compliance.",
-		"url": "https://www.gov.br/anpd/pt-br"
+		"url": "https://www.gov.br/anpd/pt-br",
+		"sources": [
+			{
+				"type": "press-release",
+				"title": "ANPD (Brazil) — INSS (National Social Security Institute)",
+				"url": "https://www.gov.br/anpd/pt-br",
+				"accessDate": "2026-02-20"
+			}
+		],
+		"verification": {
+			"status": "unverified",
+			"fineVerified": false,
+			"dateVerified": false,
+			"factsVerified": false,
+			"auditor": null,
+			"auditDate": null,
+			"notes": [
+				"URL is generic homepage (https://www.gov.br/anpd/pt-br), not a specific decision page. Needs replacement with decision-specific URL."
+			]
+		},
+		"generatedBy": "claude-opus-4"
 	}
 ]

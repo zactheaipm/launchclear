@@ -1,0 +1,4349 @@
+[
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Brazilian Congress (Congresso Nacional) — Senate (Senado",
+		"context": "**Authority**: Brazilian Congress (Congresso Nacional) — Senate (Senado",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 19,
+		"claimType": "document-number",
+		"claimText": "PL 2338/2023",
+		"context": "**Legal Basis**: PL 2338/2023 (Projeto de Lei No. 2338/2023...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 21,
+		"claimType": "effective-date",
+		"claimText": "December 10, 2024",
+		"context": "...ed by the Brazilian Senate on December 10, 2024; under",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 29,
+		"claimType": "document-number",
+		"claimText": "PL 2338/2023",
+		"context": "Brazil's AI Bill (PL 2338/2023) is the most significant AI-s...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 40,
+		"claimType": "document-number",
+		"claimText": "PL 2338/2023",
+		"context": "...rtant**: As of February 2026, PL 2338/2023 is not yet enacted law.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 49,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "### Article 14 — Risk Categories",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 58,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "### Article 15 — Prohibited AI Systems (Exce...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 70,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "### Article 17 — High-Risk AI Systems",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 91,
+		"claimType": "article-number",
+		"claimText": "Article 23",
+		"context": "### Article 23 — Foundation Model Provider O...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 136,
+		"claimType": "article-number",
+		"claimText": "Article 24",
+		"context": "### Article 24 — GenAI Content Disclosure",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 159,
+		"claimType": "article-number",
+		"claimText": "Article 25",
+		"context": "### Article 25 — Training Data Disclosure",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 181,
+		"claimType": "article-number",
+		"claimText": "Article 19",
+		"context": "### Article 19 — Algorithmic Impact Assessme...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 207,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "### Article 20 — AI Governance",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 221,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "### Article 21 — Human Oversight",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 233,
+		"claimType": "article-number",
+		"claimText": "Article 31",
+		"context": "### Article 31 — ANPD as Lead Authority",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 245,
+		"claimType": "article-number",
+		"claimText": "Article 33",
+		"context": "### Article 33 — Regulatory Sandbox",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 258,
+		"claimType": "article-number",
+		"claimText": "Article 35",
+		"context": "### Article 35 — Administrative Sanctions",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 265,
+		"claimType": "fine-amount",
+		"claimText": "BRL 50 million",
+		"context": "  **BRL 50 million per violation** (approximatel...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 265,
+		"claimType": "fine-amount",
+		"claimText": "USD 10 million",
+		"context": "...er violation** (approximately USD 10 million) —",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 321,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "Article 20 of the LGPD (right to review ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 327,
+		"claimType": "article-number",
+		"claimText": "Articles 14-35",
+		"context": "... da Inteligência Artificial), Articles 14-35",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 327,
+		"claimType": "document-number",
+		"claimText": "PL 2338/2023",
+		"context": "- PL 2338/2023 (Marco Legal da Inteligência ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 328,
+		"claimType": "effective-date",
+		"claimText": "December 10, 2024",
+		"context": "...oved by the Brazilian Senate, December 10, 2024",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 329,
+		"claimType": "document-number",
+		"claimText": "PL 2338/2023",
+		"context": "- Senate Committee Report on PL 2338/2023 (Relatório da Comissão",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/ai-bill-genai.md",
+		"line": 335,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "- Brazilian Constitution, Article 5 (fundamental rights, relevant...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Autoridade Nacional de Proteção de Dados (ANPD — National",
+		"context": "**Authority**: Autoridade Nacional de Proteção de Dados (ANPD — National",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 21,
+		"claimType": "effective-date",
+		"claimText": "September 18, 2020",
+		"context": "**Status**: Effective September 18, 2020 (enforcement provisions effec...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 22,
+		"claimType": "effective-date",
+		"claimText": "August 1, 2021",
+		"context": "August 1, 2021)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 30,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "... most critical provisions are Article 20 (right to",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 31,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "...e legal bases for processing (Article 7),",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 32,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "...sitive data processing rules (Article 11), and the ANPD's evolving",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 38,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "## Article 7 — Legal Bases for Processing ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 69,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "...udes sensitive personal data (Article 11)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 77,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "## Article 11 — Sensitive Personal Data",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 103,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "basis under Article 11 and implement enhanced protec...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 105,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "## Article 12 — Anonymisation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 120,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "## Article 18 — Data Subject Rights",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 144,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "## Article 20 — Right to Review of Automate...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 146,
+		"claimType": "article-number",
+		"claimText": "Article 20(1)",
+		"context": "### Article 20(1) — Right to Review",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 161,
+		"claimType": "article-number",
+		"claimText": "Article 20(2)",
+		"context": "### Article 20(2) — Right to Explanation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 167,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "**Important**: Unlike GDPR Article 22, which frames automated decis...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 168,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "...ibition with exceptions, LGPD Article 20 frames it as a",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 173,
+		"claimType": "article-number",
+		"claimText": "Article 20(3)",
+		"context": "### Article 20(3) — ANPD Audit Authority",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 175,
+		"claimType": "article-number",
+		"claimText": "Article 20(2)",
+		"context": "... to provide information under Article 20(2)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 189,
+		"claimType": "article-number",
+		"claimText": "Article 33",
+		"context": "## Article 33 — International Data Transfer...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 200,
+		"claimType": "article-number",
+		"claimText": "Article 33",
+		"context": "...Other conditions specified in Article 33 are met",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 206,
+		"claimType": "article-number",
+		"claimText": "Article 38",
+		"context": "## Article 38 — Data Protection Impact Asse...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 224,
+		"claimType": "article-number",
+		"claimText": "Article 41",
+		"context": "## Article 41 — Data Protection Officer (DP...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 232,
+		"claimType": "article-number",
+		"claimText": "Article 52",
+		"context": "## Article 52 — Administrative Sanctions",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 239,
+		"claimType": "fine-amount",
+		"claimText": "BRL 50 million",
+		"context": "  limited to **BRL 50 million per violation** (approximatel...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 239,
+		"claimType": "fine-amount",
+		"claimText": "USD 10",
+		"context": "...er violation** (approximately USD 10",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 256,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "   Article 7 (or Article 11 for sensitive ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 256,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "   Article 7 (or Article 11 for sensitive data) for each ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 259,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "... of automated decisions under Article 20",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 264,
+		"claimType": "article-number",
+		"claimText": "Article 20(3)",
+		"context": "... ANPD's audit authority under Article 20(3)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 267,
+		"claimType": "article-number",
+		"claimText": "Article 33",
+		"context": "...ate transfer mechanisms under Article 33",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "brazil/lgpd-ai-processing.md",
+		"line": 282,
+		"claimType": "article-number",
+		"claimText": "Articles 186-187",
+		"context": "- Brazilian Civil Code, Articles 186-187 (civil liability for damages)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Cyberspace Administration of China (CAC)",
+		"context": "**Authority**: Cyberspace Administration of China (CAC)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 23,
+		"claimType": "effective-date",
+		"claimText": "March 1, 2022",
+		"context": "...m filing provisions effective March 1, 2022; extended",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 43,
+		"claimType": "article-number",
+		"claimText": "Article 24",
+		"context": "Under Article 24 of the Algorithm Recommendati...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 55,
+		"claimType": "article-number",
+		"claimText": "Article 8",
+		"context": "Under Article 8 of the Interim Measures for G...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 157,
+		"claimType": "article-number",
+		"claimText": "Article 31",
+		"context": "under Article 31 of the Algorithm Recommendati...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 160,
+		"claimType": "fine-amount",
+		"claimText": "RMB 10,000",
+		"context": "- **Fine of RMB 10,000 to RMB 100,000** (approximate...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 160,
+		"claimType": "fine-amount",
+		"claimText": "RMB 100,000",
+		"context": "- **Fine of RMB 10,000 to RMB 100,000** (approximately USD 1,400 to",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 160,
+		"claimType": "fine-amount",
+		"claimText": "USD 1,400",
+		"context": "... RMB 100,000** (approximately USD 1,400 to",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 161,
+		"claimType": "fine-amount",
+		"claimText": "USD 14,000",
+		"context": "  USD 14,000) for failure to rectify",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 191,
+		"claimType": "article-number",
+		"claimText": "Articles 24-31",
+		"context": "...n Services (互联网信息服务算法推荐管理规定), Articles 24-31",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 193,
+		"claimType": "article-number",
+		"claimText": "Article 8",
+		"context": "  Services (生成式人工智能服务管理暂行办法), Article 8",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 195,
+		"claimType": "article-number",
+		"claimText": "Article 19",
+		"context": "  Services (互联网信息服务深度合成管理规定), Article 19",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-algorithm-registry.md",
+		"line": 198,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "...e People's Republic of China, Article 21",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Cyberspace Administration of China (CAC), Ministry of Industry",
+		"context": "**Authority**: Cyberspace Administration of China (CAC), Ministry of Industry",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 21,
+		"claimType": "effective-date",
+		"claimText": "January 10, 2023",
+		"context": "**Status**: Effective January 10, 2023",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 37,
+		"claimType": "article-number",
+		"claimText": "Article 2",
+		"context": "## Article 2 — Definition of Deep Synthesi...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 64,
+		"claimType": "article-number",
+		"claimText": "Article 6",
+		"context": "## Article 6 — Provider General Obligation...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 76,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "## Article 7 — Provider Technical Obligati...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 89,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "## Article 9 — Consent for Biometric Featu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 97,
+		"claimType": "article-number",
+		"claimText": "Article 28",
+		"context": "  processing (Article 28 of PIPL requires separate con...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 109,
+		"claimType": "article-number",
+		"claimText": "Article 10",
+		"context": "## Article 10 — Prohibition on Deceptive Us...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 119,
+		"claimType": "article-number",
+		"claimText": "Articles 16-18",
+		"context": "## Articles 16-18 — Mandatory Labeling Requirem...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 121,
+		"claimType": "article-number",
+		"claimText": "Article 16",
+		"context": "### Article 16 — Machine-Readable Labeling",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 132,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "### Article 17 — Visible Labeling",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 146,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "### Article 18 — Anti-Tampering",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 156,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "## Article 11 — User Real-Name Verification",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 163,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "## Article 13 — User Reporting Mechanisms",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 174,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "## Article 14 — Record Keeping",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 187,
+		"claimType": "article-number",
+		"claimText": "Article 19",
+		"context": "## Article 19 — Algorithm Filing",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 197,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "### Article 20 — Regulatory Supervision",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 202,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "### Article 21 — Penalties",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 207,
+		"claimType": "fine-amount",
+		"claimText": "RMB 1 million",
+		"context": "... the Cybersecurity Law (up to RMB 1 million",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 208,
+		"claimType": "fine-amount",
+		"claimText": "RMB 50 million",
+		"context": "...ata Security Law, PIPL (up to RMB 50 million",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 236,
+		"claimType": "article-number",
+		"claimText": "Article 16",
+		"context": "...ne-readable marks required by Article 16",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 245,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "...e labeling requirements under Article 11 of the GenAI Measures",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 251,
+		"claimType": "article-number",
+		"claimText": "Articles 1-25",
+		"context": "  Services (互联网信息服务深度合成管理规定), Articles 1-25",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-deep-synthesis.md",
+		"line": 257,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "  Services, Article 11 (cross-reference to deep synt...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 18,
+		"claimType": "organization",
+		"claimText": "Cyberspace Administration of China (CAC), jointly with the",
+		"context": "**Authority**: Cyberspace Administration of China (CAC), jointly with the",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 27,
+		"claimType": "effective-date",
+		"claimText": "August 15, 2023",
+		"context": "**Status**: Effective August 15, 2023",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 42,
+		"claimType": "article-number",
+		"claimText": "Article 3",
+		"context": "## Article 3 — Guiding Principles",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 58,
+		"claimType": "article-number",
+		"claimText": "Article 4",
+		"context": "## Article 4 — Provider Responsibility",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 69,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "## Article 7 — Training Data Requirements",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 103,
+		"claimType": "article-number",
+		"claimText": "Article 8",
+		"context": "## Article 8 — Algorithm Filing Requiremen...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 119,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "## Article 9 — Safety Assessment",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 130,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "## Article 11 — AI-Generated Content Labeli...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 144,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "## Article 12 — User Real-Name Verification",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 156,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "## Article 14 — User Complaint Mechanisms",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 167,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "## Article 15 — Supervision and Inspection",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 178,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "## Article 17 — Foreign Provider Restrictio...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 193,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "### Article 21 — Administrative Penalties",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 200,
+		"claimType": "fine-amount",
+		"claimText": "RMB 50 million",
+		"context": "...ted; PIPL penalties can reach RMB 50 million or 5% of",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 206,
+		"claimType": "article-number",
+		"claimText": "Articles 17-18",
+		"context": "## Articles 17-18 — Compliance Personnel and Su...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 208,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "### Article 17 — Compliance and Security Per...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 215,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "### Article 18 — Acceptance of Supervision",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 253,
+		"claimType": "article-number",
+		"claimText": "Articles 1-24",
+		"context": "  Services (生成式人工智能服务管理暂行办法), Articles 1-24",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 254,
+		"claimType": "article-number",
+		"claimText": "Articles 21-25",
+		"context": "...e People's Republic of China, Articles 21-25, 47",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 255,
+		"claimType": "article-number",
+		"claimText": "Articles 27-32",
+		"context": "...e People's Republic of China, Articles 27-32",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 256,
+		"claimType": "article-number",
+		"claimText": "Articles 13-18",
+		"context": "...mation Protection Law (PIPL), Articles 13-18, 55-56",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 258,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "  Services, Articles 6-7, 16-18",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-genai-measures.md",
+		"line": 260,
+		"claimType": "article-number",
+		"claimText": "Article 24",
+		"context": "  Information Services, Article 24",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Cyberspace Administration of China (CAC), Ministry of Industry",
+		"context": "**Authority**: Cyberspace Administration of China (CAC), Ministry of Industry",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 22,
+		"claimType": "effective-date",
+		"claimText": "March 1, 2022",
+		"context": "**Status**: Effective March 1, 2022",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 38,
+		"claimType": "article-number",
+		"claimText": "Article 3",
+		"context": "## Article 3 — Definitions",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 64,
+		"claimType": "article-number",
+		"claimText": "Article 6",
+		"context": "## Article 6 — General Provider Obligation...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 76,
+		"claimType": "article-number",
+		"claimText": "Article 8",
+		"context": "## Article 8 — Transparency Requirements",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 91,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "## Article 9 — User Opt-Out Rights",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 111,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "## Article 13 — Prohibition on Algorithmic ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 127,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "## Article 14 — Special Protections for Min...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 145,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "## Article 15 — Worker Protection from Algo...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 163,
+		"claimType": "article-number",
+		"claimText": "Article 16",
+		"context": "## Article 16 — Elderly Persons",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 174,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "## Article 18 — Prohibited Uses",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 187,
+		"claimType": "article-number",
+		"claimText": "Articles 24-26",
+		"context": "## Articles 24-26 — Algorithm Filing",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 189,
+		"claimType": "article-number",
+		"claimText": "Article 24",
+		"context": "### Article 24 — Filing Requirement",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 197,
+		"claimType": "article-number",
+		"claimText": "Article 25",
+		"context": "### Article 25 — Filing Changes",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 202,
+		"claimType": "article-number",
+		"claimText": "Article 26",
+		"context": "### Article 26 — De-Registration",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 209,
+		"claimType": "article-number",
+		"claimText": "Article 31",
+		"context": "### Article 31 — Administrative Penalties",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 214,
+		"claimType": "fine-amount",
+		"claimText": "RMB 10,000",
+		"context": "- **Fine of RMB 10,000 to RMB 100,000** (approximate...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 214,
+		"claimType": "fine-amount",
+		"claimText": "RMB 100,000",
+		"context": "- **Fine of RMB 10,000 to RMB 100,000** (approximately USD 1,400 to",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 214,
+		"claimType": "fine-amount",
+		"claimText": "USD 1,400",
+		"context": "... RMB 100,000** (approximately USD 1,400 to",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 215,
+		"claimType": "fine-amount",
+		"claimText": "USD 14,000",
+		"context": "  USD 14,000) for failure to rectify",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 256,
+		"claimType": "article-number",
+		"claimText": "Articles 1-35",
+		"context": "...n Services (互联网信息服务算法推荐管理规定), Articles 1-35",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 258,
+		"claimType": "article-number",
+		"claimText": "Articles 27-32",
+		"context": "...e People's Republic of China, Articles 27-32",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 261,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "...e People's Republic of China, Article 18 (pricing",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/cac-recommendation-algo.md",
+		"line": 264,
+		"claimType": "article-number",
+		"claimText": "Articles 64-80",
+		"context": "  Articles 64-80 (online protection of minors)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/pipl-cross-border.md",
+		"line": 22,
+		"claimType": "article-number",
+		"claimText": "Article 38",
+		"context": "### Article 38 — Transfer Mechanisms",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/pipl-cross-border.md",
+		"line": 29,
+		"claimType": "article-number",
+		"claimText": "Article 39",
+		"context": "### Article 39 — Notification and Consent",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/pipl-cross-border.md",
+		"line": 35,
+		"claimType": "article-number",
+		"claimText": "Article 40",
+		"context": "### Article 40 — Critical Information Infras...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "china/pipl-cross-border.md",
+		"line": 45,
+		"claimType": "threshold",
+		"claimText": "5% of the previous year's turnover",
+		"context": "...fines up to 50 million RMB or 5% of the previous year's turnover, plus potential suspension of...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 15,
+		"claimType": "article-number",
+		"claimText": "§5",
+		"context": "...Financial Services (Annex III §5)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 47,
+		"claimType": "article-number",
+		"claimText": "Articles 43-44",
+		"context": "- Full conformity assessment (Articles 43-44)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 48,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "- Risk management system (Article 9)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 50,
+		"claimType": "article-number",
+		"claimText": "Article 10",
+		"context": "...criminatory credit decisions (Article 10)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 52,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "  credit decisions (Article 14)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 54,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "...o AI-based credit assessment (Article 13)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 55,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "- Technical documentation (Article 11)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 56,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "...gging with 6-month retention (Article 12)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 57,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "..., and cybersecurity measures (Article 15)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 88,
+		"claimType": "article-number",
+		"claimText": "Articles 43-44",
+		"context": "- Full conformity assessment (Articles 43-44)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 90,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "...ad to discriminatory pricing (Article 9)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 93,
+		"claimType": "article-number",
+		"claimText": "Article 10",
+		"context": "...re not actuarially justified (Article 10)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 95,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "...significantly higher pricing (Article 14)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 97,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "...nsurance application process (Article 13)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 98,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "- Technical documentation (Article 11)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 99,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "- Automatic event logging (Article 12)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 126,
+		"claimType": "article-number",
+		"claimText": "§5",
+		"context": "... as high-risk under Annex III §5",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 130,
+		"claimType": "article-number",
+		"claimText": "§1",
+		"context": "identification under §1, which requires notified body...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 133,
+		"claimType": "article-number",
+		"claimText": "Articles 8-15",
+		"context": "...ance with all requirements in Articles 8-15",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 134,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "... a quality management system (Article 17)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 135,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "...w up technical documentation (Article 11)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 136,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "...logs generated by the system (Article 12)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 138,
+		"claimType": "article-number",
+		"claimText": "Article 47",
+		"context": "...EU declaration of conformity (Article 47)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 139,
+		"claimType": "article-number",
+		"claimText": "Article 48",
+		"context": "7. Affix CE marking (Article 48)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 140,
+		"claimType": "article-number",
+		"claimText": "Article 49",
+		"context": "8. Register in EU database (Article 49)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 147,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "- **GDPR Article 22**: Right not to be subject to...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 163,
+		"claimType": "effective-date",
+		"claimText": "2 August 2026",
+		"context": "- **2 August 2026**: High-risk system obligatio...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 172,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "- EU AI Act, Articles 6-7 (high-risk classification)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 173,
+		"claimType": "article-number",
+		"claimText": "Articles 8-15",
+		"context": "- EU AI Act, Articles 8-15 (high-risk requirements)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 174,
+		"claimType": "article-number",
+		"claimText": "Articles 43-44",
+		"context": "- EU AI Act, Articles 43-44, Annex VI (conformity assessm...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 175,
+		"claimType": "article-number",
+		"claimText": "Articles 47-49",
+		"context": "- EU AI Act, Articles 47-49 (declaration, CE marking, reg...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/financial-services.md",
+		"line": 176,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "- GDPR, Article 22 (automated decision-making)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 20,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "**Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence A...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 21,
+		"claimType": "article-number",
+		"claimText": "Articles 51-56",
+		"context": "**Articles**: Articles 51-56",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 22,
+		"claimType": "effective-date",
+		"claimText": "2 August 2025",
+		"context": "**Effective**: 2 August 2025 (GPAI provisions now in force...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 38,
+		"claimType": "article-number",
+		"claimText": "Article 51",
+		"context": "## Article 51 — Classification of GPAI Mode...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 44,
+		"claimType": "threshold",
+		"claimText": "10^25 FLOPs",
+		"context": "...omputing power of more than **10^25 FLOPs**",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 60,
+		"claimType": "article-number",
+		"claimText": "Article 53",
+		"context": "## Article 53 — Obligations for All GPAI Mo...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 79,
+		"claimType": "article-number",
+		"claimText": "Article 4(3)",
+		"context": "rights expressed pursuant to Article 4(3) of Directive (EU) 2019/790",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 96,
+		"claimType": "article-number",
+		"claimText": "Article 51",
+		"context": "as having systemic risk under Article 51. Systemic risk models must co...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 102,
+		"claimType": "article-number",
+		"claimText": "Article 54",
+		"context": "## Article 54 — Authorised Representatives",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 108,
+		"claimType": "article-number",
+		"claimText": "Article 55",
+		"context": "## Article 55 — Obligations for GPAI Models...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 110,
+		"claimType": "article-number",
+		"claimText": "Article 53",
+		"context": "...tion to the obligations under Article 53, providers of GPAI models",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 131,
+		"claimType": "article-number",
+		"claimText": "Article 56",
+		"context": "## Article 56 — Codes of Practice",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 143,
+		"claimType": "article-number",
+		"claimText": "Article 53",
+		"context": "...ransparency obligations under Article 53",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 145,
+		"claimType": "article-number",
+		"claimText": "Article 50",
+		"context": "  obligations under Article 50 (chatbot disclosure, deepfake...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 176,
+		"claimType": "article-number",
+		"claimText": "Article 50",
+		"context": "... **Transparency compliance**: Article 50 obligations for end-user-faci...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 183,
+		"claimType": "threshold",
+		"claimText": "EUR 15 million",
+		"context": "- Up to **EUR 15 million** or **3% of total worldwide ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 183,
+		"claimType": "threshold",
+		"claimText": "3% of total worldwide annual turnover",
+		"context": "...Up to **EUR 15 million** or **3% of total worldwide annual turnover**,",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 183,
+		"claimType": "fine-amount",
+		"claimText": "EUR 15 million",
+		"context": "- Up to **EUR 15 million** or **3% of total worldwide ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 189,
+		"claimType": "article-number",
+		"claimText": "Articles 51-56",
+		"context": "... GPAI model obligations under Articles 51-56 apply",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 189,
+		"claimType": "effective-date",
+		"claimText": "2 August 2025",
+		"context": "- **2 August 2025**: GPAI model obligations und...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 191,
+		"claimType": "effective-date",
+		"claimText": "2 August 2025",
+		"context": "... already on the market before 2 August 2025 had",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 196,
+		"claimType": "threshold",
+		"claimText": "10^25 FLOPs",
+		"context": "The **10^25 FLOPs** threshold is the quantitati...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 197,
+		"claimType": "threshold",
+		"claimText": "10^25 FLOPs",
+		"context": "...is estimated at approximately 10^25 FLOPs",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 203,
+		"claimType": "article-number",
+		"claimText": "Articles 51-56",
+		"context": "- Regulation (EU) 2024/1689, Articles 51-56",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 203,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Articles 51-56",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 204,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Annex XI (Technical document...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 205,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Annex XIII (Criteria for sys...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/gpai-provisions.md",
+		"line": 207,
+		"claimType": "article-number",
+		"claimText": "Article 4(3)",
+		"context": "- Directive (EU) 2019/790, Article 4(3) (Text and data mining)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "**Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence A...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 8-15",
+		"context": "**Articles**: Articles 8-15",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "2 August 2026",
+		"context": "**Effective**: 2 August 2026",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 29,
+		"claimType": "article-number",
+		"claimText": "Article 8",
+		"context": "## Article 8 — Compliance with Requirement...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 35,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "## Article 9 — Risk Management System",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 54,
+		"claimType": "article-number",
+		"claimText": "Article 10",
+		"context": "## Article 10 — Data and Data Governance",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 67,
+		"claimType": "article-number",
+		"claimText": "Article 9(1)",
+		"context": "...ategories of personal data** (Article 9(1) GDPR) may be",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 70,
+		"claimType": "article-number",
+		"claimText": "Article 11",
+		"context": "## Article 11 — Technical Documentation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 80,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "## Article 12 — Record-Keeping (Logging)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 94,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "## Article 13 — Transparency and Provision ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 108,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "## Article 14 — Human Oversight",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 125,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "## Article 15 — Accuracy, Robustness, and C...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 139,
+		"claimType": "article-number",
+		"claimText": "Articles 43-44",
+		"context": "## Conformity Assessment (Articles 43-44)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 156,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "... a quality management system (Article 17)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 157,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "...tain technical documentation (Article 18)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 158,
+		"claimType": "article-number",
+		"claimText": "Article 19",
+		"context": "...automatically generated logs (Article 19)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 159,
+		"claimType": "article-number",
+		"claimText": "Article 43",
+		"context": "...Ensure conformity assessment (Article 43)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 160,
+		"claimType": "article-number",
+		"claimText": "Article 48",
+		"context": "5. Affix CE marking (Article 48)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 161,
+		"claimType": "article-number",
+		"claimText": "Article 49",
+		"context": "... Register in the EU database (Article 49)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 162,
+		"claimType": "article-number",
+		"claimText": "Article 72",
+		"context": "...ement post-market monitoring (Article 72)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 163,
+		"claimType": "article-number",
+		"claimText": "Article 73",
+		"context": "8. Report serious incidents (Article 73)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 167,
+		"claimType": "article-number",
+		"claimText": "Articles 8-15",
+		"context": "- Regulation (EU) 2024/1689, Articles 8-15",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 167,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Articles 8-15",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 168,
+		"claimType": "article-number",
+		"claimText": "Articles 43-44",
+		"context": "- Regulation (EU) 2024/1689, Articles 43-44, 48-49, 72-73",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 168,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Articles 43-44, 48-49, 72-73",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/high-risk-requirements.md",
+		"line": 169,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Annexes IV, VI, VII",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "**Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence A...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "**Article**: Article 5",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "2 February 2025",
+		"context": "**Effective**: 2 February 2025",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 24,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "Article 5 establishes an absolute prohi...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 95,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "Violations of Article 5 prohibitions carry the highes...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 96,
+		"claimType": "threshold",
+		"claimText": "EUR 35 million",
+		"context": "...t: administrative fines up to EUR 35 million or 7% of total worldwide",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 96,
+		"claimType": "fine-amount",
+		"claimText": "EUR 35 million",
+		"context": "...t: administrative fines up to EUR 35 million or 7% of total worldwide",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 101,
+		"claimType": "effective-date",
+		"claimText": "2 February 2025",
+		"context": "- **2 February 2025**: Prohibitions become enforc...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 106,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "- Regulation (EU) 2024/1689, Article 5",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/prohibited-practices.md",
+		"line": 106,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Article 5",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "**Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence A...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "**Articles**: Articles 6-7, Annex III",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "2 August 2026",
+		"context": "**Effective**: 2 August 2026 (high-risk obligations apply)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 25,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "...g under prohibited practices (Article 5) are classified based on thei...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 27,
+		"claimType": "article-number",
+		"claimText": "Articles 8-15",
+		"context": "... compliance obligations under Articles 8-15.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 31,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)",
+		"context": "### Article 6(1) — High-Risk via Product Safet...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 43,
+		"claimType": "article-number",
+		"claimText": "Article 6(2)",
+		"context": "### Article 6(2) — High-Risk via Annex III",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 47,
+		"claimType": "article-number",
+		"claimText": "Article 6(3)",
+		"context": "...ts (the \"filter\" exception in Article 6(3)).",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 49,
+		"claimType": "article-number",
+		"claimText": "Article 6(3)",
+		"context": "### Article 6(3) — The Significant Risk Filter",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 149,
+		"claimType": "article-number",
+		"claimText": "Articles 50-52",
+		"context": "obligations (Articles 50-52) but do not need to comply wi...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 168,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "- Regulation (EU) 2024/1689, Articles 6-7",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 168,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Articles 6-7",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/risk-classification.md",
+		"line": 169,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Annex III",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "**Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence A...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 50-52",
+		"context": "**Articles**: Articles 50-52",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "2 August 2025",
+		"context": "**Effective**: 2 August 2025 (transparency obligations for...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 21,
+		"claimType": "effective-date",
+		"claimText": "2 August 2026",
+		"context": "2 August 2026 (transparency obligations for...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 30,
+		"claimType": "article-number",
+		"claimText": "Article 50",
+		"context": "## Article 50 — Transparency Obligations fo...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 89,
+		"claimType": "article-number",
+		"claimText": "Article 52",
+		"context": "## Article 52 — General-Purpose AI Transpar...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 115,
+		"claimType": "article-number",
+		"claimText": "Article 50",
+		"context": "...ransparency obligations under Article 50 can result in",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 116,
+		"claimType": "threshold",
+		"claimText": "EUR 15 million",
+		"context": "administrative fines up to EUR 15 million or 3% of total worldwide annu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 116,
+		"claimType": "fine-amount",
+		"claimText": "EUR 15 million",
+		"context": "administrative fines up to EUR 15 million or 3% of total worldwide annu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 121,
+		"claimType": "effective-date",
+		"claimText": "2 August 2025",
+		"context": "- **2 August 2025**: Transparency obligations f...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 122,
+		"claimType": "effective-date",
+		"claimText": "2 August 2026",
+		"context": "- **2 August 2026**: Transparency obligations f...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 126,
+		"claimType": "article-number",
+		"claimText": "Articles 50-52",
+		"context": "- Regulation (EU) 2024/1689, Articles 50-52",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/ai-act/transparency-obligations.md",
+		"line": 126,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2024/1689",
+		"context": "- Regulation (EU) 2024/1689, Articles 50-52",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "**Law**: Regulation (EU) 2016/679 (General Data Protection Regu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "**Article**: Article 22",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "25 May 2018",
+		"context": "**Effective**: 25 May 2018",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 24,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "Article 22 provides data subjects with t...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 28,
+		"claimType": "article-number",
+		"claimText": "Article 22(1)",
+		"context": "## Article 22(1) — General Prohibition",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 34,
+		"claimType": "article-number",
+		"claimText": "Article 22(2)",
+		"context": "## Article 22(2) — Exceptions",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 45,
+		"claimType": "article-number",
+		"claimText": "Article 22(3)",
+		"context": "## Article 22(3) — Safeguards",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 47,
+		"claimType": "article-number",
+		"claimText": "Article 22(2)(a)",
+		"context": "...decisions are permitted under Article 22(2)(a) or (c), the",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 87,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "While Article 22 does not explicitly mention a...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 89,
+		"claimType": "article-number",
+		"claimText": "Article 29",
+		"context": "...s has been interpreted by the Article 29",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 101,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "...ered credit assessment tool), Article 22 applies",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 110,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "- Regulation (EU) 2016/679, Article 22",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/automated-decisions.md",
+		"line": 110,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "- Regulation (EU) 2016/679, Article 22",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "**Law**: Regulation (EU) 2016/679 (General Data Protection Regu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 12-23",
+		"context": "**Articles**: Articles 12-23",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "25 May 2018",
+		"context": "**Effective**: 25 May 2018",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 28,
+		"claimType": "article-number",
+		"claimText": "Article 12",
+		"context": "## Article 12 — Transparent Communication",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 35,
+		"claimType": "article-number",
+		"claimText": "Article 13-14",
+		"context": "## Article 13-14 — Right to Information",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 35,
+		"claimType": "article-number",
+		"claimText": "Article 13",
+		"context": "## Article 13-14 — Right to Information",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 48,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "...ed directly from the subject (Article 14), including",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 52,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "## Article 15 — Right of Access",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 65,
+		"claimType": "article-number",
+		"claimText": "Article 16",
+		"context": "## Article 16 — Right to Rectification",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 71,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "## Article 17 — Right to Erasure (\"Right to...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 89,
+		"claimType": "article-number",
+		"claimText": "Article 18",
+		"context": "## Article 18 — Right to Restriction",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 95,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "## Article 20 — Right to Data Portability",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 102,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "## Article 21 — Right to Object",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 112,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "## Article 22 — Automated Decision-Making",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 118,
+		"claimType": "article-number",
+		"claimText": "Articles 12-23",
+		"context": "- Regulation (EU) 2016/679, Articles 12-23",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/data-subject-rights.md",
+		"line": 118,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "- Regulation (EU) 2016/679, Articles 12-23",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "**Law**: Regulation (EU) 2016/679 (General Data Protection Regu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 35-36",
+		"context": "**Articles**: Articles 35-36",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "25 May 2018",
+		"context": "**Effective**: 25 May 2018",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 30,
+		"claimType": "article-number",
+		"claimText": "Article 35(1)",
+		"context": "## Article 35(1) — When a DPIA Is Required",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 37,
+		"claimType": "article-number",
+		"claimText": "Article 35(3)",
+		"context": "## Article 35(3) — Mandatory DPIA Triggers",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 53,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "...f special categories of data (Article 9) or",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 54,
+		"claimType": "article-number",
+		"claimText": "Article 10",
+		"context": "...nal convictions and offences (Article 10).",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 66,
+		"claimType": "article-number",
+		"claimText": "Article 35(7)",
+		"context": "## Article 35(7) — DPIA Contents",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 79,
+		"claimType": "article-number",
+		"claimText": "Article 36",
+		"context": "## Article 36 — Prior Consultation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 116,
+		"claimType": "article-number",
+		"claimText": "Article 35(4)",
+		"context": "a DPIA (Article 35(4)). These lists often explicitl...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 124,
+		"claimType": "article-number",
+		"claimText": "Articles 35-36",
+		"context": "- Regulation (EU) 2016/679, Articles 35-36",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/dpia-requirements.md",
+		"line": 124,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "- Regulation (EU) 2016/679, Articles 35-36",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "**Law**: Regulation (EU) 2016/679 (General Data Protection Regu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "**Articles**: Articles 6-7",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "25 May 2018",
+		"context": "**Effective**: 25 May 2018",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 24,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)",
+		"context": "...ave a valid legal basis under Article 6(1).",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 27,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(a)",
+		"context": "1. **Consent** (Article 6(1)(a)) — Freely given, specific, in...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 29,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(b)",
+		"context": "2. **Contract** (Article 6(1)(b)) — Processing necessary for p...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 31,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(c)",
+		"context": "3. **Legal obligation** (Article 6(1)(c)) — Processing necessary for c...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 33,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(d)",
+		"context": "4. **Vital interests** (Article 6(1)(d)) — Processing necessary to pr...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 35,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(e)",
+		"context": "5. **Public interest** (Article 6(1)(e)) — Processing necessary for a...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 37,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)(f)",
+		"context": "6. **Legitimate interests** (Article 6(1)(f)) — Processing necessary for",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 41,
+		"claimType": "article-number",
+		"claimText": "Article 7",
+		"context": "## Consent Requirements (Article 7)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 74,
+		"claimType": "article-number",
+		"claimText": "Article 14",
+		"context": "- Article 14 transparency obligations appl...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 88,
+		"claimType": "article-number",
+		"claimText": "Articles 6-7",
+		"context": "- Regulation (EU) 2016/679, Articles 6-7",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/legal-basis.md",
+		"line": 88,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "- Regulation (EU) 2016/679, Articles 6-7",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "**Law**: Regulation (EU) 2016/679 (General Data Protection Regu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "Articles 44-49",
+		"context": "**Articles**: Articles 44-49",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "25 May 2018",
+		"context": "**Effective**: 25 May 2018",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 29,
+		"claimType": "article-number",
+		"claimText": "Article 45",
+		"context": "## Article 45 — Adequacy Decisions",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 47,
+		"claimType": "article-number",
+		"claimText": "Article 46",
+		"context": "## Article 46 — Appropriate Safeguards",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 102,
+		"claimType": "article-number",
+		"claimText": "Articles 44-49",
+		"context": "- Regulation (EU) 2016/679, Articles 44-49",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "eu/gdpr/transfers.md",
+		"line": 102,
+		"claimType": "document-number",
+		"claimText": "Regulation (EU) 2016/679",
+		"context": "- Regulation (EU) 2016/679, Articles 44-49",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/imda-agentic-ai.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Infocomm Media Development Authority (IMDA), Singapore",
+		"context": "**Authority**: Infocomm Media Development Authority (IMDA), Singapore",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/imda-genai-guidelines.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Infocomm Media Development Authority (IMDA), Singapore",
+		"context": "**Authority**: Infocomm Media Development Authority (IMDA), Singapore",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/mas-ai-risk-management.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Monetary Authority of Singapore (MAS)",
+		"context": "**Authority**: Monetary Authority of Singapore (MAS)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 18,
+		"claimType": "organization",
+		"claimText": "Personal Data Protection Commission (PDPC), Singapore",
+		"context": "**Authority**: Personal Data Protection Commission (PDPC), Singapore",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 123,
+		"claimType": "article-number",
+		"claimText": "Section 18",
+		"context": "...the AI system's purpose (PDPA Section 18)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 180,
+		"claimType": "article-number",
+		"claimText": "Section 13(a)",
+		"context": "...timate interests exception** (Section 13(a), introduced 2020):",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 184,
+		"claimType": "article-number",
+		"claimText": "Section 17",
+		"context": "...ness improvement exception** (Section 17A): Processing for improving",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 188,
+		"claimType": "article-number",
+		"claimText": "Section 18",
+		"context": "### Purpose Limitation (Section 18)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 203,
+		"claimType": "article-number",
+		"claimText": "Section 26",
+		"context": "### Data Breach Notification (Section 26A-26E)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "singapore/pdpc-ai-governance.md",
+		"line": 241,
+		"claimType": "article-number",
+		"claimText": "Section 18",
+		"context": "- PDPA Section 18 (Purpose Limitation Obligatio...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/aisi-frontier-models.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "UK AI Safety Institute (AISI), formerly the Frontier AI Taskforce",
+		"context": "**Authority**: UK AI Safety Institute (AISI), formerly the Frontier AI Taskforce",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/aisi-frontier-models.md",
+		"line": 31,
+		"claimType": "threshold",
+		"claimText": "10^25 FLOPs",
+		"context": "...ses a quantitative threshold (10^25 FLOPs) and legal obligations,",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/aisi-frontier-models.md",
+		"line": 182,
+		"claimType": "article-number",
+		"claimText": "Article 55",
+		"context": "  (Article 55 of the EU AI Act)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/aisi-frontier-models.md",
+		"line": 229,
+		"claimType": "effective-date",
+		"claimText": "1 November 2023",
+		"context": "...ley Declaration on AI Safety (1 November 2023)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/aisi-frontier-models.md",
+		"line": 230,
+		"claimType": "effective-date",
+		"claimText": "21 May 2024",
+		"context": "...ontier AI Safety Commitments (21 May 2024)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/dsit-foundation-models.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Department for Science, Innovation and Technology (DSIT)",
+		"context": "**Authority**: Department for Science, Innovation and Technology (DSIT)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/dsit-foundation-models.md",
+		"line": 87,
+		"claimType": "article-number",
+		"claimText": "Articles 13-14",
+		"context": "...ncy obligations under UK GDPR Articles 13-14; explainability",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/dsit-foundation-models.md",
+		"line": 112,
+		"claimType": "article-number",
+		"claimText": "Article 5(1)(a)",
+		"context": "...rness principle under UK GDPR Article 5(1)(a)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/dsit-foundation-models.md",
+		"line": 165,
+		"claimType": "article-number",
+		"claimText": "Section 14",
+		"context": "...utomated decisions (DPA 2018, Section 14)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/dsit-foundation-models.md",
+		"line": 265,
+		"claimType": "effective-date",
+		"claimText": "1 November 2023",
+		"context": "...ley Declaration on AI Safety (1 November 2023)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/fca-ai-guidance.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Financial Conduct Authority (FCA); Prudential Regulation Authority (PRA)",
+		"context": "**Authority**: Financial Conduct Authority (FCA); Prudential Regulation Authority (PRA)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/fca-ai-guidance.md",
+		"line": 43,
+		"claimType": "effective-date",
+		"claimText": "31 July 2024",
+		"context": "...er Duty, fully in force since 31 July 2024 for all products and",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 19,
+		"claimType": "organization",
+		"claimText": "Information Commissioner's Office (ICO)",
+		"context": "**Authority**: Information Commissioner's Office (ICO)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 34,
+		"claimType": "article-number",
+		"claimText": "Article 5",
+		"context": "...tection principles in UK GDPR Article 5.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 38,
+		"claimType": "article-number",
+		"claimText": "Article 6",
+		"context": "### UK GDPR Article 6 — Lawful Basis",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 41,
+		"claimType": "article-number",
+		"claimText": "Article 6(1)",
+		"context": "Article 6(1). The ICO has issued specific ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 63,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "### Special Category Data (Article 9)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 66,
+		"claimType": "article-number",
+		"claimText": "Article 6",
+		"context": "...tion, etc.) must satisfy both Article 6 AND",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 67,
+		"claimType": "article-number",
+		"claimText": "Article 9",
+		"context": "an Article 9 condition. The ICO flags that...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 73,
+		"claimType": "article-number",
+		"claimText": "Article 35",
+		"context": "### UK GDPR Article 35 — When a DPIA Is Required",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 79,
+		"claimType": "article-number",
+		"claimText": "Article 35(3)(a)",
+		"context": "...g** with significant effects (Article 35(3)(a))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 80,
+		"claimType": "article-number",
+		"claimText": "Article 35(3)(b)",
+		"context": "...g of special category data** (Article 35(3)(b))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 81,
+		"claimType": "article-number",
+		"claimText": "Article 35(3)(c)",
+		"context": "...f a publicly accessible area (Article 35(3)(c))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 110,
+		"claimType": "article-number",
+		"claimText": "Article 5(1)(a)",
+		"context": "### UK GDPR Article 5(1)(a) — Fairness Principle",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 134,
+		"claimType": "article-number",
+		"claimText": "Articles 13-14",
+		"context": "### UK GDPR Articles 13-14 — Right to Be Informed",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 157,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "## Automated Decision-Making (Article 22 Equivalent)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 159,
+		"claimType": "article-number",
+		"claimText": "Section 14",
+		"context": "### DPA 2018, Section 14 — Automated Decision-Making",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 161,
+		"claimType": "article-number",
+		"claimText": "Article 22",
+		"context": "...nts the UK equivalent of GDPR Article 22.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 161,
+		"claimType": "article-number",
+		"claimText": "Section 14",
+		"context": "Section 14 of the DPA 2018 implements th...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 188,
+		"claimType": "article-number",
+		"claimText": "Article 5(1)(c)",
+		"context": "### UK GDPR Article 5(1)(c) — Data Minimisation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 203,
+		"claimType": "article-number",
+		"claimText": "Article 5(1)(d)",
+		"context": "### UK GDPR Article 5(1)(d) — Accuracy Principle",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 218,
+		"claimType": "article-number",
+		"claimText": "Article 15",
+		"context": "- **Right of access** (Article 15) — includes the right to obta...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 220,
+		"claimType": "article-number",
+		"claimText": "Article 16",
+		"context": "- **Right to rectification** (Article 16) — if AI processes inaccurate...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 222,
+		"claimType": "article-number",
+		"claimText": "Article 17",
+		"context": "- **Right to erasure** (Article 17) — may extend to requiring de...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 224,
+		"claimType": "article-number",
+		"claimText": "Article 21",
+		"context": "- **Right to object** (Article 21) — individuals can object to ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 226,
+		"claimType": "article-number",
+		"claimText": "Article 20",
+		"context": "...*Right to data portability** (Article 20) — applicable to AI outputs",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 242,
+		"claimType": "threshold",
+		"claimText": "2% of annual worldwide turnover",
+		"context": "...d maximum: GBP 8.7 million or 2% of annual worldwide turnover",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 242,
+		"claimType": "fine-amount",
+		"claimText": "GBP 8.7 million",
+		"context": "- Standard maximum: GBP 8.7 million or 2% of annual worldwide tur...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 243,
+		"claimType": "threshold",
+		"claimText": "4% of annual worldwide turnover",
+		"context": "... maximum: GBP 17.5 million or 4% of annual worldwide turnover",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "uk/ico-ai-guidance.md",
+		"line": 243,
+		"claimType": "fine-amount",
+		"claimText": "GBP 17.5 million",
+		"context": "- Higher maximum: GBP 17.5 million or 4% of annual worldwide tur...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/federal-financial-ai.md",
+		"line": 148,
+		"claimType": "article-number",
+		"claimText": "§ 1691",
+		"context": "- ECOA (15 U.S.C. § 1691 et seq.)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Federal Trade Commission",
+		"context": "**Authority**: Federal Trade Commission",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "**Legal Basis**: FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 45",
+		"context": "... FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 23,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "...ses its broad authority under Section 5 of the FTC Act to address",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 28,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "## Section 5 — Unfair or Deceptive Practic...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 85,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "- 15 U.S.C. § 45 (FTC Act Section 5)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-enforcement.md",
+		"line": 85,
+		"claimType": "article-number",
+		"claimText": "§ 45",
+		"context": "- 15 U.S.C. § 45 (FTC Act Section 5)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Federal Trade Commission",
+		"context": "**Authority**: Federal Trade Commission",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "**Legal Basis**: FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 45",
+		"context": "... FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 32,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "...t potentially deceptive under Section 5 to:",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 45,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "  people may violate Section 5",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 53,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "...r fraud or impersonation is a Section 5 violation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 96,
+		"claimType": "article-number",
+		"claimText": "Section 5",
+		"context": "- FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/ftc-genai-guidance.md",
+		"line": 96,
+		"claimType": "article-number",
+		"claimText": "§ 45",
+		"context": "... FTC Act Section 5 (15 U.S.C. § 45)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/nist-ai-rmf.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "National Institute of Standards and Technology (NIST)",
+		"context": "**Authority**: National Institute of Standards and Technology (NIST)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/federal/nist-genai-profile.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "National Institute of Standards and Technology (NIST)",
+		"context": "**Authority**: National Institute of Standards and Technology (NIST)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "California Privacy Protection Agency (CPPA)",
+		"context": "**Authority**: California Privacy Protection Agency (CPPA)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§§ 1798",
+		"context": "...s Act (CPRA) — Cal. Civ. Code §§ 1798.100-1798.199.100",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 25,
+		"claimType": "effective-date",
+		"claimText": "January 1, 2023",
+		"context": "...ly amended by CPRA (effective January 1, 2023), grants",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 108,
+		"claimType": "fine-amount",
+		"claimText": "$2,500 ",
+		"context": "- Civil penalties: up to $2,500 per violation, $7,500 per inte...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 108,
+		"claimType": "fine-amount",
+		"claimText": "$7,500 ",
+		"context": "...: up to $2,500 per violation, $7,500 per intentional violation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 111,
+		"claimType": "article-number",
+		"claimText": "§ 1798",
+		"context": "  (Cal. Civ. Code § 1798.150) but not for ADMT-specifi...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 115,
+		"claimType": "article-number",
+		"claimText": "§§ 1798",
+		"context": "- Cal. Civ. Code §§ 1798.100-1798.199.100 (CCPA/CPRA)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 116,
+		"claimType": "article-number",
+		"claimText": "§ 1798",
+		"context": "- Cal. Civ. Code § 1798.185(a)(16) (CPPA rulemaking a...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 117,
+		"claimType": "article-number",
+		"claimText": "§ 7150",
+		"context": "...ion-Making Technology (11 CCR § 7150-7153)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 118,
+		"claimType": "article-number",
+		"claimText": "§ 7154",
+		"context": "...s on Risk Assessments (11 CCR § 7154-7157)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/ccpa-cpra-ai.md",
+		"line": 119,
+		"claimType": "article-number",
+		"claimText": "§ 1798",
+		"context": "- Cal. Civ. Code § 1798.150 (private right of action ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "California Legislature",
+		"context": "**Authority**: California Legislature",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 20010",
+		"context": "...sis**: AB 730 (Elections Code § 20010), AB 602 (Civ. Code § 1708.86...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 1708",
+		"context": "...e § 20010), AB 602 (Civ. Code § 1708.86),",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§ 3344",
+		"context": "AB 1836 (Civ. Code § 3344.1)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 80,
+		"claimType": "fine-amount",
+		"claimText": "$1,500 ",
+		"context": "...tory damages of not less than $1,500 and not more than $30,000",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 80,
+		"claimType": "fine-amount",
+		"claimText": "$30,000",
+		"context": "...than $1,500 and not more than $30,000",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 93,
+		"claimType": "article-number",
+		"claimText": "§ 3344",
+		"context": "...right of publicity (Civ. Code § 3344.1) to cover",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 120,
+		"claimType": "article-number",
+		"claimText": "Section 230",
+		"context": "- Section 230 immunity may limit platform l...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 125,
+		"claimType": "article-number",
+		"claimText": "§ 20010",
+		"context": "...0 (2019), Cal. Elections Code § 20010",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 126,
+		"claimType": "article-number",
+		"claimText": "§ 1708",
+		"context": "...AB 602 (2019), Cal. Civ. Code § 1708.86",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/deepfake-laws.md",
+		"line": 127,
+		"claimType": "article-number",
+		"claimText": "§ 3344",
+		"context": "...B 1836 (2024), Cal. Civ. Code § 3344.1 (as amended)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 15,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "# California — SB 942 GenAI Transparency Act",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "California Legislature",
+		"context": "**Authority**: California Legislature",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "**Legal Basis**: SB 942 — California Generative AI Tr...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§§ 22947",
+		"context": "(Cal. Bus. & Prof. Code §§ 22947-22947.8)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "January 1, 2026",
+		"context": "...law September 2024; operative January 1, 2026",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 24,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "SB 942 requires covered providers of...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 109,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "...private right of action under SB 942 itself",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 114,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "- SB 942 operates alongside CCPA/CPRA ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 119,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "- SB 942 complements California deepfa...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 124,
+		"claimType": "document-number",
+		"claimText": "SB 942",
+		"context": "- SB 942, California Generative AI Tra...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/california/sb942-genai-transparency.md",
+		"line": 125,
+		"claimType": "article-number",
+		"claimText": "§§ 22947",
+		"context": "- Cal. Bus. & Prof. Code §§ 22947-22947.8",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 15,
+		"claimType": "document-number",
+		"claimText": "SB 24",
+		"context": "# Colorado AI Act (SB 24-205)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Colorado Legislature; Colorado Attorney General",
+		"context": "**Authority**: Colorado Legislature; Colorado Attorney General",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 6",
+		"context": "...05, Colorado Revised Statutes § 6-1-1701 et seq.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 18,
+		"claimType": "document-number",
+		"claimText": "SB 24",
+		"context": "**Legal Basis**: SB 24-205, Colorado Revised Statute...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 19,
+		"claimType": "effective-date",
+		"claimText": "February 1, 2026",
+		"context": "... into law May 2024; effective February 1, 2026",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 146,
+		"claimType": "fine-amount",
+		"claimText": "$20,000 ",
+		"context": "...onsumer Protection Act (up to $20,000 per",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 160,
+		"claimType": "article-number",
+		"claimText": "§ 6",
+		"context": "...05, Colorado Revised Statutes § 6-1-1701 et seq.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 160,
+		"claimType": "document-number",
+		"claimText": "SB 24",
+		"context": "- SB 24-205, Colorado Revised Statute...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/colorado/colorado-ai-act.md",
+		"line": 161,
+		"claimType": "article-number",
+		"claimText": "§ 6",
+		"context": "...nsumer Protection Act, C.R.S. § 6-1-101 et seq.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/ai-video-interview-act.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Illinois Legislature",
+		"context": "**Authority**: Illinois Legislature",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/ai-video-interview-act.md",
+		"line": 19,
+		"claimType": "effective-date",
+		"claimText": "January 1, 2020",
+		"context": "**Status**: In effect since January 1, 2020",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/ai-video-interview-act.md",
+		"line": 79,
+		"claimType": "fine-amount",
+		"claimText": "$500 ",
+		"context": "- Penalties: up to $500 for a first offense, up to $1,...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/ai-video-interview-act.md",
+		"line": 79,
+		"claimType": "fine-amount",
+		"claimText": "$1,000 ",
+		"context": "...00 for a first offense, up to $1,000 for each subsequent",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Illinois Legislature; Illinois courts (private right of action)",
+		"context": "**Authority**: Illinois Legislature; Illinois courts (private right of action)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 48,
+		"claimType": "article-number",
+		"claimText": "Section 15(b)",
+		"context": "## Consent Requirements (Section 15(b))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 63,
+		"claimType": "article-number",
+		"claimText": "Section 15(a)",
+		"context": "## Retention and Destruction (Section 15(a))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 74,
+		"claimType": "article-number",
+		"claimText": "Section 15(c)",
+		"context": "...ohibition on Sale and Profit (Section 15(c))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 80,
+		"claimType": "article-number",
+		"claimText": "Section 15(d)",
+		"context": "## Prohibition on Disclosure (Section 15(d))",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 89,
+		"claimType": "article-number",
+		"claimText": "Section 20",
+		"context": "... Right of Action and Damages (Section 20)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 94,
+		"claimType": "fine-amount",
+		"claimText": "$1,000 ",
+		"context": "...t violation**: The greater of $1,000 per violation or actual",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 96,
+		"claimType": "fine-amount",
+		"claimText": "$5,000 ",
+		"context": "...s violation**: The greater of $5,000 per violation",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 111,
+		"claimType": "fine-amount",
+		"claimText": "$650 million",
+		"context": "- **Facebook/Meta** (2021): $650 million class action settlement for f...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 113,
+		"claimType": "fine-amount",
+		"claimText": "$228 million",
+		"context": "- **BNSF Railway** (2022): $228 million jury verdict for fingerprint",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 115,
+		"claimType": "fine-amount",
+		"claimText": "$92 million",
+		"context": "- **TikTok** (2021): $92 million settlement for facial geometr...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 116,
+		"claimType": "fine-amount",
+		"claimText": "$100 million",
+		"context": "- **Google** (2022): $100 million settlement for face grouping ...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/illinois/bipa.md",
+		"line": 118,
+		"claimType": "fine-amount",
+		"claimText": "$52 million",
+		"context": "...ultiple BIPA actions pending; $52 million proposed",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "New York City Department of Consumer and Worker Protection (DCWP)",
+		"context": "**Authority**: New York City Department of Consumer and Worker Protection (DCWP)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§ 20",
+		"context": "Code § 20-870 et seq.; DCWP Final Rules...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§ 5",
+		"context": "...eq.; DCWP Final Rules (6 RCNY § 5-300 et seq.)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 20,
+		"claimType": "effective-date",
+		"claimText": "July 5, 2023",
+		"context": "**Status**: In effect since July 5, 2023; enforcement active",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 154,
+		"claimType": "fine-amount",
+		"claimText": "$500",
+		"context": "...violation**: Civil penalty of $500",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 155,
+		"claimType": "fine-amount",
+		"claimText": "$500 ",
+		"context": "...violation**: Civil penalty of $500 to $1,500",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 155,
+		"claimType": "fine-amount",
+		"claimText": "$1,500",
+		"context": "...n**: Civil penalty of $500 to $1,500",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 172,
+		"claimType": "document-number",
+		"claimText": "LL144",
+		"context": "- LL144 operates alongside federal an...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 182,
+		"claimType": "article-number",
+		"claimText": "§ 20",
+		"context": "... 144 of 2021, NYC Admin. Code § 20-870 et seq.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 183,
+		"claimType": "article-number",
+		"claimText": "§ 5",
+		"context": "- DCWP Final Rules, 6 RCNY § 5-300 et seq.",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/new-york/ll144-aedt.md",
+		"line": 187,
+		"claimType": "article-number",
+		"claimText": "§ 1607",
+		"context": "- 29 CFR § 1607 (EEOC Uniform Guidelines on E...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Texas Legislature",
+		"context": "**Authority**: Texas Legislature",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 18,
+		"claimType": "article-number",
+		"claimText": "§ 21",
+		"context": "...*Legal Basis**: TX Penal Code § 21.165 (sexually explicit deepfa...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 19,
+		"claimType": "article-number",
+		"claimText": "§ 255",
+		"context": "TX Election Code § 255.004 (election deepfakes)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 33,
+		"claimType": "article-number",
+		"claimText": "§ 255",
+		"context": "## TX Election Code § 255.004 — Political Deepfakes",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 51,
+		"claimType": "fine-amount",
+		"claimText": "$4,000",
+		"context": "  up to $4,000",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 69,
+		"claimType": "article-number",
+		"claimText": "§ 21",
+		"context": "## TX Penal Code § 21.165 — Non-Consensual Sexually...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 91,
+		"claimType": "fine-amount",
+		"claimText": "$10,000",
+		"context": "  of up to $10,000",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 132,
+		"claimType": "article-number",
+		"claimText": "§ 255",
+		"context": "- TX Election Code § 255.004 (Deep Fake Videos — effec...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 132,
+		"claimType": "effective-date",
+		"claimText": "September 1, 2019",
+		"context": "...(Deep Fake Videos — effective September 1, 2019)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 133,
+		"claimType": "article-number",
+		"claimText": "§ 21",
+		"context": "- TX Penal Code § 21.165 (Fabricated Intimate Visu...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 134,
+		"claimType": "effective-date",
+		"claimText": "September 1, 2023",
+		"context": "  September 1, 2023)",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 135,
+		"claimType": "article-number",
+		"claimText": "§ 12",
+		"context": "- TX Penal Code § 12.35 (State jail felony punishm...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/deepfake-laws.md",
+		"line": 136,
+		"claimType": "article-number",
+		"claimText": "§ 12",
+		"context": "- TX Penal Code § 12.21 (Class A misdemeanor punis...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/traiga.md",
+		"line": 17,
+		"claimType": "organization",
+		"claimText": "Texas Legislature; Texas Attorney General",
+		"context": "**Authority**: Texas Legislature; Texas Attorney General",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/traiga.md",
+		"line": 167,
+		"claimType": "document-number",
+		"claimText": "LL144",
+		"context": "  LL144, and other state-level AI req...",
+		"citationKey": null,
+		"verified": false
+	},
+	{
+		"file": "us/states/texas/traiga.md",
+		"line": 172,
+		"claimType": "article-number",
+		"claimText": "§ 17",
+		"context": "...ices Act, TX Bus. & Com. Code § 17.41 et seq.",
+		"citationKey": null,
+		"verified": false
+	}
+]

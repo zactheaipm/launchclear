@@ -1,0 +1,97 @@
+name: Knowledge Base Lint
+
+on:
+  pull_request:
+    paths:
+      - "knowledge/**"
+
+jobs:
+  lint-knowledge-base:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Validate provision file frontmatter
+        run: |
+          echo "Checking all provision files have YAML frontmatter..."
+          MISSING=0
+          for f in $(find knowledge/provisions -name "*.md"); do
+            if ! head -1 "$f" | grep -q "^---$"; then
+              echo "MISSING FRONTMATTER: $f"
+              MISSING=$((MISSING + 1))
+            fi
+          done
+          if [ "$MISSING" -gt 0 ]; then
+            echo "::error::$MISSING provision files are missing YAML frontmatter"
+            exit 1
+          fi
+          echo "All provision files have frontmatter."
+
+      - name: Check verification status on new/modified provisions
+        run: |
+          echo "Checking verification status of changed provision files..."
+          UNVERIFIED=0
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- 'knowledge/provisions/**/*.md' || true)
+          for f in $CHANGED_FILES; do
+            if [ -f "$f" ]; then
+              if grep -q 'status: "unverified"' "$f"; then
+                echo "WARNING: $f has verification status 'unverified'"
+                UNVERIFIED=$((UNVERIFIED + 1))
+              fi
+            fi
+          done
+          if [ "$UNVERIFIED" -gt 0 ]; then
+            echo "::warning::$UNVERIFIED changed provision files have 'unverified' status. Please verify against primary sources before merging."
+          fi
+
+      - name: Extract and check claims
+        run: npx tsx scripts/extract-claims.ts
+
+      - name: Validate enforcement cases schema
+        run: |
+          echo "Checking enforcement cases have required fields..."
+          node -e "
+            const cases = require('./knowledge/enforcement/cases.json');
+            let issues = 0;
+            for (const c of cases) {
+              if (!c.verification) {
+                console.log('MISSING verification block: ' + c.id);
+                issues++;
+              }
+              if (!c.generatedBy && !c.verification?.auditor) {
+                console.log('No provenance tracking: ' + c.id);
+                issues++;
+              }
+            }
+            if (issues > 0) {
+              console.error(issues + ' enforcement case issues found');
+              process.exit(1);
+            }
+            console.log('All ' + cases.length + ' enforcement cases pass schema checks.');
+          "
+
+      - name: Validate citations registry
+        run: |
+          node -e "
+            const registry = require('./knowledge/citations.json');
+            const sources = Object.keys(registry.sources);
+            console.log('Citation registry has ' + sources.length + ' sources.');
+            let issues = 0;
+            for (const [id, source] of Object.entries(registry.sources)) {
+              if (!source.urls || source.urls.length === 0) {
+                console.log('No URLs for source: ' + id);
+                issues++;
+              }
+            }
+            if (issues > 0) {
+              console.error(issues + ' citation registry issues found');
+              process.exit(1);
+            }
+          "

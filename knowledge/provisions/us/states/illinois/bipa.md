@@ -1,3 +1,17 @@
+---
+id: "us-illinois-bipa"
+law: "Biometric Information Privacy Act, 740 ILCS 14/1 et seq."
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "il-bipa"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Illinois — Biometric Information Privacy Act (BIPA)
 
 **Authority**: Illinois Legislature; Illinois courts (private right of action)

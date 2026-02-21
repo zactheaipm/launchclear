@@ -1,3 +1,17 @@
+---
+id: "singapore-imda-agentic-ai"
+law: "Extension of PDPC Model AI Governance Framework"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "sg-imda-agentic-ai"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Singapore — IMDA Model AI Governance Framework for Agentic AI
 
 **Authority**: Infocomm Media Development Authority (IMDA), Singapore

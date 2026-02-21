@@ -1,3 +1,18 @@
+---
+id: "eu-ai-act-high-risk-requirements"
+law: "Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)"
+articles: ["Articles 8-15"]
+effectiveDate: "2 August 2026"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+    articles: ["Articles 8-15"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — Requirements for High-Risk AI Systems
 
 **Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)

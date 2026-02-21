@@ -1,3 +1,18 @@
+---
+id: "eu-gdpr-dpia-requirements"
+law: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+articles: ["Articles 35-36"]
+effectiveDate: "25 May 2018"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-gdpr"
+    articles: ["Articles 35-36"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # GDPR — Data Protection Impact Assessment Requirements
 
 **Law**: Regulation (EU) 2016/679 (General Data Protection Regulation)

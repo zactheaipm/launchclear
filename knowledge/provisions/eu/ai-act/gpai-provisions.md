@@ -1,3 +1,20 @@
+---
+id: "eu-ai-act-gpai-provisions"
+law: "Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)"
+articles: ["Articles 51-56"]
+effectiveDate: "2 August 2025"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+    articles: ["Articles 51-56"]
+  - id: "eurlex-dsm-directive"
+    articles: ["Articles 51-56"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — General-Purpose AI (GPAI) Model Obligations
 
 **Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)

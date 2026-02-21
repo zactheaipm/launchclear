@@ -1,3 +1,17 @@
+---
+id: "us-federal-ftc-genai-guidance"
+law: "FTC Act Section 5 (15 U.S.C. § 45)"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "ftc-act"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # US Federal — FTC Guidance on AI-Generated Content
 
 **Authority**: Federal Trade Commission

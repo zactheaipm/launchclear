@@ -1,3 +1,18 @@
+---
+id: "eu-ai-act-transparency-obligations"
+law: "Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)"
+articles: ["Articles 50-52"]
+effectiveDate: "2 August 2025"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+    articles: ["Articles 50-52"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — Transparency Obligations
 
 **Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)

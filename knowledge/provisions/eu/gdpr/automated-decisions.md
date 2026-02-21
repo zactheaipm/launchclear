@@ -1,3 +1,18 @@
+---
+id: "eu-gdpr-automated-decisions"
+law: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+articles: ["Article 22"]
+effectiveDate: "25 May 2018"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-gdpr"
+    articles: ["Article 22"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # GDPR — Automated Individual Decision-Making
 
 **Law**: Regulation (EU) 2016/679 (General Data Protection Regulation)

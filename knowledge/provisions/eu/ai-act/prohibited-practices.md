@@ -1,3 +1,18 @@
+---
+id: "eu-ai-act-prohibited-practices"
+law: "Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)"
+articles: ["Article 5"]
+effectiveDate: "2 February 2025"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+    articles: ["Article 5"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — Prohibited AI Practices
 
 **Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)

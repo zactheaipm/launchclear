@@ -1,3 +1,17 @@
+---
+id: "us-federal-nist-ai-rmf"
+law: "nist-ai-rmf"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "nist-ai-rmf"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # US Federal — NIST AI Risk Management Framework
 
 **Authority**: National Institute of Standards and Technology (NIST)

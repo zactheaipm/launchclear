@@ -1,3 +1,17 @@
+---
+id: "uk-fca-ai-guidance"
+law: "Financial Services and Markets Act 2000 (FSMA), FCA Handbook (PRIN, SYSC, COBS, ICOBS), PRA Rulebook, Consumer Duty (PS22/9). No AI-specific financial services legislation — existing regulatory framework applied to AI."
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "fca-ai-guidance"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # UK — FCA AI Guidance for Financial Services
 
 **Authority**: Financial Conduct Authority (FCA); Prudential Regulation Authority (PRA)

@@ -1,3 +1,17 @@
+---
+id: "brazil-ai-bill-genai"
+law: "PL 2338/2023 (Projeto de Lei No. 2338/2023), also known"
+articles: []
+effectiveDate: "December 10, 2024"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "br-ai-bill"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Brazil — AI Bill Foundation Model and GenAI Transparency
 
 **Authority**: Brazilian Congress (Congresso Nacional) — Senate (Senado

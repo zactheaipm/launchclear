@@ -1,3 +1,18 @@
+---
+id: "us-federal-eeoc-ai-guidance"
+law: "eeoc-ai-guidance"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eeoc-ai-guidance"
+  - id: "adea"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EEOC Guidance on AI in Employment Decisions
 
 ## Overview

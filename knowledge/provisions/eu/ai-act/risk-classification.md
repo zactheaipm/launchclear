@@ -1,3 +1,18 @@
+---
+id: "eu-ai-act-risk-classification"
+law: "Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)"
+articles: ["Articles 6-7", "Annex III"]
+effectiveDate: "2 August 2026"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+    articles: ["Articles 6-7", "Annex III"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — Classification of AI Systems as High-Risk
 
 **Law**: Regulation (EU) 2024/1689 (EU Artificial Intelligence Act)

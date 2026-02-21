@@ -1,3 +1,17 @@
+---
+id: "eu-ai-act-financial-services"
+law: "financial-services"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-ai-act"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # EU AI Act — Financial Services (Annex III §5)
 
 ## Overview

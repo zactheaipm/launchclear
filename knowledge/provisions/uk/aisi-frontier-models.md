@@ -1,3 +1,17 @@
+---
+id: "uk-aisi-frontier-models"
+law: "Voluntary framework; no statutory basis. However, commitments are increasingly treated as de facto mandatory for major model providers operating in the UK market."
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "aisi-framework"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # UK — AI Safety Institute Frontier Model Framework
 
 **Authority**: UK AI Safety Institute (AISI), formerly the Frontier AI Taskforce

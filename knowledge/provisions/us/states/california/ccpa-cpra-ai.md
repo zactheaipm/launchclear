@@ -1,3 +1,17 @@
+---
+id: "us-california-ccpa-cpra-ai"
+law: "California Consumer Privacy Act (CCPA), as amended by"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "ccpa"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # California — CCPA/CPRA Automated Decision-Making Provisions
 
 **Authority**: California Privacy Protection Agency (CPPA)

@@ -1,3 +1,18 @@
+---
+id: "eu-gdpr-legal-basis"
+law: "Regulation (EU) 2016/679 (General Data Protection Regulation)"
+articles: ["Articles 6-7"]
+effectiveDate: "25 May 2018"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "eurlex-gdpr"
+    articles: ["Articles 6-7"]
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # GDPR — Legal Basis for Processing
 
 **Law**: Regulation (EU) 2016/679 (General Data Protection Regulation)

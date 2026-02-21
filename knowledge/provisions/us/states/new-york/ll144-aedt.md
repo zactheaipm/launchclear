@@ -1,3 +1,17 @@
+---
+id: "us-new-york-ll144-aedt"
+law: "NYC Local Law 144 of 2021 (Int. 1894-2020), NYC Administrative"
+articles: []
+effectiveDate: "July 5, 2023"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "nyc-ll144"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # NYC Local Law 144 — Automated Employment Decision Tools (AEDT)
 
 **Authority**: New York City Department of Consumer and Worker Protection (DCWP)

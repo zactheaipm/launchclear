@@ -1,3 +1,17 @@
+---
+id: "singapore-mas-ai-risk-management"
+law: "MAS Act, Banking Act, Securities and Futures Act, Insurance Act, Payment Services Act"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "sg-mas-ai-risk"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Singapore — MAS Guidelines on AI Risk Management for Financial Institutions
 
 **Authority**: Monetary Authority of Singapore (MAS)

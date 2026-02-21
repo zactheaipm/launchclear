@@ -1,3 +1,17 @@
+---
+id: "us-texas-traiga"
+law: "Texas Responsible AI Governance Act (TRAIGA), Texas Business &"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "tx-traiga"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Texas Responsible AI Governance Act (TRAIGA)
 
 **Authority**: Texas Legislature; Texas Attorney General

@@ -1,3 +1,17 @@
+---
+id: "us-federal-nist-genai-profile"
+law: "nist-genai-profile"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "nist-genai-profile"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # US Federal — NIST Generative AI Risk Profile
 
 **Authority**: National Institute of Standards and Technology (NIST)

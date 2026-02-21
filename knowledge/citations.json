@@ -1,0 +1,362 @@
+{
+	"sources": {
+		"eurlex-ai-act": {
+			"type": "primary-legislation",
+			"jurisdiction": "EU",
+			"title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act",
+			"officialReference": "Regulation (EU) 2024/1689",
+			"urls": ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"eurlex-gdpr": {
+			"type": "primary-legislation",
+			"jurisdiction": "EU",
+			"title": "Regulation (EU) 2016/679 — General Data Protection Regulation",
+			"officialReference": "Regulation (EU) 2016/679",
+			"urls": ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"eurlex-dsm-directive": {
+			"type": "primary-legislation",
+			"jurisdiction": "EU",
+			"title": "Directive (EU) 2019/790 — Copyright in the Digital Single Market",
+			"officialReference": "Directive (EU) 2019/790",
+			"urls": ["https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0790"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"ftc-act": {
+			"type": "primary-legislation",
+			"jurisdiction": "US",
+			"title": "Federal Trade Commission Act — Section 5",
+			"officialReference": "15 U.S.C. §§ 41-58",
+			"urls": ["https://www.ftc.gov/legal-library/browse/statutes/federal-trade-commission-act"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"nist-ai-rmf": {
+			"type": "official-guidance",
+			"jurisdiction": "US",
+			"title": "NIST AI Risk Management Framework (AI 100-1)",
+			"officialReference": "NIST AI 100-1",
+			"urls": [
+				"https://doi.org/10.6028/NIST.AI.100-1",
+				"https://airc.nist.gov/AI_RMF_Interactivity/Playbook"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"nist-genai-profile": {
+			"type": "official-guidance",
+			"jurisdiction": "US",
+			"title": "NIST AI 600-1 — Generative AI Profile",
+			"officialReference": "NIST AI 600-1",
+			"urls": ["https://doi.org/10.6028/NIST.AI.600-1"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"coppa-rule": {
+			"type": "primary-legislation",
+			"jurisdiction": "US",
+			"title": "Children's Online Privacy Protection Rule",
+			"officialReference": "16 CFR Part 312",
+			"urls": ["https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"adea": {
+			"type": "primary-legislation",
+			"jurisdiction": "US",
+			"title": "Age Discrimination in Employment Act",
+			"officialReference": "29 U.S.C. §§ 621-634",
+			"urls": ["https://www.eeoc.gov/statutes/age-discrimination-employment-act-1967"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sr-11-7": {
+			"type": "official-guidance",
+			"jurisdiction": "US",
+			"title": "OCC/Fed SR 11-7 — Supervisory Guidance on Model Risk Management",
+			"officialReference": "SR Letter 11-7 / OCC Bulletin 2011-12",
+			"urls": ["https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"ccpa": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-CA",
+			"title": "California Consumer Privacy Act / California Privacy Rights Act",
+			"officialReference": "Cal. Civ. Code §§ 1798.100-1798.199.100",
+			"urls": [
+				"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"ca-sb942": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-CA",
+			"title": "SB 942 — California Generative AI Transparency Act",
+			"officialReference": "Cal. Bus. & Prof. Code §§ 22947-22947.8",
+			"urls": [
+				"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB942"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"colorado-ai-act": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-CO",
+			"title": "Colorado AI Act (SB 24-205)",
+			"officialReference": "C.R.S. § 6-1-1701 et seq.",
+			"urls": ["https://leg.colorado.gov/bills/sb24-205"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"il-bipa": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-IL",
+			"title": "Illinois Biometric Information Privacy Act",
+			"officialReference": "740 ILCS 14/",
+			"urls": ["https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"il-aivaa": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-IL",
+			"title": "Illinois Artificial Intelligence Video Interview Act",
+			"officialReference": "820 ILCS 42/",
+			"urls": ["https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=4015"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"nyc-ll144": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-NY",
+			"title": "NYC Local Law 144 of 2021 — Automated Employment Decision Tools",
+			"officialReference": "NYC Admin Code §§ 20-870 to 20-874",
+			"urls": ["https://legistar.council.nyc.gov/LegislationDetail.aspx?ID=4344524"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"tx-traiga": {
+			"type": "primary-legislation",
+			"jurisdiction": "US-TX",
+			"title": "Texas Responsible AI Governance Act (TRAIGA)",
+			"officialReference": "Tex. Bus. & Com. Code Ch. 120",
+			"urls": ["https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1709"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"uk-gdpr": {
+			"type": "primary-legislation",
+			"jurisdiction": "UK",
+			"title": "UK General Data Protection Regulation (retained EU law)",
+			"officialReference": "UK GDPR",
+			"urls": ["https://www.legislation.gov.uk/eur/2016/679/contents"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"uk-dpa-2018": {
+			"type": "primary-legislation",
+			"jurisdiction": "UK",
+			"title": "Data Protection Act 2018",
+			"officialReference": "Data Protection Act 2018",
+			"urls": ["https://www.legislation.gov.uk/ukpga/2018/12/contents"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"ico-ai-guidance": {
+			"type": "official-guidance",
+			"jurisdiction": "UK",
+			"title": "ICO Guidance on AI and Data Protection",
+			"urls": [
+				"https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"aisi-framework": {
+			"type": "official-guidance",
+			"jurisdiction": "UK",
+			"title": "UK AI Safety Institute — Frontier Model Safety Framework",
+			"urls": ["https://www.gov.uk/government/organisations/ai-safety-institute"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"dsit-foundation-models": {
+			"type": "official-guidance",
+			"jurisdiction": "UK",
+			"title": "DSIT Foundation Model Taskforce Principles",
+			"urls": [
+				"https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"fca-ai-guidance": {
+			"type": "official-guidance",
+			"jurisdiction": "UK",
+			"title": "FCA Principles-Based AI Guidance for Financial Services",
+			"urls": ["https://www.fca.org.uk/firms/artificial-intelligence"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sg-pdpa": {
+			"type": "primary-legislation",
+			"jurisdiction": "Singapore",
+			"title": "Personal Data Protection Act 2012",
+			"officialReference": "No. 26 of 2012",
+			"urls": ["https://sso.agc.gov.sg/Act/PDPA2012"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sg-pdpc-ai-governance": {
+			"type": "official-guidance",
+			"jurisdiction": "Singapore",
+			"title": "PDPC Model AI Governance Framework (2nd Edition)",
+			"urls": ["https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sg-imda-genai": {
+			"type": "official-guidance",
+			"jurisdiction": "Singapore",
+			"title": "IMDA Proposed Model AI Governance Framework for Generative AI",
+			"urls": [
+				"https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2024/proposed-model-ai-governance-framework-for-generative-ai"
+			],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sg-imda-agentic-ai": {
+			"type": "official-guidance",
+			"jurisdiction": "Singapore",
+			"title": "IMDA Model AI Governance Framework for Agentic AI (January 2026)",
+			"urls": ["https://www.imda.gov.sg/"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"sg-mas-ai-risk": {
+			"type": "official-guidance",
+			"jurisdiction": "Singapore",
+			"title": "MAS Guidelines on AI Risk Management for Financial Institutions",
+			"urls": ["https://www.mas.gov.sg/"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-cac-genai-measures": {
+			"type": "primary-legislation",
+			"jurisdiction": "China",
+			"title": "Interim Measures for the Management of Generative Artificial Intelligence Services",
+			"urls": ["http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"],
+			"language": "zh",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-cac-genai-measures-en": {
+			"type": "secondary-analysis",
+			"jurisdiction": "China",
+			"title": "CAC GenAI Measures — English Translation (China Law Translate)",
+			"urls": ["https://www.chinalawtranslate.com/en/generative-ai-interim/"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-cac-algorithm-provisions": {
+			"type": "primary-legislation",
+			"jurisdiction": "China",
+			"title": "Internet Information Service Algorithmic Recommendation Management Provisions",
+			"urls": ["http://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"],
+			"language": "zh",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-cac-deep-synthesis": {
+			"type": "primary-legislation",
+			"jurisdiction": "China",
+			"title": "Administrative Provisions on Deep Synthesis of Internet-Based Information Services",
+			"urls": ["http://www.cac.gov.cn/2022-12/11/c_1672221949318230.htm"],
+			"language": "zh",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-pipl": {
+			"type": "primary-legislation",
+			"jurisdiction": "China",
+			"title": "Personal Information Protection Law of the People's Republic of China",
+			"urls": ["http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml"],
+			"language": "zh",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"cn-cac-recommendation-algo": {
+			"type": "primary-legislation",
+			"jurisdiction": "China",
+			"title": "Internet Information Service Algorithmic Recommendation Management Provisions",
+			"urls": ["http://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm"],
+			"language": "zh",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"br-lgpd": {
+			"type": "primary-legislation",
+			"jurisdiction": "Brazil",
+			"title": "Lei Geral de Proteção de Dados Pessoais (LGPD)",
+			"officialReference": "Lei nº 13.709/2018",
+			"urls": ["http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"],
+			"language": "pt",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"br-ai-bill": {
+			"type": "pending-legislation",
+			"jurisdiction": "Brazil",
+			"title": "PL 2338/2023 — Marco Legal da Inteligência Artificial",
+			"officialReference": "PL 2338/2023",
+			"urls": ["https://www25.senado.leg.br/web/atividade/materias/-/materia/157233"],
+			"language": "pt",
+			"lastChecked": null,
+			"status": "active"
+		},
+		"eeoc-ai-guidance": {
+			"type": "official-guidance",
+			"jurisdiction": "US",
+			"title": "EEOC Guidance on AI and Automated Systems in Employment Decisions",
+			"urls": ["https://www.eeoc.gov/ai"],
+			"language": "en",
+			"lastChecked": null,
+			"status": "active"
+		}
+	}
+}

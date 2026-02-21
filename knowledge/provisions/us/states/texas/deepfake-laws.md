@@ -1,3 +1,17 @@
+---
+id: "us-texas-deepfake-laws"
+law: "TX Penal Code § 21.165 (sexually explicit deepfakes);"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "tx-traiga"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Texas — Deepfake Laws
 
 **Authority**: Texas Legislature

@@ -1,3 +1,19 @@
+---
+id: "uk-ico-ai-guidance"
+law: "UK GDPR (retained EU law), Data Protection Act 2018 (DPA 2018)"
+articles: []
+effectiveDate: null
+generatedBy: "claude-opus-4"
+sources:
+  - id: "ico-ai-guidance"
+  - id: "uk-gdpr"
+  - id: "uk-dpa-2018"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # UK — ICO AI and Data Protection Guidance
 
 **Authority**: Information Commissioner's Office (ICO)

@@ -1,3 +1,17 @@
+---
+id: "us-illinois-ai-video-interview-act"
+law: "Artificial Intelligence Video Interview Act, 820 ILCS 42/1 et seq."
+articles: []
+effectiveDate: "January 1, 2020"
+generatedBy: "claude-opus-4"
+sources:
+  - id: "il-aivaa"
+verification:
+  status: "unverified"
+  lastAuditDate: null
+  auditor: null
+  issues: []
+---
 # Illinois — Artificial Intelligence Video Interview Act
 
 **Authority**: Illinois Legislature
